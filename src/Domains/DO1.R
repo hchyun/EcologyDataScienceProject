@@ -1,4 +1,4 @@
-DO1 <- read_csv("./outputs/plots_per_domain_1.csv")
+DO1 <- read_csv("../outputs/plots_per_domain_1.csv")
 DO1 <- DO1 %>%
   select(-c("lon.1", "lat.1", "invyr"))
 

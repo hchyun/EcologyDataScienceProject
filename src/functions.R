@@ -1,3 +1,26 @@
+subscales_fia <- function(file){
+  # load shapefiles
+  library(rgdal)
+  library(raster)
+  
+  mat <- readr::read_csv(file) 
+  mat <- mat[complete.cases(mat), ]
+  mat <- mat[-c(8:10)] %>% unique
+  
+  neon_domains <- readOGR("NEONDomains_0/", "NEON_Domains")
+  coords <- mat[,c(7,6)]
+  FIA <- SpatialPointsDataFrame(coords = coords, data = mat,
+                                proj4string = CRS("+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0"))
+  
+  for(jj in 1: nrow(neon_domains)){
+    domain <- neon_domains[neon_domains$DomainID == jj,]
+    crs(domain) <- crs(FIA)
+    subset <- raster::extract(domain, FIA)
+    subset <- FIA[complete.cases(subset), ]
+    write_csv(as.data.frame(subset), paste("./outputs/plots_per_domain_", jj, ".csv", sep=""))
+  }
+}
+
 load_packages <- function(){
   library(tidyverse)
   library(gjam)
