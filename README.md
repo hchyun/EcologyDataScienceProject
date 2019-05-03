@@ -1,6 +1,6 @@
 # EcologyDataScienceProject
 
-To Download the data run download.py in src.
+To Download the data run make in src.
 
 Unzip the data folder.
 
