@@ -12,7 +12,9 @@ subscales_fia <- function(file){
   FIA <- SpatialPointsDataFrame(coords = coords, data = mat,
                                 proj4string = CRS("+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0"))
   
-  for(jj in 1: nrow(neon_domains)){
+  #Removing 21, 22
+  end <- nrow(neon_domains) - 2
+  for(jj in 1:end){
     domain <- neon_domains[neon_domains$DomainID == jj,]
     crs(domain) <- crs(FIA)
     subset <- raster::extract(domain, FIA)

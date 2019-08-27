@@ -1,3 +1,5 @@
+source('functions.R')
+source('Shared.R')
 source('./Domains/DO1.R')
 source('./Domains/DO2.R')
 source('./Domains/DO3.R')
