@@ -1,11 +1,7 @@
 # EcologyDataScienceProject
 
-To Download the data run make in src.
+To Download the data run make in `./src`.
 
-Run the functions in functions.R.
+To train the model run `./src/Run.R`
 
-Run Shared.R
-
-To train the model run Run.R
-
-To train individual domains run each DO...R file
+To train individual domains run each `./src/Domains/DO<Domain Number>.R` file
