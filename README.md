@@ -16,8 +16,6 @@ The Daymet data contains climate information of North America. For more informat
 For more NEON information visit `https://www.neonscience.org`.
 
 ## Setting Up
-Build the docker image `docker build -t <image name> .`
-Run the docker image `docker run -it <image name>`
 To Download the data run `make` in `./src`.
 
 ## Training GJAM
