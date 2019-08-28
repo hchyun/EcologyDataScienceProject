@@ -28,7 +28,7 @@ id <- cont_pred$id_coords
 cont_pred$id_coords <- NULL
 cont_pred$id_coords <- id
 
-#cols_cluster <- c("lat", "lon")
+cols_cluster <- c("lat", "lon")
 #cont_clustered_x <- cluster_plots(cont_pred, cols_cluster)
 
 #cont_y <- get_responses(cont_clustered_x, y_fia)
