@@ -1,0 +1,7 @@
+install.packages("rgdal")
+install.packages("raster")
+install.packages("tidyverse")
+install.packages("gjam")
+install.packages("plyr")
+install.packages("maptools")
+install.packages("sp")

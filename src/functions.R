@@ -1,6 +1,5 @@
 subscales_fia <- function(file){
   # load shapefiles
-  library(rgdal)
   library(raster)
   
   mat <- readr::read_csv(file) 
