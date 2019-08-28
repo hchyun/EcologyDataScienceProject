@@ -6,7 +6,7 @@ The goal of this project is to apply a joint species distribution model to predi
 
 
 ![alt text](https://www.neonscience.org/sites/default/files/styles/fullwidth/public/image-content-images/2016_NEONBattelleDomainOverview-web.png?itok=WfKIIINK)
-**Figure 1**
+**Figure 1 (image from https://www.neonscience.org)**
 
 
 
