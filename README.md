@@ -11,14 +11,15 @@ The goal of this project is to apply a joint species distribution model to predi
 
 
 ### Data
-The FIA data is a ground sample of FIA plots of forests in the United States. For more information visit `https://www.fia.fs.fed.us`.
-The Daymet data contains climate information of North America. For more information visit `https://daymet.ornl.gov`.
-For more NEON information visit `https://www.neonscience.org`.
+The FIA data is a ground sample of FIA plots of forests in the United States. For more information visit https://www.fia.fs.fed.us.
+The Daymet data contains climate information of North America. For more information visit https://daymet.ornl.gov.
+For more NEON information visit https://www.neonscience.org.
 
 ## Setting Up
 To Download the data run `make` in `./src`.
 
 ## Training GJAM
+Running the code on RStudio would be the best method.
 To train the model run `Rscript ./src/Run.R`
 To train individual domains run each `Rscript ./src/Domains/DO<Domain Number>.R` file
 
