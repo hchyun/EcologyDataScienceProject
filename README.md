@@ -6,7 +6,7 @@ The goal of this project is to apply a joint species distribution model to predi
 
 
 ![alt text](https://www.neonscience.org/sites/default/files/styles/fullwidth/public/image-content-images/2016_NEONBattelleDomainOverview-web.png?itok=WfKIIINK)
-                **Figure 1**
+**Figure 1**
 
 
 
@@ -18,14 +18,14 @@ For more NEON information visit `https://www.neonscience.org`.
 ## Setting Up
 Build the docker image `docker build -t <image name> .`
 Run the docker image `docker run -it <image name>`
-To Download the data run make in `./src`.
+To Download the data run `make` in `./src`.
 
 ## Training GJAM
-To train the model run `./src/Run.R`
-To train individual domains run each `./src/Domains/DO<Domain Number>.R` file
+To train the model run `Rscript ./src/Run.R`
+To train individual domains run each `Rscript ./src/Domains/DO<Domain Number>.R` file
 
 ### GJAM
 To find out more about Generalized Joint Attribute Model (Clark et. al. 2017) read `Clark_et_al-2017-Ecological_Monographs.pdf` in the root directory of the source folder.
 
 ## Analysis of the Results
-To view the model results and analysis of the performance run `./src/analysis.R`
+To view the model results and analysis of the performance run `Rscript ./src/analysis.R`
