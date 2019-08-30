@@ -1,6 +1,6 @@
-DO8 <- read_csv("../outputs/plots_per_domain_8.csv")
+DO8 <- read_csv("./outputs/plots_per_domain_8.csv")
 DO8 <- DO8 %>%
-  select(-c("lon.1", "lat.1", "invyr"))
+  dplyr::select(-c("lon.1", "lat.1", "invyr"))
 
 DO8_pred <- join(DO8, cont_pred, type="left",by=c("statecd","unitcd","countycd","plot"),match="first")
 DO8_pred <- join(DO8_pred, daymet_used, type="left", by=c("statecd","unitcd","countycd","plot"), match="first")

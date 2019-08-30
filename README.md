@@ -19,7 +19,7 @@ For more NEON information visit https://www.neonscience.org.
 To Download the data run `make` in `./src`.
 
 ## Training GJAM
-Running the code on RStudio would be the best method.
+Running the code on RStudio would be the best method and set the working directory to `EcologyDataScienceProject/src`. 
 To train the model run `Rscript ./src/Run.R`
 To train individual domains run each `Rscript ./src/Domains/DO<Domain Number>.R` file
 

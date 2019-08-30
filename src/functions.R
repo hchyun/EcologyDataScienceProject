@@ -169,3 +169,21 @@ evaluate_model <- function(x_, y_, model){
   return(eval)
 }
 
+#find row num from x_mat then return row of y_mat
+find_abundance <- function(lat, lon, y_mat, x_mat){
+  #Finding minimum distance
+  #Returning row
+  
+  dist <- sqrt((x_mat$lat - lat)^2 + (x_mat$lon - lon)^2)
+  index <- which(dist == min(dist))
+  return(y_mat[index, ])
+  
+}
+
+find_abundance(38.91425, -107.3077, cont_y, cont_pred)
+
+#find row num from x_mat then search in model$covariance to return
+find_covariance <- function(lat, lon, model, x_mat){
+  
+}
+

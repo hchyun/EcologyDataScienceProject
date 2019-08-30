@@ -1,6 +1,6 @@
-DO5 <- read_csv("../outputs/plots_per_domain_5.csv")
+DO5 <- read_csv("./outputs/plots_per_domain_5.csv")
 DO5 <- DO5 %>%
-  select(-c("lon.1", "lat.1", "invyr"))
+  dplyr::select(-c("lon.1", "lat.1", "invyr"))
 
 DO5_pred <- join(DO5, cont_pred, type="left",by=c("statecd","unitcd","countycd","plot"),match="first")
 DO5_pred <- DO5_pred[, !duplicated(colnames(DO5_pred))] #removing duplicated column names
