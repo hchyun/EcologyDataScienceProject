@@ -173,17 +173,62 @@ evaluate_model <- function(x_, y_, model){
 find_abundance <- function(lat, lon, y_mat, x_mat){
   #Finding minimum distance
   #Returning row
-  
+  #sort then get first 16 then aggregate these
   dist <- sqrt((x_mat$lat - lat)^2 + (x_mat$lon - lon)^2)
-  index <- which(dist == min(dist))
-  return(y_mat[index, ])
-  
+  dist_sorted <- sort(dist)
+  index <- which(dist %in% dist_sorted[1:16])
+  geo_info <- x_mat[index, c('statecd', 'unitcd', 'countycd', 'plot')]
+  indexes <- which(y_mat$statecd %in% geo_info$statecd 
+                   & y_mat$unitcd %in% geo_info$unitcd
+                   & y_mat$countycd %in% geo_info$countycd
+                   & y_mat$plot %in% geo_info$plot)
+
+  grouped_mat <- y_mat[indexes, ] %>%
+    dplyr::group_by(spcd) %>%
+    dplyr::summarize(count = sum(count))
+
+  return(grouped_mat)
 }
 
-find_abundance(38.91425, -107.3077, cont_y, cont_pred)
+#find_abundance(38.91425, -107.3077, cont_y, cont_pred)
 
-#find row num from x_mat then search in model$covariance to return
-find_covariance <- function(lat, lon, model, x_mat){
+##find row num from x_mat then search in model$covariance to return
+find_covariance <- function(lat, lon, y_mat, x_mat){
+  #Find 16 shortest distances
+  #Train model on that
+  dist <- sqrt((x_mat$lat - lat)^2 + (x_mat$lon - lon)^2)
+  dist_sorted <- sort(dist)
+  index <- which(dist %in% dist_sorted[1:16])
+  geo_info <- x_mat[index, c('statecd', 'unitcd', 'countycd', 'plot')]
+  indexes <- which(y_mat$statecd %in% geo_info$statecd 
+                   & y_mat$unitcd %in% geo_info$unitcd
+                   & y_mat$countycd %in% geo_info$countycd
+                   & y_mat$plot %in% geo_info$plot)
+  
+  y_mat <- y_mat[indexes, ]
+  x_data <- x_mat[index,]
+  #write my own get responses function
+  spc <- sort(unique(y_mat$spcd))
+  rsp_plot <- matrix(as.numeric(0), ncol = length(spc), nrow = nrow(x_data))
+  rsp_plot <- data.frame(rsp_plot)
+  colnames(rsp_plot) <- spc
+  
+  for(i in 1:nrow(y_mat)){
+    cot <- which(x_data$statecd == y_mat$statecd[i] & x_data$unitcd == y_mat$unitcd[i] & x_data$plot == y_mat$plot[i])
+    rsp_plot[cot, as.character(y_mat$spcd[i])] <- 1 + rsp_plot[cot, as.character(y_mat$spcd[i])]
+  }
+  rsp_plot <- rsp_plot[,!apply(rsp_plot, 2, sum)==0]
+  y_data <- rsp_plot
+  x_data <- x_data[,c("avg(slope)","avg(aspect)","max(elev)")]
+  colnames(x_data) <- c("slope", "aspect", "elev")
+  
+  rl <- list(r = ncol(y_data), N = ncol(y_data))
+  ml   <- list(ng = 1000, burnin = 200, typeNames = "DA", reductList= rl)
+  form <- as.formula(paste("~", paste(colnames(x_data), collapse = " + ")))
+  out <- gjam(form, xdata=x_data, ydata=y_data, modelList=ml)
+  
+  cov <- out$parameters$sigMu #covariance matrix
+  return(cov)
   
 }
-
+find_covariance(38.91425, -107.3077, cont_y, cont_pred)
