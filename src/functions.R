@@ -91,7 +91,8 @@ get_responses <- function(x_d, y){
       }
     }
   }
-  rsp_plot <- rsp_plot[,!apply(rsp_plot, 2, sum)==0]
+  #rsp_plot <- rsp_plot[,!apply(rsp_plot, 2, sum)==0]
+  rsp_plot <- filter_sparse(rsp_plot)
   return(rsp_plot)
 }
 
@@ -190,8 +191,6 @@ find_abundance <- function(lat, lon, y_mat, x_mat){
   return(grouped_mat)
 }
 
-#find_abundance(38.91425, -107.3077, cont_y, cont_pred)
-
 ##find row num from x_mat then search in model$covariance to return
 find_covariance <- function(lat, lon, y_mat, x_mat){
   #Find 16 shortest distances
@@ -231,4 +230,15 @@ find_covariance <- function(lat, lon, y_mat, x_mat){
   return(cov)
   
 }
-find_covariance(38.91425, -107.3077, cont_y, cont_pred)
+
+filter_sparse <- function(y_mat){
+  
+  min_num <- nrow(y_mat) / 10
+  num_zero <- colSums(y_mat != 0)
+  col_zeros <- which(num_zero > min_num)
+  print(col_zeros)
+  spc_filter <- colnames(y_mat)[col_zeros]
+  filtered <- y_mat[,spc_filter]
+  return(filtered)
+  
+}
