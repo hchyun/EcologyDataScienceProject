@@ -30,4 +30,3 @@ DO1_test_y <- DO1_training[[4]]
 DO1_out <- train_gjam(DO1_train_x, DO1_train_y)
 
 DO1_eval <- evaluate_model(DO1_test_x, DO1_test_y, DO1_out)
-

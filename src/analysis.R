@@ -3,13 +3,10 @@ percentage <- c()
 for(i in 1:length(eval)){
   pos <- length(eval[[i]][eval[[i]] > 0])
   total <- length(eval[[i]][eval[[i]] != -Inf])
-  if(i == 4){
-    percentage <- c(percentage, 0.174)
-  }
   percentage <- c(percentage, pos/total)
 }
 
-barplot(percentage,ylim=c(0,1), ylab= "accuracy", xlab="Domain", names.arg = c("1","2","3","3_old","4","5","6","7","8","9","10","11","12","13","14","15","16","17","19"))
+barplot(percentage,ylim=c(0,1), ylab= "accuracy", xlab="Domain", names.arg = c("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","19"))
 
 #Getting all spc codes from the domains
 spc <- c()

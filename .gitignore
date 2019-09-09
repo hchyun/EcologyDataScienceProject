@@ -1,9 +1,16 @@
+#Downloaded data files
 data
 
 NEONDomains_0
 NEONDomains_0.zip
 outputs
 
-.Rhistory
 
+#R environment
+.Rhistory
+.Rdata
 .ipynb_checkpoints
+.Rproj.user
+.Rproj
+src.Rproj
+EcologyDataScienceProject.Rproj

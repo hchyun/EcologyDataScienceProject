@@ -69,6 +69,18 @@ cluster_plots <- function(data, cols_to_cluster){
   return(clustered)
 }
 
+filter_sparse <- function(y_mat){
+  
+  min_num <- nrow(y_mat) / 10
+  num_zero <- colSums(y_mat != 0)
+  col_zeros <- which(num_zero > min_num)
+  print(col_zeros)
+  spc_filter <- colnames(y_mat)[col_zeros]
+  filtered <- y_mat[,spc_filter]
+  return(filtered)
+  
+}
+
 get_responses <- function(x_d, y){
   spc <- sort(unique(y$spcd))
   rsp_plot <- matrix(as.numeric(0), ncol = length(spc), nrow = nrow(x_d))
@@ -91,7 +103,7 @@ get_responses <- function(x_d, y){
       }
     }
   }
-  #rsp_plot <- rsp_plot[,!apply(rsp_plot, 2, sum)==0]
+  
   rsp_plot <- filter_sparse(rsp_plot)
   return(rsp_plot)
 }
@@ -228,17 +240,5 @@ find_covariance <- function(lat, lon, y_mat, x_mat){
   
   cov <- out$parameters$sigMu #covariance matrix
   return(cov)
-  
-}
-
-filter_sparse <- function(y_mat){
-  
-  min_num <- nrow(y_mat) / 10
-  num_zero <- colSums(y_mat != 0)
-  col_zeros <- which(num_zero > min_num)
-  print(col_zeros)
-  spc_filter <- colnames(y_mat)[col_zeros]
-  filtered <- y_mat[,spc_filter]
-  return(filtered)
   
 }
