@@ -1,4 +1,4 @@
-eval <- c(list(DO1_eval),list(DO2_eval),list(DO3_eval),list(DO4_eval),list(DO5_eval),list(DO6_eval),list(DO7_eval),list(DO8_eval),list(DO9_eval),list(DO10_eval),list(DO11_eval),list(DO12_eval),list(DO13_eval),list(DO14_eval),list(DO15_eval),list(DO16_eval),list(DO17_eval),list(DO19_eval))
+eval <- c(list(DO1_eval),list(DO2_eval),list(DO3_eval),list(DO5_eval),list(DO6_eval),list(DO7_eval),list(DO8_eval),list(DO9_eval),list(DO10_eval),list(DO11_eval),list(DO12_eval),list(DO13_eval),list(DO14_eval),list(DO15_eval),list(DO16_eval),list(DO17_eval))
 percentage <- c()
 for(i in 1:length(eval)){
   pos <- length(eval[[i]][eval[[i]] > 0])
@@ -6,7 +6,7 @@ for(i in 1:length(eval)){
   percentage <- c(percentage, pos/total)
 }
 
-barplot(percentage,ylim=c(0,1), ylab= "accuracy", xlab="Domain", names.arg = c("1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","19"))
+barplot(percentage,ylim=c(0,1), ylab= "accuracy", xlab="Domain", names.arg = c("1","2","3","5","6","7","8","9","10","11","12","13","14","15","16","17"))
 
 #Getting all spc codes from the domains
 spc <- c()
@@ -111,5 +111,6 @@ gjamPlot(output = DO19_out)
 daylength10_sensitivity <- c(median(DO1_out$parameters$betaStandXmu["daylength10",]),median(DO2_out$parameters$betaStandXmu["daylength10",]),median(DO3_out$parameters$betaStandXmu["daylength10",]),median(DO4_out$parameters$betaStandXmu["daylength10",]),median(DO5_out$parameters$betaStandXmu["daylength10",]),median(DO6_out$parameters$betaStandXmu["daylength10",]),median(DO7_out$parameters$betaStandXmu["daylength10",]),median(DO8_out$parameters$betaStandXmu["daylength10",]),median(DO9_out$parameters$betaStandXmu["daylength10",]),median(DO10_out$parameters$betaStandXmu["daylength10",]),median(DO11_out$parameters$betaStandXmu["daylength10",]),median(DO12_out$parameters$betaStandXmu["daylength10",]),median(DO13_out$parameters$betaStandXmu["daylength10",]),median(DO14_out$parameters$betaStandXmu["daylength10",]),median(DO15_out$parameters$betaStandXmu["daylength10",]),median(DO16_out$parameters$betaStandXmu["daylength10",]),median(DO17_out$parameters$betaStandXmu["daylength10",]),median(DO19_out$parameters$betaStandXmu["daylength10",]))
 plot(daylength10_sensitivity, xlab="Domian")
 
-cov <- c(0.01512265,0.004691407,0.005656079, 0.003733143)
-
+cov <- c(0.66, 2210,1402,99)
+covar <- data.frame(x=c('D1','D2','D7','D8'), y=cov)
+plot(covar, xlab="Domain", ylab="Covariance")

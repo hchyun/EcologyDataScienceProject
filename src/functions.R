@@ -152,8 +152,11 @@ evaluate_model_ <- function(prediction, observation){
   eval <- data.frame(t(eval))
   colnames(eval) <- colnames(observation)
   for(j in 1:ncol(observation)){
-    eval[j] <- 1 - sum((prediction[,j] - observation[,j])^2, na.rm=T) / 
-      sum((observation[,j] - mean(observation[,j], na.rm = T))^2, na.rm = T)
+    eval[j] <- 1 - sum(
+      (prediction[,j] - observation[,j])^2, na.rm=T) / 
+      sum(
+        (observation[,j] - mean(observation[,j], na.rm = T))^2,
+        na.rm = T)
   }
   return(eval)
 }
