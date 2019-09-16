@@ -9,7 +9,10 @@ import math
 database = '../fia.sqlite'
 conn = sqlite3.connect(database)
 
-sql = "SELECT plott.statecd, plott.unitcd, plott.countycd, plott.plot, lat, lon, AVG(slope), AVG(aspect), MAX(elev) FROM forest_inventory_analysis_COND as cond JOIN forest_inventory_analysis_PLOT as plott ON cond.statecd == plott.statecd AND cond.unitcd == plott.unitcd AND cond.countycd == plott.countycd AND cond.plot == plott.plot WHERE slope != '' AND elev != '' AND aspect != '' GROUP BY plott.statecd, plott.unitcd, plott.countycd, plott.plot"
+sql = """SELECT plott.statecd, plott.unitcd, plott.countycd, plott.plot, lat, lon, AVG(slope), AVG(aspect), MAX(elev) 
+         FROM forest_inventory_analysis_COND as cond JOIN forest_inventory_analysis_PLOT as plott
+         ON cond.statecd == plott.statecd AND cond.unitcd == plott.unitcd AND cond.countycd == plott.countycd AND cond.plot == plott.plot
+         WHERE slope != '' AND elev != '' AND aspect != '' GROUP BY plott.statecd, plott.unitcd, plott.countycd, plott.plot"""
 fia_climate = pd.read_sql_query(sql, conn)
 
 #Getting all predictor values
@@ -17,7 +20,7 @@ Neon_Domain3 = pd.read_csv("../data/domain3.csv")
 bioclim = pd.read_csv("../data/bioclim_fia.csv")
 bioclim.drop('Unnamed: 0', axis=1, inplace=True)
 
-sql = "SELECT COUNT(*) ,spcd, statecd, unitcd, countycd, plot, invyr FROM forest_inventory_analysis_TREE GROUP BY spcd, statecd, unitcd, countycd, plot"
+sql = "SELECT COUNT(Distinct treeid) ,spcd, statecd, unitcd, countycd, plot, invyr FROM forest_inventory_analysis_TREE GROUP BY spcd, statecd, unitcd, countycd, plot"
 fia_response = pd.read_sql_query(sql, conn)
 conn.close()
 
