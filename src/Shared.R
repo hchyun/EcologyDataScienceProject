@@ -31,7 +31,7 @@ cont_pred$id_coords <- id
 cols_cluster <- c("lat", "lon")
 #cont_clustered_x <- cluster_plots(cont_pred, cols_cluster)
 
-cont_y <- get_responses(cont_pred, y_fia)
+#cont_y <- get_responses(cont_pred, y_fia)
 
 #cont_pred_final <- cont_clustered_x %>%
 #  dplyr::select(-c("statecd","unitcd", "countycd","id_coords","plot","elev","lat","lon","isoth","trange","preccold_quart","precwarm_quart","invyr"))
