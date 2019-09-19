@@ -24,7 +24,7 @@ To train the model run `Rscript ./src/Run.R`
 To train individual domains run each `Rscript ./src/Domains/DO<Domain Number>.R` file
 
 ### GJAM
-To find out more about Generalized Joint Attribute Model (Clark et. al. 2017) read `Clark_et_al-2017-Ecological_Monographs.pdf` in the root directory of the source folder.
+To find out more about Generalized Joint Attribute Model (Clark et. al. 2017) read https://cran.r-project.org/web/packages/gjam/vignettes/gjamVignette.html.
 
 ## Analysis of the Results
 To view the model results and analysis of the performance run `Rscript ./src/analysis.R`
