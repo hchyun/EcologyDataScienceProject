@@ -1,4 +1,4 @@
-subscales_fia <- function(file){
+subscales_fia <- function(file, n_domains=neon_domains){
   # load shapefiles
   library(raster)
   
@@ -6,15 +6,15 @@ subscales_fia <- function(file){
   mat <- mat[complete.cases(mat), ]
   mat <- mat[-c(8:10)] %>% unique
   
-  neon_domains <- readOGR("NEONDomains_0/", "NEON_Domains")
+  #neon_domains <- readOGR("NEONDomains_0/", "NEON_Domains")
   coords <- mat[,c(7,6)]
   FIA <- SpatialPointsDataFrame(coords = coords, data = mat,
                                 proj4string = CRS("+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0"))
   
   #Removing 21, 22
-  end <- nrow(neon_domains) - 2
+  end <- nrow(n_domains) - 2
   for(jj in 1:end){
-    domain <- neon_domains[neon_domains$DomainID == jj,]
+    domain <- n_domains[n_domains$DomainID == jj,]
     crs(domain) <- crs(FIA)
     subset <- raster::extract(domain, FIA)
     subset <- FIA[complete.cases(subset), ]
@@ -116,6 +116,45 @@ train_gjam <- function(x_data,y_data, R=8,n=10,Typenames="DA",Ng=2500,Burnin=500
   return(out)
 }
 
+#Needs fixing
+train_gjam_domain <- function(domain_num){
+  DO <- read_csv(paste("./outputs/plots_per_domain_", ".csv", sep=as.character(domain_num)))
+  DO <- DO %>%
+    dplyr::select(-c("lon.1", "lat.1", "invyr"))
+  DO_pred <- join(DO, cont_pred, type="left",by=c("statecd","unitcd","countycd","plot"),match="first")
+  DO_pred <- join(DO_pred, daymet_used, type="left", by=c("statecd","unitcd","countycd","plot"), match="first")
+  DO_pred <- DO_pred[, !duplicated(colnames(DO_pred))] #removing duplicated column names
+  DO_pred <- DO_pred[complete.cases(DO_pred),]
+  
+  
+  id <- DO_pred$id_coords
+  DO_pred$id_coords <- NULL
+  DO_pred$id_coords <- id
+  
+  DO_clustered_x <- cluster_plots(DO_pred, cols_cluster)
+  
+  DO_y <- get_responses(DO_clustered_x, y_fia)
+  
+  DO_pred_final <- DO_clustered_x %>%
+    dplyr::select(-c("statecd","unitcd", "countycd","id_coords","plot","elev","lat","lon","isoth","trange","preccold_quart","precwarm_quart","invyr","mat","mdr","ts","mtw","mtc","mtwet","mtdry","mtwarm","mtcold","prec","precwet","precdry","precseason","precwec_quart","precdry_quart"))
+  colnames(DO_pred_final)[1:3] <- c("slope", "aspect", "elev")
+  
+  DO_pred_mat <- apply(DO_pred_final, 2, scale)
+  DO_pred_final <- data.frame(DO_pred_mat)
+  DO_training <- split_sample(DO_pred_final, DO_y)
+  DO_train_x <- DO_training[[1]]
+  DO_train_y <- DO_training[[2]]
+  DO_test_x <- DO_training[[3]]
+  DO_test_y <- DO_training[[4]]
+  
+  DO_out <- train_gjam(DO_train_x, DO_train_y)
+  
+  DO_eval <- evaluate_model(DO_test_x, DO_test_y, DO_out)
+  
+  return(list("model"=DO_out, "eval"=DO_eval, "x"=DO_pred_final, "y"=DO_y))
+  
+}
+
 kmvar <- function(mat, clsize=16, method=c('random','maxd', 'mind', 'elki')){
   k = ceiling(nrow(mat)/clsize)
   km.o = kmeans(mat, k)
@@ -206,42 +245,18 @@ find_abundance <- function(lat, lon, y_mat, x_mat){
   return(grouped_mat)
 }
 
-##find row num from x_mat then search in model$covariance to return
-find_covariance <- function(lat, lon, y_mat, x_mat){
-  #Find 16 shortest distances
-  #Train model on that
-  dist <- sqrt((x_mat$lat - lat)^2 + (x_mat$lon - lon)^2)
-  dist_sorted <- sort(dist)
-  index <- which(dist %in% dist_sorted[1:16])
-  geo_info <- x_mat[index, c('statecd', 'unitcd', 'countycd', 'plot')]
-  indexes <- which(y_mat$statecd %in% geo_info$statecd 
-                   & y_mat$unitcd %in% geo_info$unitcd
-                   & y_mat$countycd %in% geo_info$countycd
-                   & y_mat$plot %in% geo_info$plot)
-  
-  y_mat <- y_mat[indexes, ]
-  x_data <- x_mat[index,]
-  #write my own get responses function
-  spc <- sort(unique(y_mat$spcd))
-  rsp_plot <- matrix(as.numeric(0), ncol = length(spc), nrow = nrow(x_data))
-  rsp_plot <- data.frame(rsp_plot)
-  colnames(rsp_plot) <- spc
-  
-  for(i in 1:nrow(y_mat)){
-    cot <- which(x_data$statecd == y_mat$statecd[i] & x_data$unitcd == y_mat$unitcd[i] & x_data$plot == y_mat$plot[i])
-    rsp_plot[cot, as.character(y_mat$spcd[i])] <- 1 + rsp_plot[cot, as.character(y_mat$spcd[i])]
+find_covariance <- function(lat, lon, n_domains=neon_domains){
+
+  coords <- data.frame(list('Latitude'=lat, 'Longitude'=lon))
+  coordinates(coords) <- ~ Longitude + Latitude
+  proj4string(coords) <- proj4string(n_domains)
+  domain_num <- over(coords, n_domains)$DomainID
+  if(is.na(domain_num)){
+    return("Not in domains")
   }
-  rsp_plot <- rsp_plot[,!apply(rsp_plot, 2, sum)==0]
-  y_data <- rsp_plot
-  x_data <- x_data[,c("avg(slope)","avg(aspect)","max(elev)")]
-  colnames(x_data) <- c("slope", "aspect", "elev")
-  
-  rl <- list(r = ncol(y_data), N = ncol(y_data))
-  ml   <- list(ng = 1000, burnin = 200, typeNames = "DA", reductList= rl)
-  form <- as.formula(paste("~", paste(colnames(x_data), collapse = " + ")))
-  out <- gjam(form, xdata=x_data, ydata=y_data, modelList=ml)
-  
-  cov <- out$parameters$sigMu #covariance matrix
-  return(cov)
+  var_name <- paste("DO", "_out", sep=as.character(domain_num))
+  covariance <- get(var_name)$parameters$sigMu
+  print(domain_num)
+  return(covariance)
   
 }

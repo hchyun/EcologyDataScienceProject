@@ -14,3 +14,5 @@ outputs
 .Rproj
 src.Rproj
 EcologyDataScienceProject.Rproj
+
+*.pdf

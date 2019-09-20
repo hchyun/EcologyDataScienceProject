@@ -3,7 +3,7 @@ library(sp)
 library(rgdal)
 load_packages()
 
-
+neon_domains <- readOGR("NEONDomains_0/", "NEON_Domains")
 subscales_fia("../data/fiaClimate.csv")
 daymet <- read_csv("../data/climate_daymet.csv")
 daymet_used <- daymet[,c("countycd", "unitcd","statecd","plot","daylength_3", "daylength_4","daylength_10","prec_6","prec_7","rad_8","tmax_8","tmin_1")]
@@ -31,7 +31,7 @@ cont_pred$id_coords <- id
 cols_cluster <- c("lat", "lon")
 #cont_clustered_x <- cluster_plots(cont_pred, cols_cluster)
 
-#cont_y <- get_responses(cont_pred, y_fia)
+cont_y <- get_responses(cont_pred, y_fia)
 
 #cont_pred_final <- cont_clustered_x %>%
 #  dplyr::select(-c("statecd","unitcd", "countycd","id_coords","plot","elev","lat","lon","isoth","trange","preccold_quart","precwarm_quart","invyr"))
