@@ -19,20 +19,28 @@ Neon_Domain3 = pd.read_csv("../data/domain3.csv")
 bioclim = pd.read_csv("../data/bioclim_fia.csv")
 bioclim.drop('Unnamed: 0', axis=1, inplace=True)
 
-sql = "SELECT COUNT(Distinct tree) ,spcd, statecd, unitcd, countycd, plot, invyr FROM forest_inventory_analysis_TREE GROUP BY spcd, statecd, unitcd, countycd, plot"
+sql = """"SELECT COUNT(Distinct tree) ,spcd, T.statecd, T.unitcd, T.countycd, T.plot, T.invyr 
+          FROM forest_inventory_analysis_TREE T 
+          JOIN (SELECT MAX(invyr) as invyr, statecd, unitcd, countycd, plot FROM forest_inventory_analysis_TREE GROUP BY statecd, unitcd, countycd, plot) S
+          ON T.invyr = S.invyr AND T.statecd = S.statecd AND T.unitcd = S.unitcd AND T.countycd = S.countycd AND T.plot = S.plot
+          GROUP BY spcd, T.statecd, T.unitcd, T.countycd, T.plot"""
 fia_response = pd.read_sql_query(sql, conn)
+
+sql = "SELECT COUNT(Distinct tree) ,spcd, statecd, unitcd, countycd, plot, invyr FROM forest_inventory_analysis_TREE GROUP BY spcd, statecd, unitcd, countycd, plot, invyr"
+fia_temporal = pd.read_sql(sql, conn)
 conn.close()
 
-'''
-@param 
-df: the left data frame
-df2: the right data frame
-merge: the colunms to merge the data frames
-join_kind: type of join on the two data frames (left, inner, right, outer)
-@return 
-final_df: a data frame that is a combination of the two data frames
-'''
+
 def format_predictors(df, df2=None, merge=["statecd","unitcd","countycd","plot"], join_kind="left"):
+    """
+    @param 
+    df: the left data frame
+    df2: the right data frame
+    merge: the colunms to merge the data frames
+    join_kind: type of join on the two data frames (left, inner, right, outer)
+    @return 
+    final_df: a data frame that is a combination of the two data frames
+    """
     df.columns = map(str.lower, df.columns)
     if(df2.equals(None)):
         #merging all of the duplicate rows
@@ -57,3 +65,4 @@ cont_climate = format_predictors(fia_climate,bioclim)
 neon_climate.to_csv('../data/neon_climate.csv', index=False)
 cont_climate.to_csv('../data/cont_climate.csv',index=False)
 fia_response.to_csv('../data/fia_response.csv',index=False)
+fia_temporal.to_csv('../data/fia_temporal.csv', index=False)

@@ -41,7 +41,7 @@ get_mat <- function(data, colnames=colnames(data)){
   df <- data %>%
     dplyr::select(one_of(colnames))
   colnames(df) <- tolower(colnames(df))
-    df$id_coords <- paste(df$statecd, df$unitcd, df$countycd, df$plot,  sep="_")
+  df$id_coords <- paste(df$statecd, df$unitcd, df$countycd, df$plot,  sep="_")
   return(df)
 }
 
@@ -117,36 +117,36 @@ train_gjam <- function(x_data,y_data, R=8,n=10,Typenames="DA",Ng=2500,Burnin=500
 }
 
 #Needs fixing
-train_gjam_domain <- function(domain_num){
-  DO <- read_csv(paste("./outputs/plots_per_domain_", ".csv", sep=as.character(domain_num)))
-  DO <- DO %>%
-    dplyr::select(-c("lon.1", "lat.1", "invyr"))
+train_gjam_domain <- function(domain_num, year){
+  DO <- get(paste("DO",domain_num,sep=""))
   DO_pred <- join(DO, cont_pred, type="left",by=c("statecd","unitcd","countycd","plot"),match="first")
   DO_pred <- join(DO_pred, daymet_used, type="left", by=c("statecd","unitcd","countycd","plot"), match="first")
   DO_pred <- DO_pred[, !duplicated(colnames(DO_pred))] #removing duplicated column names
   DO_pred <- DO_pred[complete.cases(DO_pred),]
-  
+  DO_pred <- get(paste("DO","_pred",sep=as.character(domain_num)))
   
   id <- DO_pred$id_coords
   DO_pred$id_coords <- NULL
   DO_pred$id_coords <- id
   
   DO_clustered_x <- cluster_plots(DO_pred, cols_cluster)
+  DO_y_fia <- y_fia[y_fia$invyr == year, ]
+  DO_y <- get_responses(DO_clustered_x, DO_y_fia)
   
-  DO_y <- get_responses(DO_clustered_x, y_fia)
   
+  DO_clustered_x <- DO_clustered_x[DO_clustered_x$invyr == year, ]
   DO_pred_final <- DO_clustered_x %>%
     dplyr::select(-c("statecd","unitcd", "countycd","id_coords","plot","elev","lat","lon","isoth","trange","preccold_quart","precwarm_quart","invyr","mat","mdr","ts","mtw","mtc","mtwet","mtdry","mtwarm","mtcold","prec","precwet","precdry","precseason","precwec_quart","precdry_quart"))
   colnames(DO_pred_final)[1:3] <- c("slope", "aspect", "elev")
   
   DO_pred_mat <- apply(DO_pred_final, 2, scale)
   DO_pred_final <- data.frame(DO_pred_mat)
+  print(nrow(DO_pred_final))
   DO_training <- split_sample(DO_pred_final, DO_y)
   DO_train_x <- DO_training[[1]]
   DO_train_y <- DO_training[[2]]
   DO_test_x <- DO_training[[3]]
   DO_test_y <- DO_training[[4]]
-  
   DO_out <- train_gjam(DO_train_x, DO_train_y)
   
   DO_eval <- evaluate_model(DO_test_x, DO_test_y, DO_out)

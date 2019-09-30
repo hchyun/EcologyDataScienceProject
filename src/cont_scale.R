@@ -1,28 +1,19 @@
-load_packages()
+cont_clustered_x <- cluster_plots(cont_pred, cols_cluster)
 
-cont_predictors <- read_csv("cont_climate.csv")
-fia_response <- read_csv("fia_response.csv")
+cont_y <- get_responses(cont_pred, y_fia)
 
-cols_cluster <- c("lat","lon")
-cont_clustered <- cluster_plots(cont_predictors, cols_cluster)
+cont_pred_final <- cont_clustered_x %>%
+  dplyr::select(-c("statecd","unitcd", "countycd","id_coords","plot","elev","lat","lon","isoth","trange","preccold_quart","precwarm_quart","invyr"))
+#colnames(cont_pred)[1:3] <- c("slope", "aspect", "elev")
 
-cont_response <- get_responses(cont_clustered, fia_response)
-
-train <- sample(1:nrow(cont_predictors),nrow(cont_predictors)*0.8)
-cont_train_x <- cont_predictors[train,]
-cont_train_y <- cont_response[train,]
+cont_pred_mat <- apply(cont_pred_final, 2, scale)
+cont_pred_final <- data.frame(cont_pred_mat)
+cont_training <- split_sample(cont_pred_final, cont_y)
+cont_train_x <- cont_training[[1]]
+cont_train_y <- cont_training[[2]]
+cont_test_x <- cont_training[[3]]
+cont_test_y <- cont_training[[4]]
 
 cont_out <- train_gjam(cont_train_x, cont_train_y)
 
-cont_test_x <- cont_predictors[-train,]
-cont_test_y <- cont_response[-train,]
-
-cont_newdata <- list(xdata=cont_test_x, nsim=100)
-cont_pred <- gjamPredict(output=cont_out, newdata=cont_newdata)
-cont_predictions <- cont_pred$sdList$yMu
-
-cont_eval <- evaluate_model(cont_predictions, cont_test_y)
-
-cont_newdata <- list(xdata = cont_test_x, nsim=100)
-cont_prediction <- gjamPredict(output = cont_gjam, newdata = cont_newdata)
-cont_pred <- cont_prediction$sdList$yMu
+cont_eval <- evaluate_model(cont_test_x, cont_test_y, cont_out)

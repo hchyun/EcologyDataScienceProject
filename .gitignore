@@ -1,5 +1,6 @@
 #Downloaded data files
 data
+*.sqlite
 
 NEONDomains_0
 NEONDomains_0.zip
