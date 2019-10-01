@@ -8,16 +8,14 @@ subscales_fia("../data/fiaClimate.csv")
 daymet <- read_csv("../data/climate_daymet.csv")
 daymet_used <- daymet[,c("countycd", "unitcd","statecd","plot","daylength_3", "daylength_4","daylength_10","prec_6","prec_7","rad_8","tmax_8","tmin_1")]
 
-files <- c("../data/bioclim_fia.csv", "../data/fiaClimate.csv", "../data/fia_response.csv", "../data/fia_temporal.csv")
+files <- c("../data/bioclim_fia.csv", "../data/fiaClimate.csv", "../data/fia_response.csv")
 data_eco <- load_data(files)
 
 x <- get_mat(data_eco[[1]],colnames(data_eco[[1]])[-1])   #Getting rid of row indexer column
 x_fia <- get_mat(data_eco[[2]], colnames(data_eco[[2]]))
 y_fia <- get_mat(data_eco[[3]], colnames(data_eco[[3]]))
-temporal_fia <- get_mat(data_eco[[4]], colnames(data_eco[[4]]))
 
 colnames(y_fia)[1] <- "count"
-cont_y <- y_fia
 cont_x <- x_fia
 
 cont_pred <- join(x_fia, x, type="left",by=c("statecd","unitcd","countycd","plot"),match="first")

@@ -102,6 +102,7 @@ get_responses <- function(x_d, y){
         }
       }
     }
+
   }
   
   rsp_plot <- filter_sparse(rsp_plot)
@@ -116,7 +117,6 @@ train_gjam <- function(x_data,y_data, R=8,n=10,Typenames="DA",Ng=2500,Burnin=500
   return(out)
 }
 
-#Needs fixing
 train_gjam_domain <- function(domain_num, year){
   DO <- get(paste("DO",domain_num,sep=""))
   DO_pred <- join(DO, cont_pred, type="left",by=c("statecd","unitcd","countycd","plot"),match="first")
@@ -130,7 +130,7 @@ train_gjam_domain <- function(domain_num, year){
   DO_pred$id_coords <- id
   
   DO_clustered_x <- cluster_plots(DO_pred, cols_cluster)
-  DO_y_fia <- y_fia[y_fia$invyr == year, ]
+  DO_y_fia <- temporal_fia[temporal_fia$invyr == year, ]
   DO_y <- get_responses(DO_clustered_x, DO_y_fia)
   
   

@@ -6,6 +6,8 @@ for(i in 1:length(eval)){
   percentage <- c(percentage, pos/total)
 }
 
+cont_accuracy <- length(cont_eval[cont_eval > 0]) / length(cont_eval)
+
 barplot(percentage,ylim=c(0,1), ylab= "accuracy", xlab="Domain", names.arg = c("1","2","3","5","6","7","8","9","10","11","12","13","14","15","16","17"))
 
 #Getting all spc codes from the domains
@@ -106,6 +108,7 @@ gjamPlot(output = DO15_out)
 gjamPlot(output = DO16_out)
 gjamPlot(output = DO17_out)
 gjamPlot(output = DO19_out)
+gjamPlot(output = cont_out)
 
 
 daylength10_sensitivity <- c(median(DO1_out$parameters$betaStandXmu["daylength10",]),median(DO2_out$parameters$betaStandXmu["daylength10",]),median(DO3_out$parameters$betaStandXmu["daylength10",]),median(DO4_out$parameters$betaStandXmu["daylength10",]),median(DO5_out$parameters$betaStandXmu["daylength10",]),median(DO6_out$parameters$betaStandXmu["daylength10",]),median(DO7_out$parameters$betaStandXmu["daylength10",]),median(DO8_out$parameters$betaStandXmu["daylength10",]),median(DO9_out$parameters$betaStandXmu["daylength10",]),median(DO10_out$parameters$betaStandXmu["daylength10",]),median(DO11_out$parameters$betaStandXmu["daylength10",]),median(DO12_out$parameters$betaStandXmu["daylength10",]),median(DO13_out$parameters$betaStandXmu["daylength10",]),median(DO14_out$parameters$betaStandXmu["daylength10",]),median(DO15_out$parameters$betaStandXmu["daylength10",]),median(DO16_out$parameters$betaStandXmu["daylength10",]),median(DO17_out$parameters$betaStandXmu["daylength10",]),median(DO19_out$parameters$betaStandXmu["daylength10",]))
@@ -114,3 +117,13 @@ plot(daylength10_sensitivity, xlab="Domian")
 cov <- c(0.66, 2210,1402,99)
 covar <- data.frame(x=c('D1','D2','D7','D8'), y=cov)
 plot(covar, xlab="Domain", ylab="Covariance")
+
+#Predictor comparison of beta mu in some of the domains
+for(i in 1:length(col_x)){
+  predictor.name = str_remove(col_x[i], '_')
+  boxplot(cont_out$parameters$betaMu[predictor.name,], DO1_out$parameters$betaMu[predictor.name,],
+          DO5_out$parameters$betaMu[predictor.name,], DO7_out$parameters$betaMu[predictor.name,],
+          DO8_out$parameters$betaMu[predictor.name,], DO12_out$parameters$betaMu[predictor.name,],
+          DO13_out$parameters$betaMu[predictor.name,], DO15_out$parameters$betaMu[predictor.name,], DO17_out$parameters$betaMu[predictor.name,],
+          names=c('cont', '1', '5','7','8','12','13','15','17'), main=predictor.name, ylim=c(-200,200))
+}
