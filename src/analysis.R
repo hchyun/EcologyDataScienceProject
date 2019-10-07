@@ -125,5 +125,8 @@ for(i in 1:length(col_x)){
           DO5_out$parameters$betaMu[predictor.name,], DO7_out$parameters$betaMu[predictor.name,],
           DO8_out$parameters$betaMu[predictor.name,], DO12_out$parameters$betaMu[predictor.name,],
           DO13_out$parameters$betaMu[predictor.name,], DO15_out$parameters$betaMu[predictor.name,], DO17_out$parameters$betaMu[predictor.name,],
-          names=c('cont', '1', '5','7','8','12','13','15','17'), main=predictor.name, ylim=c(-200,200))
+          names=c('cont', '1', '5','7','8','12','13','15','17'), main=predictor.name, ylim=c(-50,50))
 }
+
+
+#Exploring some covariances

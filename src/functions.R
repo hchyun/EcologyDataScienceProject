@@ -105,7 +105,7 @@ get_responses <- function(x_d, y){
 
   }
   
-  rsp_plot <- filter_sparse(rsp_plot)
+  #rsp_plot <- filter_sparse(rsp_plot)
   return(rsp_plot)
 }
 

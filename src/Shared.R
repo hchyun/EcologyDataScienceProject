@@ -32,4 +32,6 @@ cols_cluster <- c("lat", "lon")
 
 spcd_code <- read.csv("../data/spcd.csv")
 
+set.seed(1)
+
 
