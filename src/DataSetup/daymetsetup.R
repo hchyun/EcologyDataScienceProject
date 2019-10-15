@@ -52,11 +52,24 @@ get_daymet_temporal <- function(year, climate_variable, climate_name, cont_df, t
     }
     
   }
-  final_df <- final_df[as.vector(!is.na(final_df[,climate_name])),]
-  if(is.null(to_join)){
-    return(final_df)
-  }else{
-    final_df <- join(final_df, to_join, type="left",by=c('statecd','countycd','plot'), match='first')
-  }
+  final_df <- final_df[as.vector(!is.na(final_df[,climate_name])), c("statecd", "unitcd", "countycd", "plot", climate_name)]
+  return(final_df)
   
+}
+
+get_cont_pred_year <- function(year, cont_pred_, tmax_, tmin_, prcp_jun_, prcp_jul_, cont_x_){
+  cont_pred_tmax <- get_daymet_temporal(2000, tmax_, "tmax_8", cont_x_)
+  cont_pred_tmin <- get_daymet_temporal(2000, tmin_, "tmin_1", cont_x_)
+  cont_pred_prec6 <- get_daymet_temporal(2000, prcp_jun_, "prec_6", cont_x_)
+  cont_pred_prec7 <- get_daymet_temporal(2000, prcp_jul_, "prec_7", cont_x_)
+  
+  cont_pred <- join(cont_pred_[, colnames(cont_pred_) != 'tmax_8'], cont_pred_tmax, type="right", by=c("statecd","unitcd","countycd","plot"), match="first")
+  cont_pred_ <- join(cont_pred_[, colnames(cont_pred_) != 'tmin_1'], cont_pred_tmin, type="right", by=c("statecd","unitcd","countycd","plot"), match="first")
+  cont_pred_ <- join(cont_pred_[, colnames(cont_pred_) != 'prec_6'], cont_pred_prec6, type="right", by=c("statecd","unitcd","countycd","plot"), match="first")
+  cont_pred_ <- join(cont_pred_[, colnames(cont_pred_) != 'prec_7'], cont_pred_prec7, type="right", by=c("statecd","unitcd","countycd","plot"), match="first")
+  cont_pred_ <- cont_pred_[complete.cases(cont_pred_),]
+  id <- cont_pred_$id_coords
+  cont_pred_$id_coords <- NULL
+  cont_pred_$id_coords <- id
+  return(cont_pred_)
 }
