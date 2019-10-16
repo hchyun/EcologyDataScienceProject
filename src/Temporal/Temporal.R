@@ -11,11 +11,11 @@ colnames(temporal_fia_2015)[1] <- "count"
 temporal_fia_2015$id_coords <- paste(temporal_fia_2015$statecd, temporal_fia_2015$unitcd, temporal_fia_2015$countycd, temporal_fia_2015$plot, sep='_')
 
 #2000 Predictor setup
-cont_pred_2000 <- get_cont_pred_year(2000, cont_pred, tmax, tmin, prcp_jun, prcp_jul, cont_x)
+cont_pred_2000 <- get_cont_pred_year(2000, cont_pred, tmax, tmin, prcp_jun, prcp_jul, cont_pred)
 #2005 Predictor setup
-cont_pred_2005 <- get_cont_pred_year(2005, cont_pred, tmax, tmin, prcp_jun, prcp_jul, cont_x)
+cont_pred_2005 <- get_cont_pred_year(2005, cont_pred, tmax, tmin, prcp_jun, prcp_jul, cont_pred)
 #2015 Predictor setup
-cont_pred_2015 <- get_cont_pred_year(2015, cont_pred, tmax, tmin, prcp_jun, prcp_jul, cont_x)
+cont_pred_2015 <- get_cont_pred_year(2015, cont_pred, tmax, tmin, prcp_jun, prcp_jul, cont_pred)
 
 
 cont_pred_2000_clustered <- cluster_plots(cont_pred_2000, cols_cluster)
