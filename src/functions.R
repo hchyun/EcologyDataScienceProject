@@ -1,13 +1,12 @@
-subscales_fia <- function(file, n_domains=neon_domains){
+subscales_fia <- function(file, index, n_domains=neon_domains){
   # load shapefiles
   library(raster)
   
   mat <- readr::read_csv(file) 
-  mat <- mat[complete.cases(mat), ]
-  mat <- mat[-c(8:10)] %>% unique
+  
   
   #neon_domains <- readOGR("NEONDomains_0/", "NEON_Domains")
-  coords <- mat[,c(7,6)]
+  coords <- mat[,index]
   FIA <- SpatialPointsDataFrame(coords = coords, data = mat,
                                 proj4string = CRS("+proj=longlat +datum=WGS84 +ellps=WGS84 +towgs84=0,0,0"))
   
@@ -71,10 +70,9 @@ cluster_plots <- function(data, cols_to_cluster){
 
 filter_sparse <- function(y_mat){
   
-  min_num <- nrow(y_mat) / 10
+  min_num <- nrow(y_mat) / 100
   num_zero <- colSums(y_mat != 0)
   col_zeros <- which(num_zero > min_num)
-  print(col_zeros)
   spc_filter <- colnames(y_mat)[col_zeros]
   filtered <- y_mat[,spc_filter]
   return(filtered)
@@ -104,8 +102,8 @@ get_responses <- function(x_d, y){
     }
 
   }
-  rsp_plot <- rsp_plot[,!apply(rsp_plot, 2, sum)==0]
-  #rsp_plot <- filter_sparse(rsp_plot)
+  #rsp_plot <- rsp_plot[,!apply(rsp_plot, 2, sum)==0]
+  rsp_plot <- filter_sparse(rsp_plot)
   return(rsp_plot)
 }
 
@@ -191,13 +189,26 @@ evaluate_model_ <- function(prediction, observation){
   eval <- data.frame(t(eval))
   colnames(eval) <- colnames(observation)
   for(j in 1:ncol(observation)){
-    eval[j] <- 1 - sum(
-      (prediction[,j] - observation[,j])^2, na.rm=T) / 
+    eval[j] <- 1 - (sum(
+      (prediction[,j] - observation[,j])^2, na.rm=T
+      )
+    / 
       sum(
         (observation[,j] - mean(observation[,j], na.rm = T))^2,
-        na.rm = T)
+        na.rm = T))
   }
   return(eval)
+}
+
+evaluate_model_ <- function(prediction, observation){
+  med <- rep(NA, ncol(observation))
+  med <- data.frame(t(med))
+  colnames(med) <- colnames(observation)
+  for(i in 1:ncol(observation)){
+    
+    med[i] <- median(abs(prediction[,i]-observation[,i]))
+  }
+  return(med)
 }
 
 split_sample <- function(x_, y_){
@@ -221,7 +232,7 @@ evaluate_model <- function(x_, y_, model){
   prediction <- prediction$sdList$yMu
   test_y <- y_[,colnames(prediction)]
   eval <- evaluate_model_(prediction, test_y)
-  return(eval)
+  return(list('eval'=eval,'pred'=prediction))
 }
 
 #find row num from x_mat then return row of y_mat

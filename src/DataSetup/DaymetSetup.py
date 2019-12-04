@@ -8,7 +8,11 @@ from netCDF4 import Dataset
 def extract_climate_month(array, start, end, func):
     climate_values = []
     for a in array:
-        climate_values.append(func(a[start+1:end+1]))
+        data = a[start+1:end+1]
+        for i, d in enumerate(data):
+            if d == -9999:
+                data[i] = 0
+        climate_values.append(func(data))
     return climate_values
 
 def mean(arr):
@@ -18,7 +22,7 @@ directory = "data"
 file_base = "stnsxval"
 file_type = "nc4"
 
-climate_vars = {"tmax": [212, 242, max],"prcp" : [151, 180, mean, 181, 211], "tmin": [0, 31, min]}
+climate_vars = {"tmax": [212, 242, max],"prcp" : [151, 180, sum, 181, 211], "tmin": [0, 31, min]}
 
 for climate in climate_vars:
     print(climate)

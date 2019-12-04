@@ -7,19 +7,33 @@ DO17_pred <- join(DO17_pred, daymet_used, type="left", by=c("statecd","unitcd","
 DO17_pred <- DO17_pred[, !duplicated(colnames(DO17_pred))] #removing duplicated column names
 DO17_pred <- DO17_pred[complete.cases(DO17_pred),]
 
-
 id <- DO17_pred$id_coords
 DO17_pred$id_coords <- NULL
 DO17_pred$id_coords <- id
 
 DO17_clustered_x <- cluster_plots(DO17_pred, cols_cluster)
-
 DO17_y <- get_responses(DO17_clustered_x, y_fia)
 
-DO17_pred_final <- DO17_clustered_x %>%
-  dplyr::select(-c("statecd","unitcd", "countycd","id_coords","plot","elev","lat","lon","isoth","trange","preccold_quart","precwarm_quart","invyr","mat","mdr","ts","mtw","mtc","mtwet","mtdry","mtwarm","mtcold","prec","precwet","precdry","precseason","precwec_quart","precdry_quart"))
-colnames(DO17_pred_final)[1:3] <- c("slope", "aspect", "elev")
+# DO17_y <- matrix(as.numeric(0), nrow=nrow(DO17_pred))
+# DO17_y <- data.frame(DO17_y)
 
+# for(i in 1:nrow(y_fia)){
+#  ind <- which(DO17_pred$statecd == y_fia$statecd[i] & DO17_pred$countycd == y_fia$countycd[i] & DO17_pred$plot == y_fia$plot[i])
+#  if(!identical(ind,integer(0))){
+#    if(! (y_fia$spcd[i] %in% colnames(DO17_y)) ){
+#      DO17_y[,as.character(y_fia$spcd[i])] <- 0
+#    }
+#    DO17_y[ind, as.character(y_fia$spcd[i])] <- as.numeric(y_fia$count[i])
+#  }
+# }
+
+# DO17_y <- filter_sparse(DO17_y)
+
+
+DO17_pred_final <- DO17_clustered_x %>%
+  dplyr::select(-c("statecd", "unitcd", "countycd","id_coords","plot","lat","lon","invyr","watercd","physclcd"))
+#colnames(DO17_pred_final)[1:3] <- c("slope", "aspect", "elev")
+colnames(DO17_pred_final)[c(7,8,9)] <- c("DL3","DL4","DL10")
 DO17_pred_mat <- apply(DO17_pred_final, 2, scale)
 DO17_pred_final <- data.frame(DO17_pred_mat)
 

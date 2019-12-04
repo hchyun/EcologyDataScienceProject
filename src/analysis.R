@@ -1,4 +1,8 @@
-eval <- c(list(DO1_eval),list(DO2_eval),list(DO3_eval),list(DO5_eval),list(DO6_eval),list(DO7_eval),list(DO8_eval),list(DO9_eval),list(DO10_eval),list(DO11_eval),list(DO12_eval),list(DO13_eval),list(DO14_eval),list(DO15_eval),list(DO16_eval),list(DO17_eval))
+eval <- c(list(DO1_eval$eval),list(DO2_eval$eval),list(DO3_eval$eval),list(DO5_eval$eval),list(DO6_eval$eval),list(DO7_eval$eval),list(DO8_eval$eval),list(DO9_eval$eval),list(DO10_eval$eval),list(DO11_eval$eval),list(DO12_eval$eval),list(DO13_eval$eval),list(DO14_eval$eval),list(DO15_eval$eval),list(DO16_eval$eval),list(DO17_eval$eval))
+for(i in 1:length(eval)){
+  boxplot(eval[[i]][eval[[i]] > -1])
+}
+
 percentage <- c()
 for(i in 1:length(eval)){
   pos <- length(eval[[i]][eval[[i]] > 0])
@@ -6,9 +10,10 @@ for(i in 1:length(eval)){
   percentage <- c(percentage, pos/total)
 }
 
-cont_accuracy <- length(cont_eval[cont_eval > 0]) / length(cont_eval)
+cont_accuracy <- length(cont_eval$eval[cont_eval$eval > 0]) / length(cont_eval$eval)
+percentage <- c(percentage, cont_accuracy)
 
-barplot(percentage,ylim=c(0,1), ylab= "accuracy", xlab="Domain", names.arg = c("1","2","3","5","6","7","8","9","10","11","12","13","14","15","16","17"))
+barplot(percentage,ylim=c(0,1), ylab= "accuracy", xlab="Domain", names.arg = c("1","2","3","5","6","7","8","9","10","11","12","13","14","15","16","17", "cont"))
 
 #Getting all spc codes from the domains
 spc <- c()
@@ -118,15 +123,55 @@ cov <- c(0.66, 2210,1402,99)
 covar <- data.frame(x=c('D1','D2','D7','D8'), y=cov)
 plot(covar, xlab="Domain", ylab="Covariance")
 
+col_x <- colnames(DO1_pred_final)
 #Predictor comparison of beta mu in some of the domains
 for(i in 1:length(col_x)){
-  predictor.name = str_remove(col_x[i], '_')
+  predictor.name = str_remove_all(col_x[i], '_')
+  print(predictor.name)
   boxplot(cont_out$parameters$betaMu[predictor.name,], DO1_out$parameters$betaMu[predictor.name,],
-          DO5_out$parameters$betaMu[predictor.name,], DO7_out$parameters$betaMu[predictor.name,],
-          DO8_out$parameters$betaMu[predictor.name,], DO12_out$parameters$betaMu[predictor.name,],
-          DO13_out$parameters$betaMu[predictor.name,], DO15_out$parameters$betaMu[predictor.name,], DO17_out$parameters$betaMu[predictor.name,],
-          names=c('cont', '1', '5','7','8','12','13','15','17'), main=predictor.name, ylim=c(-50,50))
+          DO3_out$parameters$betaMu[predictor.name,], DO5_out$parameters$betaMu[predictor.name,],
+          DO8_out$parameters$betaMu[predictor.name,], DO9_out$parameters$betaMu[predictor.name,],
+          DO13_out$parameters$betaMu[predictor.name,], DO17_out$parameters$betaMu[predictor.name,],
+          names=c('Cont', 'NE', 'SE','GL','OZ','NP','SROC','PSW'), main=predictor.name, ylim=c(-50,50))
+}
+
+for(i in 1:length(col_x)){
+  predictor.name = str_remove_all(col_x[i], '_')
+  print(predictor.name)
+  boxplot(cont_out$parameters$fmatrix[predictor.name,], DO1_out$parameters$fmatrix[predictor.name,],
+          DO3_out$parameters$fmatrix[predictor.name,], DO5_out$parameters$fmatrix[predictor.name,],
+          DO8_out$parameters$fmatrix[predictor.name,], DO9_out$parameters$fmatrix[predictor.name,],
+          DO13_out$parameters$fmatrix[predictor.name,], DO17_out$parameters$fmatrix[predictor.name,],
+          names=c('Cont', 'NE', 'SE','GL','OZ','NP','SROC','PSW'), main=predictor.name, ylim=c(-0.05,0.05))
 }
 
 
 #Exploring some covariances
+
+tsamp <- intersect(colnames(DO1_y), intersect(intersect(colnames(DO2_y), colnames(DO7_y)), colnames(DO8_y)))
+tsamp <- sample(tsamp, 12)
+spcn <- spcd_code[which(spcd_code$spcd %in% tsamp),]$common_name
+ds <- c(1,2,7,8, 'cont')
+colsn <- c(list(colnames(DO1_out$parameters$sigMu)),list(colnames(DO2_out$parameters$sigMu)),list(colnames(DO7_out$parameters$sigMu)),list(colnames(DO8_out$parameters$sigMu)), list(colnames(cont_out$parameters$sigMu))   )
+cormus <- c(list(DO1_out$parameters$corMu),list(DO2_out$parameters$corMu),list(DO7_out$parameters$corMu),list(DO8_out$parameters$corMu), list(cont_out$parameters$corMu))
+for(i in 1:5){
+  test <- cormus[[i]]
+  test <- test[which(colsn[[i]] %in% tsamp),which(colsn[[i]] %in% tsamp)]
+  colnames(test) <- spcn
+  rownames(test) <- spcn
+  test[upper.tri(test, diag=T)] <- NA
+  print(ggcorrplot(test))
+}
+
+t <- DO1_out$parameters$corMu
+t[lower.tri(t, diag=T)] <- NA
+plot(t)
+
+mean_abs_diff <- function(pred, obs){
+  diffs <- c()
+  for(i in 1:ncol(obs)){
+    curr.spc <- colnames(obs)[i]
+    diffs<- c(mean(abs(pred[,curr.spc] - obs[,curr.spc])),diffs)
+  }
+  return(diffs)
+}

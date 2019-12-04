@@ -12,12 +12,27 @@ DO15_pred$id_coords <- NULL
 DO15_pred$id_coords <- id
 
 DO15_clustered_x <- cluster_plots(DO15_pred, cols_cluster)
-
 DO15_y <- get_responses(DO15_clustered_x, y_fia)
 
+# DO15_y <- matrix(as.numeric(0), nrow=nrow(DO15_pred))
+# DO15_y <- data.frame(DO15_y)
+
+# for(i in 1:nrow(y_fia)){
+#  ind <- which(DO15_pred$statecd == y_fia$statecd[i] & DO15_pred$countycd == y_fia$countycd[i] & DO15_pred$plot == y_fia$plot[i])
+#  if(!identical(ind,integer(0))){
+#    if(! (y_fia$spcd[i] %in% colnames(DO15_y)) ){
+#      DO15_y[,as.character(y_fia$spcd[i])] <- 0
+#    }
+#    DO15_y[ind, as.character(y_fia$spcd[i])] <- as.numeric(y_fia$count[i])
+#  }
+# }
+
+# DO15_y <- filter_sparse(DO15_y)
+
+
 DO15_pred_final <- DO15_clustered_x %>%
-  dplyr::select(-c("statecd","unitcd", "countycd","id_coords","plot","elev","lat","lon","isoth","trange","preccold_quart","precwarm_quart","invyr","mat","mdr","ts","mtw","mtc","mtwet","mtdry","mtwarm","mtcold","prec","precwet","precdry","precseason","precwec_quart","precdry_quart"))
-colnames(DO15_pred_final)[1:3] <- c("slope", "aspect", "elev")
+  dplyr::select(-c("statecd", "unitcd", "countycd","id_coords","plot","lat","lon","invyr","watercd","physclcd"))
+#colnames(DO15_pred_final)[1:3] <- c("slope", "aspect", "elev")
 
 DO15_pred_mat <- apply(DO15_pred_final, 2, scale)
 DO15_pred_final <- data.frame(DO15_pred_mat)

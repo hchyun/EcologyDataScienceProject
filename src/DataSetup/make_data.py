@@ -8,10 +8,10 @@ import math
 database = '../fia.sqlite'
 conn = sqlite3.connect(database)
 
-sql = """SELECT plott.statecd, plott.unitcd, plott.countycd, plott.plot, lat, lon, AVG(slope), AVG(aspect), MAX(elev) 
+sql = """SELECT plott.statecd, plott.unitcd, plott.countycd, plott.plot, lat, lon, AVG(slope), AVG(aspect), MAX(elev), cond.invyr
          FROM forest_inventory_analysis_COND as cond JOIN forest_inventory_analysis_PLOT as plott
          ON cond.statecd == plott.statecd AND cond.unitcd == plott.unitcd AND cond.countycd == plott.countycd AND cond.plot == plott.plot
-         WHERE slope != '' AND elev != '' AND aspect != '' GROUP BY plott.statecd, plott.unitcd, plott.countycd, plott.plot"""
+         WHERE slope != '' AND elev != '' AND aspect != '' GROUP BY plott.statecd, plott.unitcd, plott.countycd, plott.plot, cond.invyr"""
 fia_climate = pd.read_sql_query(sql, conn)
 
 #Getting all predictor values
@@ -26,7 +26,7 @@ sql = """"SELECT COUNT(Distinct tree) ,spcd, T.statecd, T.unitcd, T.countycd, T.
           GROUP BY spcd, T.statecd, T.unitcd, T.countycd, T.plot"""
 fia_response = pd.read_sql_query(sql, conn)
 
-sql = "SELECT COUNT(Distinct tree) ,spcd, statecd, unitcd, countycd, plot, invyr FROM forest_inventory_analysis_TREE GROUP BY spcd, statecd, unitcd, countycd, plot, invyr"
+sql = "SELECT COUNT(Distinct tree) ,spcd, statecd, unitcd, countycd, plot, invyr FROM forest_inventory_analysis_TREE WHERE statecd < 60 and statuscd = 1 GROUP BY spcd, statecd, unitcd, countycd, plot, invyr"
 fia_temporal = pd.read_sql(sql, conn)
 conn.close()
 
