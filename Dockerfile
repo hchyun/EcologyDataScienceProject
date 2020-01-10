@@ -1,22 +1,10 @@
-FROM ubuntu:18.04
-
-RUN apt-get update \ 
-	&& apt-get install -y --no-install-recommends \
-	    apt-utils \
-		ed \
-		less \
-		locales \
-		vim-tiny \
-		wget \
-		ca-certificates \
-		apt-transport-https \
-		gsfonts \
-		gnupg2 \
-	&& rm -rf /var/lib/apt/lists/*
-
-ENV R_BASE_VERSION 3.5.1
+FROM rocker/r-base:latest
 
 COPY setup.R setup.R
-RUN Rscript setup.R
+RUN mkdir src/
+COPY src/Shared.R src/Shared.R 
+COPY src/brmsmodel.R src/brmsmodel.R
+COPY src/functions.R src/functions.R
+COPY src/cont_scale.R src/cont_scale.R
 
-COPY src/ src/
+RUN Rscript setup.R
