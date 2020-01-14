@@ -157,7 +157,7 @@ evaluate_model_ <- function(prediction, observation){
   return(eval)
 }
 
-evaluate_model_ <- function(prediction, observation){
+evaluate_model_median <- function(prediction, observation){
   med <- rep(NA, ncol(observation))
   med <- data.frame(t(med))
   colnames(med) <- colnames(observation)

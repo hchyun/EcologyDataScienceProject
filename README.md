@@ -8,8 +8,6 @@ The goal of this project is to apply a joint species distribution model to predi
 ![alt text](https://www.neonscience.org/sites/default/files/styles/fullwidth/public/image-content-images/2016_NEONBattelleDomainOverview-web.png?itok=WfKIIINK)
 **Figure 1 (image from https://www.neonscience.org)**
 
-
-
 ### Data
 The FIA data is a ground sample of FIA plots of forests in the United States. For more information visit https://www.fia.fs.fed.us.
 The Daymet data contains climate information of North America. For more information visit https://daymet.ornl.gov.
