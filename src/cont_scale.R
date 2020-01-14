@@ -20,7 +20,6 @@ cont_clustered_x <- cont_clustered_x %>%
 
 cont_pred_final <- cont_clustered_x %>%
   dplyr::select(-c("statecd", "unitcd", "countycd","id_coords","plot","lat","lon","invyr"))
-#colnames(cont_pred_final)[1:3] <- c("slope", "aspect", "elev")
 
 cont_pred_mat <- apply(cont_pred_final, 2, scale)
 cont_pred_final <- data.frame(cont_pred_mat)

@@ -1,9 +1,14 @@
+library(tidyverse)
+library(gjam)
+library(plyr)
 library(maptools)
 library(sp)
 library(rgdal)
 load_packages()
 
 neon_domains <- readOGR("NEONDomains_0/", "NEON_Domains")
+
+#6, 5 are lon, lat
 subscales_fia("../data/climate_fia.csv", c(6,5))
 
 #Fix daymet so its just last year
@@ -27,14 +32,6 @@ cont_pred[cont_pred$physclcd > 20 & cont_pred$physclcd < 30, 'mod'] <- 1
 
 cont_pred$physclcd <- NULL
 cont_pred$watercd <- NULL
-#cont_pred <- join(x_fia, x, type="left",by=c("statecd","unitcd","countycd","plot"),match="first")
-#cont_pred <- cont_pred[, !duplicated(colnames(cont_pred))] #removing duplicated column names
-#cont_pred <- cont_pred[complete.cases(cont_pred),]
-
-#moving id_coords to the last column of the dataframe
-#id <- cont_pred$id_coords
-#cont_pred$id_coords <- NULL
-#cont_pred$id_coords <- id
 
 cols_cluster <- c("lat", "lon")
 

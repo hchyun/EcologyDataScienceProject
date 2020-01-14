@@ -1,0 +1,2653 @@
+spcd,common_name,genus,species
+10,fir spp.,Abies,spp.
+11,Pacific silver fir,Abies,amabilis
+12,balsam fir,Abies,balsamea
+14,Santa Lucia or bristlecone fir,Abies,bracteata
+15,white fir,Abies,concolor
+16,Fraser fir,Abies,fraseri
+17,grand fir,Abies,grandis
+18,corkbark fir,Abies,lasiocarpa
+19,subalpine fir,Abies,lasiocarpa
+20,California red fir,Abies,magnifica
+21,Shasta red fir,Abies,shastensis
+22,noble fir,Abies,procera
+40,white-cedar spp.,Chamaecyparis,spp.
+41,Port-Orford-cedar,Chamaecyparis,lawsoniana
+42,Alaska yellow-cedar,Chamaecyparis,nootkatensis
+43,Atlantic white-cedar,Chamaecyparis,thyoides
+50,cypress,Cupressus,spp.
+51,Arizona cypress,Cupressus,arizonica
+52,Baker or Modoc cypress,Cupressus,bakeri
+53,Tecate cypress,Cupressus,forbesii
+54,Monterey cypress,Cupressus,macrocarpa
+55,Sargent's cypress,Cupressus,sargentii
+56,MacNab's cypress,Cupressus,macnabiana
+57,redcedar/juniper spp.,Juniperus,spp.
+58,Pinchot juniper,Juniperus,pinchotii
+59,redberry juniper,Juniperus,coahuilensis
+60,Drooping juniper,Juniperus,flaccida
+61,Ashe juniper,Juniperus,ashei
+62,California juniper,Juniperus,californica
+63,alligator juniper,Juniperus,deppeana
+64,western juniper,Juniperus,occidentalis
+65,Utah juniper,Juniperus,osteosperma
+66,Rocky Mountain juniper,Juniperus,scopulorum
+67,southern redcedar,Juniperus,virginiana
+68,eastern redcedar,Juniperus,virginiana
+69,oneseed juniper,Juniperus,monosperma
+70,larch spp.,Larix,spp.
+71,tamarack (native),Larix,laricina
+72,subalpine larch,Larix,lyallii
+73,western larch,Larix,occidentalis
+81,incense-cedar,Calocedrus,decurrens
+90,spruce spp.,Picea,spp.
+91,Norway spruce,Picea,abies
+92,Brewer spruce,Picea,breweriana
+93,Engelmann spruce,Picea,engelmannii
+94,white spruce,Picea,glauca
+95,black spruce,Picea,mariana
+96,blue spruce,Picea,pungens
+97,red spruce,Picea,rubens
+98,Sitka spruce,Picea,sitchensis
+100,pine spp.,Pinus,spp.
+101,whitebark pine,Pinus,albicaulis
+102,Rocky Mountain bristlecone pine,Pinus,aristata
+103,knobcone pine,Pinus,attenuata
+104,foxtail pine,Pinus,balfouriana
+105,jack pine,Pinus,banksiana
+106,common or two-needle pinyon,Pinus,edulis
+107,sand pine,Pinus,clausa
+108,lodgepole pine,Pinus,contorta
+109,Coulter pine,Pinus,coulteri
+110,shortleaf pine,Pinus,echinata
+111,slash pine,Pinus,elliottii
+112,Apache pine,Pinus,engelmannii
+113,limber pine,Pinus,flexilis
+114,southwestern white pine,Pinus,strobiformis
+115,spruce pine,Pinus,glabra
+116,Jeffrey pine,Pinus,jeffreyi
+117,sugar pine,Pinus,lambertiana
+118,Chihuahuan pine,Pinus,leiophylla
+119,western white pine,Pinus,monticola
+120,bishop pine,Pinus,muricata
+121,longleaf pine,Pinus,palustris
+122,ponderosa pine,Pinus,ponderosa
+123,Table Mountain pine,Pinus,pungens
+124,Monterey pine,Pinus,radiata
+125,red pine,Pinus,resinosa
+126,pitch pine,Pinus,rigida
+127,gray or California foothill pine,Pinus,sabiniana
+128,pond pine,Pinus,serotina
+129,eastern white pine,Pinus,strobus
+130,Scotch pine,Pinus,sylvestris
+131,loblolly pine,Pinus,taeda
+132,Virginia pine,Pinus,virginiana
+133,singleleaf pinyon,Pinus,monophylla
+134,border pinyon,Pinus,discolor
+135,Arizona pine,Pinus,arizonica
+136,Austrian pine,Pinus,nigra
+137,Washoe pine,Pinus,washoensis
+138,four-leaf or Parry pinyon pine,Pinus,quadrifolia
+139,Torrey pine,Pinus,torreyana
+140,Mexican pinyon pine,Pinus,cembroides
+141,Papershell pinyon pine,Pinus,remota
+142,Great Basin bristlecone pine,Pinus,longaeva
+143,Arizona pinyon pine,Pinus,monophylla
+144,Honduras pine,Pinus,elliottii
+200,Douglas-fir spp.,Pseudotsuga,spp.
+201,bigcone Douglas-fir,Pseudotsuga,macrocarpa
+202,Douglas-fir,Pseudotsuga,menziesii
+211,redwood,Sequoia,sempervirens
+212,giant sequoia,Sequoiadendron,giganteum
+220,baldcypress spp.,Taxodium,spp.
+221,baldcypress,Taxodium,distichum
+222,pondcypress,Taxodium,ascendens
+223,Montezuma baldcypress,Taxodium,mucronatum
+230,yew spp.,Taxus,spp.
+231,Pacific yew,Taxus,brevifolia
+232,Florida yew,Taxus,floridana
+240,thuja spp.,Thuja,spp.
+241,northern white-cedar,Thuja,occidentalis
+242,western redcedar,Thuja,plicata
+250,torreya (nutmeg) spp.,Torreya,spp.
+251,California torreya (nutmeg),Torreya,californica
+252,Florida torreya (nutmeg),Torreya,taxifolia
+260,hemlock spp.,Tsuga,spp.
+261,eastern hemlock,Tsuga,canadensis
+262,Carolina hemlock,Tsuga,caroliniana
+263,western hemlock,Tsuga,heterophylla
+264,mountain hemlock,Tsuga,mertensiana
+299,Unknown dead conifer,Tree,evergreen
+300,acacia spp.,Acacia,spp.
+303,sweet acacia,Acacia,farnesiana
+304,catclaw acacia,Acacia,greggii
+310,maple spp.,Acer,spp.
+311,Florida maple,Acer,barbatum
+312,bigleaf maple,Acer,macrophyllum
+313,boxelder,Acer,negundo
+314,black maple,Acer,nigrum
+315,striped maple,Acer,pensylvanicum
+316,red maple,Acer,rubrum
+317,silver maple,Acer,saccharinum
+318,sugar maple,Acer,saccharum
+319,mountain maple,Acer,spicatum
+320,Norway maple,Acer,platanoides
+321,Rocky Mountain maple,Acer,glabrum
+322,bigtooth maple,Acer,grandidentatum
+323,chalk maple,Acer,leucoderme
+330,"buckeye, horsechestnut spp.",Aesculus,spp.
+331,Ohio buckeye,Aesculus,glabra
+332,yellow buckeye,Aesculus,flava
+333,California buckeye,Aesculus,californica
+334,Texas buckeye,Aesculus,glabra
+336,red buckeye,Aesculus,pavia
+337,painted buckeye,Aesculus,sylvatica
+341,ailanthus,Ailanthus,altissima
+345,"mimosa, silktree",Albizia,julibrissin
+350,alder spp.,Alnus,spp.
+351,red alder,Alnus,rubra
+352,white alder,Alnus,rhombifolia
+353,Arizona alder,Alnus,oblongifolia
+355,European alder,Alnus,glutinosa
+356,serviceberry spp.,Amelanchier,spp.
+357,common serviceberry,Amelanchier,arborea
+358,roundleaf serviceberry,Amelanchier,sanguinea
+360,madrone spp.,Arbutus,spp.
+361,Pacific madrone,Arbutus,menziesii
+362,Arizona madrone,Arbutus,arizonica
+363,Texas madrone,Arbutus,xalapensis
+367,pawpaw,Asimina,triloba
+370,birch spp.,Betula,spp.
+371,yellow birch,Betula,alleghaniensis
+372,sweet birch,Betula,lenta
+373,river birch,Betula,nigra
+374,water birch,Betula,occidentalis
+375,paper birch,Betula,papyrifera
+377,Virginia roundleaf birch,Betula,uber
+378,northwestern paper birch,Betula,x utahensis
+379,gray birch,Betula,populifolia
+381,"chittamwood, gum bumelia",Sideroxylon,lanuginosum
+391,"American hornbeam, musclewood",Carpinus,caroliniana
+400,hickory spp.,Carya,spp.
+401,water hickory,Carya,aquatica
+402,bitternut hickory,Carya,cordiformis
+403,pignut hickory,Carya,glabra
+404,pecan,Carya,illinoinensis
+405,shellbark hickory,Carya,laciniosa
+406,nutmeg hickory,Carya,myristiciformis
+407,shagbark hickory,Carya,ovata
+408,black hickory,Carya,texana
+409,mockernut hickory,Carya,alba
+410,sand hickory,Carya,pallida
+411,scrub hickory,Carya,floridana
+412,red hickory,Carya,ovalis
+413,southern shagbark hickory,Carya,carolinae-septentrionalis
+420,chestnut spp.,Castanea,spp.
+421,American chestnut,Castanea,dentata
+422,Allegheny chinkapin,Castanea,pumila
+423,Ozark chinkapin,Castanea,pumila
+424,Chinese chestnut,Castanea,mollissima
+431,"giant chinkapin, golden chinkapin",Chrysolepis,chrysophylla
+450,catalpa spp.,Catalpa,spp.
+451,southern catalpa,Catalpa,bignonioides
+452,northern catalpa,Catalpa,speciosa
+460,hackberry spp.,Celtis,spp.
+461,sugarberry,Celtis,laevigata
+462,hackberry,Celtis,occidentalis
+463,netleaf hackberry,Celtis,laevigata
+471,eastern redbud,Cercis,canadensis
+475,curlleaf mountain-mahogany,Cercocarpus,ledifolius
+481,yellowwood,Cladrastis,kentukea
+490,dogwood spp.,Cornus,spp.
+491,flowering dogwood,Cornus,florida
+492,Pacific dogwood,Cornus,nuttallii
+500,hawthorn spp.,Crataegus,spp.
+501,cockspur hawthorn,Crataegus,crus-galli
+502,downy hawthorn,Crataegus,mollis
+503,Brainerd's hawthorn,Crataegus,brainerdii
+504,pear hawthorn,Crataegus,calpodendron
+505,fireberry hawthorn,Crataegus,chrysocarpa
+506,broadleaf hawthorn,Crataegus,dilatata
+507,fanleaf hawthorn,Crataegus,flabellata
+508,oneseed hawthorn,Crataegus,monogyna
+509,scarlet hawthorn,Crataegus,pedicellata
+510,eucalyptus spp.,Eucalyptus,spp.
+511,Tasmanian bluegum,Eucalyptus,globulus
+512,river redgum,Eucalyptus,camaldulensis
+513,grand eucalyptus,Eucalyptus,grandis
+514,swampmahogany,Eucalyptus,robusta
+520,persimmon spp.,Diospyros,spp.
+521,common persimmon,Diospyros,virginiana
+522,Texas persimmon,Diospyros,texana
+523,Anacua knockaway,Ehretia,anacua
+531,American beech,Fagus,grandifolia
+540,ash spp.,Fraxinus,spp.
+541,white ash,Fraxinus,americana
+542,Oregon ash,Fraxinus,latifolia
+543,black ash,Fraxinus,nigra
+544,green ash,Fraxinus,pennsylvanica
+545,pumpkin ash,Fraxinus,profunda
+546,blue ash,Fraxinus,quadrangulata
+547,velvet ash,Fraxinus,velutina
+548,Carolina ash,Fraxinus,caroliniana
+549,Texas ash,Fraxinus,texensis
+550,honeylocust spp.,Gleditsia,spp.
+551,waterlocust,Gleditsia,aquatica
+552,honeylocust,Gleditsia,triacanthos
+555,loblolly-bay,Gordonia,lasianthus
+561,"ginkgo, maidenhair tree",Ginkgo,biloba
+571,Kentucky coffeetree,Gymnocladus,dioicus
+580,silverbell spp.,Halesia,spp.
+581,Carolina silverbell,Halesia,carolina
+582,two-wing silverbell,Halesia,diptera
+583,little silverbell,Halesia,parviflora
+591,American holly,Ilex,opaca
+600,walnut spp.,Juglans,spp.
+601,butternut,Juglans,cinerea
+602,black walnut,Juglans,nigra
+603,northern California black walnut,Juglans,hindsii
+604,southern California black walnut,Juglans,californica
+605,Texas walnut,Juglans,microcarpa
+606,Arizona walnut,Juglans,major
+611,sweetgum,Liquidambar,styraciflua
+621,yellow-poplar,Liriodendron,tulipifera
+631,tanoak,Lithocarpus,densiflorus
+641,Osage-orange,Maclura,pomifera
+650,magnolia spp.,Magnolia,spp.
+651,cucumbertree,Magnolia,acuminata
+652,southern magnolia,Magnolia,grandiflora
+653,sweetbay,Magnolia,virginiana
+654,bigleaf magnolia,Magnolia,macrophylla
+655,mountain or Fraser magnolia,Magnolia,fraseri
+657,pyramid magnolia,Magnolia,pyramidata
+658,umbrella magnolia,Magnolia,tripetala
+660,apple spp.,Malus,spp.
+661,Oregon crab apple,Malus,fusca
+662,southern crab apple,Malus,angustifolia
+663,sweet crab apple,Malus,coronaria
+664,prairie crab apple,Malus,ioensis
+680,mulberry spp.,Morus,spp.
+681,white mulberry,Morus,alba
+682,red mulberry,Morus,rubra
+683,Texas mulberry,Morus,microphylla
+684,black mulberry,Morus,nigra
+690,tupelo spp.,Nyssa,spp.
+691,water tupelo,Nyssa,aquatica
+692,Ogeechee tupelo,Nyssa,ogeche
+693,blackgum,Nyssa,sylvatica
+694,swamp tupelo,Nyssa,biflora
+701,eastern hophornbeam,Ostrya,virginiana
+711,sourwood,Oxydendrum,arboreum
+712,"paulownia, empress-tree",Paulownia,tomentosa
+715,Maytenus palauica,Maytenus,palauica
+718,kesiamel,Osmoxylon,truncatum
+720,bay spp.,Persea,spp.
+721,redbay,Persea,borbonia
+722,"water-elm, planertree",Planera,aquatica
+729,sycamore spp.,Platanus,spp.
+730,California sycamore,Platanus,racemosa
+731,American sycamore,Platanus,occidentalis
+732,Arizona sycamore,Platanus,wrightii
+740,cottonwood and poplar spp.,Populus,spp.
+741,balsam poplar,Populus,balsamifera
+742,eastern cottonwood,Populus,deltoides
+743,bigtooth aspen,Populus,grandidentata
+744,swamp cottonwood,Populus,heterophylla
+745,plains cottonwood,Populus,deltoides
+746,quaking aspen,Populus,tremuloides
+747,black cottonwood,Populus,balsamifera
+748,Fremont cottonwood,Populus,fremontii
+749,narrowleaf cottonwood,Populus,angustifolia
+752,silver poplar,Populus,alba
+753,Lombardy poplar,Populus,nigra
+755,mesquite spp.,Prosopis,spp.
+756,honey mesquite,Prosopis,glandulosa
+757,velvet mesquite,Prosopis,velutina
+758,screwbean mesquite,Prosopis,pubescens
+760,cherry and plum spp.,Prunus,spp.
+761,pin cherry,Prunus,pensylvanica
+762,black cherry,Prunus,serotina
+763,chokecherry,Prunus,virginiana
+764,peach,Prunus,persica
+765,Canada plum,Prunus,nigra
+766,American plum,Prunus,americana
+768,bitter cherry,Prunus,emarginata
+769,Allegheny plum,Prunus,alleghaniensis
+770,Chickasaw plum,Prunus,angustifolia
+771,"sweet cherry, domesticated",Prunus,avium
+772,"sour cherry, domesticated",Prunus,cerasus
+773,"European plum, domesticated",Prunus,domestica
+774,"Mahaleb cherry, domesticated",Prunus,mahaleb
+800,oak spp.,Quercus,spp.
+801,California live oak,Quercus,agrifolia
+802,white oak,Quercus,alba
+803,Arizona white oak,Quercus,arizonica
+804,swamp white oak,Quercus,bicolor
+805,canyon live oak,Quercus,chrysolepis
+806,scarlet oak,Quercus,coccinea
+807,blue oak,Quercus,douglasii
+808,Durand oak,Quercus,sinuata
+809,northern pin oak,Quercus,ellipsoidalis
+810,Emory oak,Quercus,emoryi
+811,Engelmann oak,Quercus,engelmannii
+812,southern red oak,Quercus,falcata
+813,cherrybark oak,Quercus,pagoda
+814,Gambel oak,Quercus,gambelii
+815,Oregon white oak,Quercus,garryana
+816,scrub oak,Quercus,ilicifolia
+817,shingle oak,Quercus,imbricaria
+818,California black oak,Quercus,kelloggii
+819,turkey oak,Quercus,laevis
+820,laurel oak,Quercus,laurifolia
+821,California white oak,Quercus,lobata
+822,overcup oak,Quercus,lyrata
+823,bur oak,Quercus,macrocarpa
+824,blackjack oak,Quercus,marilandica
+825,swamp chestnut oak,Quercus,michauxii
+826,chinkapin oak,Quercus,muehlenbergii
+827,water oak,Quercus,nigra
+828,Texas red oak,Quercus,texana
+829,Mexican blue oak,Quercus,oblongifolia
+830,pin oak,Quercus,palustris
+831,willow oak,Quercus,phellos
+832,chestnut oak,Quercus,prinus
+833,northern red oak,Quercus,rubra
+834,Shumard oak,Quercus,shumardii
+835,post oak,Quercus,stellata
+836,Delta post oak,Quercus,similis
+837,black oak,Quercus,velutina
+838,live oak,Quercus,virginiana
+839,interior live oak,Quercus,wislizeni
+840,dwarf post oak,Quercus,margarettiae
+841,dwarf live oak,Quercus,minima
+842,bluejack oak,Quercus,incana
+843,silverleaf oak,Quercus,hypoleucoides
+844,Oglethorpe oak,Quercus,oglethorpensis
+845,dwarf chinkapin oak,Quercus,prinoides
+846,gray oak,Quercus,grisea
+847,netleaf oak,Quercus,rugosa
+851,Chisos oak,Quercus,graciliformis
+852,sea torchwood,Amyris,elemifera
+853,pond-apple,Annona,glabra
+854,gumbo limbo,Bursera,simaruba
+855,sheoak spp.,Casuarina,spp.
+856,gray sheoak,Casuarina,glauca
+857,belah,Casuarina,lepidophloia
+858,camphortree,Cinnamomum,camphora
+859,Florida fiddlewood,Citharexylum,fruticosum
+860,citrus spp.,Citrus,spp.
+863,"tietongue, pigeon-plum",Coccoloba,diversifolia
+864,soldierwood,Colubrina,elliptica
+865,largeleaf geigertree,Cordia,sebestena
+866,carrotwood,Cupaniopsis,anacardioides
+867,Bluewood,Condalia,hookeri
+868,Blackbead ebony,Ebenopsis,ebano
+869,Great leucaene,Leucaena,pulverulenta
+870,Texas sophora,Sophora,affinis
+873,red stopper,Eugenia,rhombea
+874,"butterbough, inkwood",Exothea,paniculata
+876,Florida strangler fig,Ficus,aurea
+877,"wild banyantree, shortleaf fig",Ficus,citrifolia
+882,"beeftree, longleaf blolly",Guapira,discolor
+883,manchineel,Hippomane,mancinella
+884,false tamarind,Lysiloma,latisiliquum
+885,mango,Mangifera,indica
+886,Florida poisontree,Metopium,toxiferum
+887,fishpoison tree,Piscidia,piscipula
+888,"octopus tree, schefflera",Schefflera,actinophylla
+890,false mastic,Sideroxylon,foetidissimum
+891,"white bully, willow bustic",Sideroxylon,salicifolium
+895,paradisetree,Simarouba,glauca
+896,Java plum,Syzygium,cumini
+897,tamarind,Tamarindus,indica
+901,black locust,Robinia,pseudoacacia
+902,New Mexico locust,Robinia,neomexicana
+906,"Everglades palm, paurotis-palm",Acoelorraphe,wrightii
+907,Florida silver palm,Coccothrinax,argentata
+908,coconut palm,Cocos,nucifera
+909,royal palm spp.,Roystonea,spp.
+911,Mexican palmetto,Sabal,mexicana
+912,cabbage palmetto,Sabal,palmetto
+913,key thatch palm,Thrinax,morrisii
+914,Florida thatch palm,Thrinax,radiata
+915,other palms,Family Arecaceae,not listed above
+919,western soapberry,Sapindus,saponaria
+920,willow spp.,Salix,spp.
+921,peachleaf willow,Salix,amygdaloides
+922,black willow,Salix,nigra
+923,Bebb willow,Salix,bebbiana
+924,Bonpland willow,Salix,bonplandiana
+925,coastal plain willow,Salix,caroliniana
+926,balsam willow,Salix,pyrifolia
+927,white willow,Salix,alba
+928,Scouler's willow,Salix,scouleriana
+929,weeping willow,Salix,sepulcralis
+931,sassafras,Sassafras,albidum
+934,mountain-ash spp.,Sorbus,spp.
+935,American mountain-ash,Sorbus,americana
+936,European mountain-ash,Sorbus,aucuparia
+937,northern mountain-ash,Sorbus,decora
+940,West Indian mahogany,Swietenia,mahagoni
+950,basswood spp.,Tilia,spp.
+951,American basswood,Tilia,americana
+952,white basswood,Tilia,americana
+953,Carolina basswood,Tilia,americana
+970,elm spp.,Ulmus,spp.
+971,winged elm,Ulmus,alata
+972,American elm,Ulmus,americana
+973,cedar elm,Ulmus,crassifolia
+974,Siberian elm,Ulmus,pumila
+975,slippery elm,Ulmus,rubra
+976,September elm,Ulmus,serotina
+977,rock elm,Ulmus,thomasii
+981,California-laurel,Umbellularia,californica
+982,Joshua tree,Yucca,brevifolia
+986,black-mangrove,Avicennia,germinans
+987,buttonwood-mangrove,Conocarpus,erectus
+988,white-mangrove,Laguncularia,racemosa
+989,American mangrove,Rhizophora,mangle
+990,desert ironwood,Olneya,tesota
+991,saltcedar,Tamarix,spp.
+992,melaleuca,Melaleuca,quinquenervia
+993,chinaberry,Melia,azedarach
+994,Chinese tallowtree,Triadica,sebifera
+995,tungoil tree,Vernicia,fordii
+996,smoketree,Cotinus,obovatus
+997,Russian-olive,Elaeagnus,angustifolia
+998,Unknown dead hardwood,Tree,broadleaf
+999,Other or unknown live tree,Tree,unknown
+5091,Washington hawthorn,Crataegus,phaenopyrum
+5092,fleshy hawthorn,Crataegus,succulenta
+5093,dwarf hawthorn,Crataegus,uniflora
+5145,hedge maple,Acer,campestre
+5146,vine maple,Acer,circinatum
+5147,Amur maple,Acer,ginnala
+5148,paperbark maple,Acer,griseum
+5149,Painted maple,Acer,mono
+5150,Japanese maple,Acer,palmatum
+5151,sycamore maple,Acer,pseudoplatanus
+5152,tatarian maple,Acer,tataricum
+5154,Freeman maple,Acer,x freemanii
+5155,State Street Maple,Acer,miyabei
+5156,Three Flower Maple,Acer,triflorum
+5157,Norwegian Sunset Maple,Acer,platanoides x truncatum
+5163,horse chestnut,Aesculus,hippocastanum
+5164,bottlebrush buckeye,Aesculus,parviflora
+5188,gray alder,Alnus,incana
+5189,Italian alder,Alnus,cordata
+5190,hazel alder,Alnus,serrulata
+5192,green alder,Alnus,viridis
+5203,Allegheny serviceberry,Amelanchier,laevis
+5232,Japanese angelica tree,Aralia,elata
+5233,devil's walkingstick,Aralia,spinosa
+5256,smallflower pawpaw,Asimina,parviflora
+5259,silverling,Baccharis,glomeruliflora
+5260,eastern baccharis,Baccharis,halimifolia
+5261,peach palm,Bactris,gasipaes
+5279,European white birch,Betula,pendula
+5280,Asian white birch,Betula,platyphylla
+5281,downy birch,Betula,pubescens
+5322,fountain butterflybush,Buddleja,alternifolia
+5329,common box,Buxus,sempervirens
+5363,camellia,Camellia,japonica
+5364,tea,Camellia,sinensis
+5375,Siberian peashrub,Caragana,arborescens
+5378,European hornbeam,Carpinus,betulus
+5401,Japanese chestnut,Castanea,crenata
+5402,European chestnut,Castanea,sativa
+5411,Chinese catalpa,Catalpa,ovata
+5415,snowbrush ceanothus,Ceanothus,velutinus
+5420,Atlas cedar,Cedrus,atlantica
+5421,cedar of Lebanon,Cedrus,libani
+5423,Deodar cedar,Cedrus,deodara
+5432,common buttonbush,Cephalanthus,occidentalis
+5435,katsura tree,Cercidiphyllum,japonicum
+5436,California redbud,Cercis,orbiculata
+5443,hinoki false cypress,Chamaecyparis,obtusa
+5462,desert willow,Chilopsis,linearis
+5491,Berlandier ash,Fraxinus,berlandieriana
+5492,European ash,Fraxinus,excelsior
+5493,Caucasian ash,Fraxinus,oxycarpa
+5523,rose glorybower,Clerodendrum,bungei
+5529,mountain sweetpepperbush,Clethra,acuminata
+5559,bladder senna,Colutea,arborescens
+5591,kousa dogwood,Cornus,kousa
+5599,American hazelnut,Corylus,americana
+5600,Turkish hazelnut,Corylus,colurna
+5603,European smoketree,Cotinus,coggygria
+5776,storehousebush,Cudrania,tricuspidata
+5800,Leyland cypress,Cupressocyparis,leylandii
+5818,quince,Cydonia,oblonga
+5965,burningbush,Euonymus,alatus
+5983,European beech,Fagus,sylvatica
+6001,blackbrush wattle,Acacia,anegadensis
+6002,mulga,Acacia,aneura
+6003,auri,Acacia,auriculiformis
+6004,small Philippine acacia,Acacia,confusa
+6006,koa,Acacia,koa
+6007,koaoha,Acacia,koaia
+6008,porknut,Acacia,macracantha
+6009,black wattle,Acacia,mangium
+6010,black wattle,Acacia,mearnsii
+6011,blackwood,Acacia,melanoxylon
+6012,spineless wattle,Acacia,muricata
+6013,gum arabic tree,Acacia,nilotica
+6014,South Wales wattle,Acacia,parramattensis
+6015,Acacia polyacantha,Acacia,polyacantha
+6016,silver wattle,Acacia,dealbata
+6017,green wattle,Acacia,decurrens
+6018,poponax,Acacia,tortuosa
+6019,Sydney golden wattle,Acacia,longifolia
+6020,prickly Moses,Acacia,verticillata
+6021,hollowheart,Acnistus,arborescens
+6023,grugru palm,Acrocomia,media
+6025,baobab,Adansonia,digitata
+6026,wild lime,Adelia,ricinella
+6028,red beadtree,Adenanthera,pavonina
+6029,beadtree,Adenanthera,spp.
+6032,Caribbean spiritweed,Aegiphila,martinicensis
+6036,kauri,Agathis,australis
+6037,Queensland kauri,Agathis,robusta
+6042,Titimel,Aglaia,mariannensis
+6043,mesecheues,Aglaia,palauensis
+6044,"karasyu, marasau",Aglaia,ponapensis
+6046,laga ali,Aglaia,samoensis
+6047,Aglaia,Aglaia,spp.
+6048,Olomea,Aidia,cochinchinensis
+6049,Aidia racemosa,Aidia,racemosa
+6051,ailanthus,Ailanthus,spp.
+6053,Aiphanes minima,Aiphanes,minima
+6055,cream albizia,Albizia,adinocephala
+6056,naked albizia,Albizia,carbonaria
+6057,Chinese albizia,Albizia,chinensis
+6058,ukall ra ngebard,Albizia,falcataria
+6059,woman's tongue,Albizia,lebbeck
+6060,tall albizia,Albizia,procera
+6061,ukall ra ngebard,Albizia,retusa
+6062,whiteflower albizia,Albizia,saponaria
+6063,albizia,Albizia,spp.
+6064,achiotillo,Alchornea,latifolia
+6066,palo de gallina,Alchorneopsis,floribunda
+6069,Hawaii alectryon,Alectryon,macrococcus
+6072,Elattostachys falcata,Elattostachys,falcata
+6073,alectryon,Alectryon,spp.
+6075,Indian walnut,Aleurites,moluccana
+6077,aleurites,Aleurites,spp.
+6078,lumbang,Aleurites,trisperma
+6080,palo blanco,Allophylus,crassinervis
+6082,palo de caja,Allophylus,racemosus
+6083,Allophylus,Allophylus,spp.
+6084,chebeludes,Allophylus,ternatus
+6085,"ebeludes, chebeludes",Allophylus,timorensis
+6086,Nepal alder,Alnus,nepalensis
+6088,"chelebiob, elebiong",Alphitonia,carolinensis
+6089,Hawaii kauilatree,Alphitonia,ponderosa
+6090,Alphitonia,Alphitonia,spp.
+6091,toi,Alphitonia,zizyphoides
+6092,helecho gigante de la sierra,Alsophila,bryophila
+6093,Alsophila portoricensis,Alsophila,portoricensis
+6095,deviltree,Alstonia,macrophylla
+6096,Alstonia pacifica,Alstonia,pacifica
+6097,alstonia,Alstonia,spp.
+6101,black calabash,Amphitecna,latifolia
+6103,balsam torchwood,Amyris,balsamifera
+6106,anacardium,Anacardium,spp.
+6107,cashew,Anacardium,occidentale
+6108,Anacolosa glochidiiformis,Anacolosa,glochidiiformis
+6109,Anacolosa insularis,Anacolosa,insularis
+6111,Anadenanthera peregrina,Anadenanthera,peregrina
+6114,cabbagebark tree,Andira,inermis
+6118,dermarm,Angiopteris,evecta
+6120,canelillo,Aniba,bracteata
+6124,Annona cherimola,Annona,cherimola
+6125,ilama,Annona,diversifolia
+6127,mountain soursop,Annona,montana
+6128,soursop,Annona,muricata
+6129,custard apple,Annona,reticulata
+6130,Annona,Annona,spp.
+6131,sugar apple,Annona,squamosa
+6135,Kapua china laurel,Antidesma,kapuae
+6137,Antidesma bunius,Antidesma,bunius
+6138,Antidesma kusaiense,Antidesma,kusaiense
+6139,ha a,Antidesma,platyphyllum
+6142,Antidesma ponapense,Antidesma,ponapense
+6143,hame,Antidesma,pulvinatum
+6144,Antidesma sphaerocarpum,Antidesma,sphaerocarpum
+6145,chinalaurel,Antidesma,spp.
+6146,placa chiquitu,Antirhea,acutata
+6147,pegwood,Antirhea,coriacea
+6148,Antirhea inconspicua,Antirhea,inconspicua
+6149,palo iloron,Antirhea,lucida
+6150,quina roja,Antirhea,obtusifolia
+6151,Puerto Rico quina,Antirhea,portoricensis
+6152,Sintenis' quina,Antirhea,sintenisii
+6154,parana pine,Araucaria,angustifolia
+6155,New Caledonia pine,Araucaria,columnaris
+6156,Norfolk Island Pine,Araucaria,excelsa
+6157,Norfolk Island pine,Araucaria,heterophylla
+6158,Araucaria,Araucaria,spp.
+6159,Alexandra palm,Archontophoenix,alexandrae
+6161,shoebutton,Ardisia,elliptica
+6162,ausubon,Ardisia,glauciflora
+6163,mountain marlberry,Ardisia,luquillensis
+6164,Guadeloupe marlberry,Ardisia,obovata
+6165,China-shrub,Ardisia,solanacea
+6166,marlberry,Ardisia,spp.
+6167,betelnut,Areca,catechu
+6169,cabo-negro,Arenga,pinnata
+6171,breadfruit,Artocarpus,altilis
+6173,Artocarpus heterophyllus,Artocarpus,heterophyllus
+6175,"dugdug, Marianas breadfruit",Artocarpus,mariannensis
+6176,Artocarpus nobilis,Artocarpus,nobilis
+6177,Marang,Artocarpus,odoratissimus
+6178,meduu,Artocarpus,spp.
+6179,taputoi,Arytera,brackenridgei
+6180,strawberry tree,Arbutus,unedo
+6181,afia,Ascarina,diffusa
+6184,Astronidium kusaianum,Astronidium,kusaianum
+6185,Astronidium navigatorum,Astronidium,navigatorum
+6186,meskui,Astronidium,palauense
+6187,Astronidium pickeringii,Astronidium,pickeringii
+6188,Astronidium samoense,Astronidium,samoense
+6189,Astronidium,Astronidium,spp.
+6190,Astronidium subcordata,Astronidium,subcordata
+6193,ifi ifi,Atuna,racemosa
+6197,Bilimbi,Averrhoa,bilimbi
+6198,carambola,Averrhoa,carambola
+6199,Averrhoa,Averrhoa,spp.
+6200,biut,Avicennia,alba
+6203,Avicennia marina,Avicennia,marina
+6205,Avicennia,Avicennia,spp.
+6206,neem,Azadirachta,indica
+6208,Saitamu,Baccaurea,taitensis
+6212,European larch,Larix,decidua
+6213,ralm,Badusa,palauensis
+6215,bamboo,Bambusa,spp.
+6216,common bamboo,Bambusa,vulgaris
+6217,Puerto Rico palo de ramon,Banara,portoricensis
+6219,Vanderbilt's palo de ramon,Banara,vanderbiltii
+6220,sea putat,Barringtonia,asiatica
+6221,langaasag,Barringtonia,racemosa
+6222,falaga,Barringtonia,samoensis
+6223,Barringtonia,Barringtonia,spp.
+6224,Bastardiopsis eggersii,Bastardiopsis,eggersii
+6225,Bauhinia binata,Bauhinia,binata
+6226,Napoleon's plume,Bauhinia,monandra
+6227,petite flamboyant bauhinia,Bauhinia,multinervia
+6228,railroadfence,Bauhinia,pauletia
+6229,butterfly tree,Bauhinia,purpurea
+6230,bauhinia,Bauhinia,spp.
+6231,St. Thomas tree,Bauhinia,tomentosa
+6232,mountain ebony,Bauhinia,variegata
+6233,slugwood,Beilschmiedia,pendula
+6234,bog spicebush,Lindera,subcoriacea
+6235,Caribbean myrtlecroton,Bernardia,dichotoma
+6236,Javanese bishopwood,Bischofia,javanica
+6237,bishopwood,Bischofia,spp.
+6238,lipsticktree,Bixa,orellana
+6239,bixa,Bixa,spp.
+6240,akee,Blighia,sapida
+6241,Texasplume,Bauhinia,lunarioides
+6242,akupa,Bobea,brevipes
+6243,ahakea lau nui,Bobea,elatior
+6244,Hawaii dogweed,Bobea,sandwicensis
+6245,ahakea,Bobea,spp.
+6246,ahakea,Bobea,timonioides
+6247,parrotweed,Bocconia,frutescens
+6248,bocconia,Bocconia,spp.
+6250,virgata,Boehmeria,virgata
+6251,white alling,Bontia,daphnoides
+6253,Bourreria radula,Bourreria,radula
+6255,bodywood,Bourreria,succulenta
+6257,roble de guayo,Bourreria,virgata
+6260,kanawao,Broussaisia,arguta
+6262,paper mulberry,Broussonetia,papyrifera
+6264,angels-trumpet,Brugmansia,candida
+6266,Oriental mangrove,Bruguiera,gymnorhiza
+6267,smallflower bruguiera,Bruguiera,parviflora
+6268,Oriental mangrove,Bruguiera,sexangula
+6269,bruguiera,Bruguiera,spp.
+6270,West Indian sumac,Brunellia,comocladiifolia
+6272,American brunfelsia,Brunfelsia,americana
+6273,Serpentine Hill raintree,Brunfelsia,densifolia
+6274,vega blanca,Brunfelsia,lactea
+6275,Puerto Rico raintree,Brunfelsia,portoricensis
+6277,omail,Buchanania,engleriana
+6278,gasu,Buchanania,merrillii
+6279,"omail, deuachel",Buchanania,palawensis
+6280,Buchanania,Buchanania,spp.
+6283,fourleaf buchenavia,Buchenavia,tetraphylla
+6284,gregorywood,Bucida,buceras
+6286,dogtail,Buddleja,asiatica
+6294,cafe falso,Bunchosia,glandulifera
+6295,cafe forastero,Bunchosia,glandulosa
+6297,Bunchosia polystachia,Bunchosia,polystachia
+6299,Burckella richii,Burckella,richii
+6303,Buxus laevigata,Buxus,laevigata
+6304,Puerto Rico box,Buxus,portoricensis
+6306,Vahl's box,Buxus,vahlii
+6308,maricao cimun,Byrsonima,crassifolia
+6311,Long Key locustberry,Byrsonima,lucida
+6313,doncella,Byrsonima,spicata
+6315,almendrillo,Byrsonima,wadsworthii
+6316,nicker,Caesalpinia,spp.
+6317,divi divi,Caesalpinia,coriaria
+6318,uhiuhi,Caesalpinia,kavaiensis
+6319,pride-of-Barbados,Caesalpinia,pulcherrima
+6320,sappanwood,Caesalpinia,sappan
+6325,Surinamese stickpea,Calliandra,surinamensis
+6326,caparosa,Callicarpa,ampla
+6328,crimson bottlebrush,Callistemon,citrinus
+6329,weeping bottlebrush,Callistemon,viminalis
+6331,Callitris columellaris,Callitris,columellaris
+6337,Caloncoba echinata,Caloncoba,echinata
+6338,Antilles calophyllum,Calophyllum,antillanum
+6341,Alexandrian laurel,Calophyllum,inophyllum
+6342,tamanu,Calophyllum,neo-ebudicum
+6343,chesemolech,Calophyllum,pelewense
+6344,"olebtaches, chesemolech",Calophyllum,soulattri
+6345,calophyllum,Calophyllum,spp.
+6346,roostertree,Calotropis,procera
+6347,calotropis,Calotropis,spp.
+6350,degame,Calycophyllum,candidissimum
+6351,Kiaerskov's lidflower,Calyptranthes,kiaerskovii
+6352,limoncillo,Calyptranthes,krugii
+6353,Luquillo forest lidflower,Calyptranthes,luquillensis
+6354,pale lidflower,Calyptranthes,pallens
+6355,Puerto Rico lidflower,Calyptranthes,portoricensis
+6356,limoncillo de monte,Calyptranthes,sintenisii
+6358,Thomas' lidflower,Calyptranthes,thomasiana
+6359,myrtle of the river,Calyptranthes,zuzygium
+6360,Puerto Rico manac,Calyptronoma,rivalis
+6366,"kelela charm, kiu",Campnosperma,brevipetiolatum
+6367,Campnosperma brevipetiolata,Campnosperma,brevipetiolata
+6370,ilang-ilang,Cananga,odorata
+6372,mafoa,Canarium,mafoa
+6373,mesecheues,Canarium,hirsutum
+6374,lukerr,Canarium,indicum
+6375,Pili Nut,Canarium,ovatum
+6377,Canarium,Canarium,spp.
+6378,maali,Canarium,vitiense
+6379,Canarium vulgare,Canarium,vulgare
+6380,wild cinnamon,Canella,winteriana
+6381,Olasina,Psydrax,merrillii
+6383,burro blanco,Capparis,amplissima
+6384,caper,Capparis,baducca
+6386,Jamaican caper,Capparis,cynophallophora
+6387,falseteeth,Capparis,flexuosa
+6389,broadleaf caper,Capparis,hastata
+6390,linguam,Capparis,indica
+6393,crabwood,Carapa,guianensis
+6395,papaya,Carica,papaya
+6396,papaya,Carica,spp.
+6397,scorpionbush,Carmona,retusa
+6398,scorpionbush,Carmona,spp.
+6399,fish tail palm,Caryota,mitis
+6400,Caryota,Caryota,spp.
+6401,fishtail palm,Caryota,urens
+6402,rabo de ranton,Casearia,aculeata
+6403,gia verde,Casearia,arborea
+6405,keuert,Casearia,cauliflora
+6406,wild honeytree,Casearia,decandra
+6407,Guyanese wild coffee,Casearia,guianensis
+6408,Casearia,Casearia,spp.
+6410,crackopen,Casearia,sylvestris
+6415,golden shower,Cassia,fistula
+6417,pink shower,Cassia,grandis
+6418,apple blossom,Cassia,javanica
+6420,kassod tree,Cassia,siamea
+6422,Cassia,Cassia,spp.
+6425,marbletree,Cassine,xylocarpa
+6427,goatwood,Cassipourea,guianensis
+6429,goatbush,Castela,erecta
+6430,Panama rubbertree,Castilla,elastica
+6433,river sheoak,Casuarina,cunninghamiana
+6434,beach sheoak,Casuarina,equisetifolia
+6437,"gagu,australian pine",Casuarina,litorea
+6438,catberry,Ilex,mucronata
+6439,Haitian catalpa,Catalpa,longissima
+6441,trumpet tree,Cecropia,obtusifolia
+6443,pumpwood,Cecropia,schreberiana
+6444,pumpwood,Cecropia,spp.
+6445,Spanish cedar,Cedrela,odorata
+6447,pochote,Ceiba,acuminata
+6448,pochote,Ceiba,aesculifolia
+6449,kapoktree,Ceiba,pentandra
+6452,Celtis paniculata,Celtis,paniculata
+6454,almex,Celtis,trinervia
+6457,St. John's bread,Ceratonia,siliqua
+6458,Chinese hackberry,Celtis,sinensis
+6459,chuti,Cerbera,dilatata
+6460,emeridech,Cerbera,floribunda
+6461,leva,Cerbera,manghas
+6462,chiute,Cerbera,odollam
+6463,Cerbera spp.,Cerbera,spp.
+6468,lady of the night cactus,Cereus,hexagonus
+6469,Cereus hildmannianus,Cereus,hildmannianus
+6470,sweetpotato cactus,Cereus,spp.
+6472,biut,Ceriops,tagal
+6473,orange jessamine,Cestrum,aurantiacum
+6474,day jessamine,Cestrum,diurnum
+6475,galen del monte,Cestrum,laurifolium
+6477,night jessamine,Cestrum,nocturnum
+6478,jessamine,Cestrum,spp.
+6479,Knowlton's hophornbeam,Ostrya,knowltonii
+6480,European fan palm,Chamaerops,humilis
+6481,jointed sandmat,Chamaesyce,articulata
+6482,koko,Chamaesyce,atrococca
+6483,ekoko,Chamaesyce,celastroides
+6492,Herbsts sandmat,Chamaesyce,herbstii
+6493,kokomalei,Chamaesyce,kuwaleana
+6494,alpine sandmat,Chamaesyce,olowaluana
+6495,Koolau Range sandmat,Chamaesyce,rockii
+6496,sandmat,Chamaesyce,spp.
+6497,Napali coast papala,Charpentiera,densiflora
+6498,ellipticleaf papala,Charpentiera,elliptica
+6499,broadleaf papala,Charpentiera,obovata
+6500,Koolau Range papala,Charpentiera,ovata
+6503,papala,Charpentiera,spp.
+6504,Waianae Range papala,Charpentiera,tomentosa
+6507,Domins club,Cheirodendron,dominii
+6508,Fauries club,Cheirodendron,fauriei
+6509,olapa,Cheirodendron,forbesii
+6510,lapalapa,Cheirodendron,platyphyllum
+6511,swamp bay,Persea,palustris
+6513,cheirodendron,Cheirodendron,spp.
+6514,olapalapa,Cheirodendron,trigynum
+6516,Amur corktree,Phellodendron,amurense
+6517,alaweo,Chenopodium,oahuense
+6518,goosefoot,Chenopodium,spp.
+6519,hueso,Chionanthus,axilliflorus
+6520,bridgotree,Chionanthus,compactus
+6521,white rosewood,Chionanthus,domingensis
+6522,hueso prieto,Chionanthus,holdridgei
+6523,cabra blanca,Chionanthus,ligustrinus
+6524,Chinese fringetree,Chionanthus,retusus
+6525,vitiensis,Chionanthus,vitiensis
+6526,puntaj jayuya,Chione,seminervis
+6528,fatpork,Chione,venosa
+6529,african teak,Chlorophora,excelsa
+6532,silk-floss tree,Chorisia,speciosa
+6533,Sakhalin spruce,Picea,glehnii
+6535,icaco coco plum,Chrysobalanus,icaco
+6538,Serbian spruce,Picea,omorika
+6539,bastard redwood,Chrysophyllum,argenteum
+6541,star apple,Chrysophyllum,cainito
+6542,satinleaf,Chrysophyllum,oliviforme
+6543,camito de perro,Chrysophyllum,pauciflorum
+6545,Hawaiian tree fern,Cibotium,heleniae
+6546,Chamissos manfern,Cibotium,chamissoi
+6547,hapuu,Cibotium,glaucum
+6548,hapuu li,Cibotium,menziesii
+6549,manfern,Cibotium,spp.
+6552,quinine,Cinchona,pubescens
+6553,cinchona,Cinchona,spp.
+6554,cassia,Cinnamomum,aromaticum
+6555,Padang cassia,Cinnamomum,burmannii
+6557,ochod,Cinnamomum,carolinense
+6559,laurel avispillo,Cinnamomum,elongatum
+6560,avispillo,Cinnamomum,montanum
+6561,ochod,Cinnamomum,pedatinervium
+6562,matieu,Cinnamomum,sessilifolium
+6563,cinnamon,Cinnamomum,spp.
+6564,cinnamon,Cinnamomum,verum
+6565,juniper berry,Citharexylum,caudatum
+6567,spiny fiddlewood,Citharexylum,spinosum
+6568,fiddlewood,Citharexylum,spp.
+6569,threespike fiddlewood,Citharexylum,tristachyum
+6570,samoensis,Citronella,samoensis
+6572,Lime (Tipolo),Citrus,aurantifolia
+6573,key lime,Citrus,xaurantiifolia
+6574,sour orange,Citrus,xaurantium
+6575,lemon,Citrus,xlimon
+6576,grapefruit,Citrus,xparadisi
+6577,sweet orange,Citrus,xsinensis
+6578,"grapefruit, kahet magas",Citrus,grandis
+6579,limon china,Citrus,hystrix
+6580,"kahet, wild orange",Citrus,macroptera
+6581,Citrus maxima,Citrus,maxima
+6582,Citrus medica,Citrus,medica
+6583,"calamondin, kingkang",Citrus,mitis
+6584,Citrus reticulata,Citrus,reticulata
+6586,koee,Claoxylon,carolinianum
+6588,Claoxylon fallax,Claoxylon,fallax
+6589,Claoxylon longiracemosum,Claoxylon,longiracemosum
+6590,"katteknau, katot",Claoxylon,marianum
+6591,poola,Claoxylon,sandwicense
+6592,claoxylon,Claoxylon,spp.
+6593,Cleistanthus carolinianus,Cleistanthus,carolinianus
+6594,Cleistanthus insularis,Cleistanthus,insularis
+6595,Cleistanthus,Cleistanthus,spp.
+6596,oha wai nui Clermontia,Clermontia,leptoclada
+6597,oha wai nui,Clermontia,arborescens
+6601,Kauai clermontia,Clermontia,clermontioides
+6604,Kohala Mountain clermontia,Clermontia,drepanomorpha
+6605,haha aiakamanu,Clermontia,fauriei
+6606,bog clermontia,Clermontia,grandiflora
+6610,oha kepau,Clermontia,hawaiiensis
+6611,forest clermontia,Clermontia,kakeana
+6612,Waipio Valley clermontia,Clermontia,kohalae
+6613,hillside clermontia,Clermontia,lindseyana
+6614,Maui clermontia,Clermontia,micrantha
+6615,Mauna Loa clermontia,Clermontia,montis-loa
+6616,Oahu clermontia,Clermontia,oblongifolia
+6620,Wailai Pali clermontia,Clermontia,pallida
+6621,smallflower clermontia,Clermontia,parviflora
+6622,pele clermontia,Clermontia,peleana
+6625,Waioiani clermontia,Clermontia,persicifolia
+6626,Hamakua clermontia,Clermontia,pyrularia
+6627,Clermontia singuliflora,Clermontia,singuliflora
+6628,clermontia,Clermontia,spp.
+6629,Haleakala clermontia,Clermontia,tuberculata
+6630,swampforest clermontia,Clermontia,waimeae
+6631,haggarbush,Clerodendrum,aculeatum
+6632,stickbush,Clerodendrum,chinense
+6633,Natal glorybower,Clerodendrum,glabrum
+6634,turks turbin,Clerodendrum,indicum
+6635,velvetleaf glorybower,Clerodendrum,macrostegium
+6636,glorybower,Clerodendrum,spp.
+6637,teta prieta,Cleyera,albopunctata
+6639,jackass breadnut,Clibadium,erosum
+6641,Clidemia cymosa,Clidemia,cymosa
+6642,soapbush,Clidemia,hirta
+6644,Philippine pigeonwings,Clitoria,fairchildiana
+6645,palm tree,Clinostigma,carolinense
+6646,cupeillo,Clusia,clusioides
+6648,Grundlach's attorney,Clusia,gundlachii
+6650,cupey de monte,Clusia,minor
+6651,Scotch attorney,Clusia,rosea
+6652,attorney,Clusia,spp.
+6653,deepwoods fern,Cnemidaria,horrida
+6655,treadsoftly,Cnidoscolus,aconitifolius
+6658,uvilla,Coccoloba,costata
+6660,whitewood,Coccoloba,krugii
+6661,puckhout,Coccoloba,microstachya
+6662,pale seagrape,Coccoloba,pallida
+6663,grandleaf seagrape,Coccoloba,pubescens
+6664,uvera,Coccoloba,pyrifolia
+6665,ortegon,Coccoloba,rugosa
+6666,uvero de monte,Coccoloba,sintenisii
+6668,Swartz's pigeonplum,Coccoloba,swartzii
+6669,Bahama pigeonplum,Coccoloba,tenuifolia
+6670,seagrape,Coccoloba,uvifera
+6671,false chiggergrape,Coccoloba,venosa
+6673,Coccothrinax barbadensis,Coccothrinax,barbadensis
+6679,silk cottontree,Cochlospermum,vitifolium
+6681,coconut palm,Cocos,spp.
+6683,garden croton,Codiaeum,variegatum
+6684,Arabian coffee,Coffea,arabica
+6685,robusta coffee,Coffea,robusta
+6686,Coffea liberica,Coffea,liberica
+6687,coffee,Coffea,spp.
+6688,Cojoba arborea,Cojoba,arborea
+6689,abata cola,Cola,acuminata
+6691,"uab, chuchab",Colona,scabra
+6693,common snakebark,Colubrina,arborescens
+6694,Asian nakedwood,Colubrina,asiatica
+6696,cherry laurel,Prunus,laurocerasus
+6697,kauila,Colubrina,oppositifolia
+6699,nakedwood,Colubrina,spp.
+6700,Urban's nakedwood,Colubrina,verrucosa
+6702,ochaol,Combretum,tetralophum
+6703,Mao,Commersonia,bartramia
+6705,poison ash,Comocladia,dodonaea
+6706,carrasco,Comocladia,glabra
+6707,Japanese flowering cherry,Prunus,serrulata
+6709,mangrove,Conocarpus,spp.
+6710,Luquillo Mountain snailwood,Conostegia,rufescens
+6711,Consolea moniliformis,Consolea,moniliformis
+6712,Consolea rubescens,Consolea,rubescens
+6714,copaiba,Copaifera,officinalis
+6716,forest mirrorplant,Coprosma,foliosa
+6717,koi,Coprosma,kauensis
+6718,Oahu mirrorplant,Coprosma,longifolia
+6719,alpine mirrorplant,Coprosma,montana
+6720,Maui mirrorplant,Coprosma,ochracea
+6721,pubescent mirrorplant,Coprosma,pubens
+6722,woodland mirrorplant,Coprosma,rhynchocarpa
+6724,mirrorplant,Coprosma,spp.
+6726,olena,Coprosma,waimeae
+6728,Spanish elm,Cordia,alliodora
+6729,Tou,Cordia,aspera
+6730,muneco,Cordia,borinquensis
+6731,red manjack,Cordia,collococca
+6733,fragrant manjack,Cordia,dichotoma
+6735,smooth manjack,Cordia,laevigata
+6736,Cordia micronesica,Cordia,micronesica
+6737,clammy cherry,Cordia,obliqua
+6738,San Bartolome,Cordia,rickseckeri
+6739,Puerto Rico manjack,Cordia,rupicola
+6741,cordia,Cordia,spp.
+6742,kou,Cordia,subcordata
+6743,mucilage manjack,Cordia,sulcata
+6744,tiplant,Cordyline,fruticosa
+6745,cordyline,Cordyline,spp.
+6746,nigua,Cornutia,obovata
+6747,azulejo,Cornutia,pyramidata
+6748,roughleaf dogwood,Cornus,drummondii
+6749,redgum,Corymbia,calophylla
+6750,Corymbia citriodora,Corymbia,citriodora
+6751,redflower gum,Corymbia,ficifolia
+6752,red bloodwood,Corymbia,gummifera
+6754,karaka nut,Corynocarpus,laevigatus
+6755,corynocarpus,Corynocarpus,spp.
+6756,cannonball tree,Couroupita,guianensis
+6758,sacred garlic pear,Crateva,religiosa
+6759,Stansbury cliffrose,Purshia,stansburiana
+6760,"houka, calabash",Crescentia,alata
+6761,common calabash tree,Crescentia,cujete
+6762,higuerito,Crescentia,linearifolia
+6763,higuero de sierra,Crescentia,portoricensis
+6765,Critonia portoricensis,Critonia,portoricensis
+6767,maidenberry,Crossopetalum,rhacoma
+6768,Arkansas oak,Quercus,arkansana
+6769,Saitamu,Crossostylis,biflora
+6771,longbeak rattlebox,Crotalaria,longirostrata
+6772,croton spp.,Croton,spp.
+6773,wild marrow,Croton,astroites
+6774,Croton flavens,Croton,flavens
+6775,sabinon,Croton,poecilanthus
+6778,Cryptocarya oreophila,Cryptocarya,oreophila
+6779,laulilii,Cryptocarya,elegans
+6781,holio,Cryptocarya,mannii
+6782,Georgia oak,Quercus,georgiana
+6783,cryptocarya,Cryptocarya,spp.
+6784,laulilii,Cryptocarya,turbinata
+6785,Havard oak,Quercus,havardii
+6786,Japanese cedar,Cryptomeria,japonica
+6787,Japanese cedar,Cryptomeria,spp.
+6788,Chinese fir,Cunninghamia,lanceolata
+6790,wild ackee,Cupania,americana
+6791,myrtle oak,Quercus,myrtifolia
+6792,guara blanca,Cupania,triquetra
+6794,durmast oak,Quercus,petraea
+6795,cedar-of-Goa,Cupressus,lusitanica
+6796,Italian cypress,Cupressus,sempervirens
+6797,English oak,Quercus,robur
+6799,bastard oak,Quercus,sinuata
+6800,Haleakala cyanea,Cyanea,aculeatiflora
+6801,palmtree cyanea,Cyanea,arborea
+6802,Kauai cyanea,Cyanea,fissa
+6805,Degeners cyanea,Cyanea,floribunda
+6806,Kilauea Mauna cyanea,Cyanea,giffardii
+6807,wetforest cyanea,Cyanea,hamatiflora
+6810,Oahu cyanea,Cyanea,hardyi
+6811,prickly cyanea,Cyanea,horrida
+6812,Limahuli Valley cyanea,Cyanea,kuhihewa
+6813,Kunths cyanea,Cyanea,kunthiana
+6814,giant kokee cyanea,Cyanea,leptostegia
+6815,purple cyanea,Cyanea,macrostegia
+6818,Marks cyanea,Cyanea,marksii
+6819,hairy cyanea,Cyanea,pilosa
+6822,pohaku cyanea,Cyanea,pohaku
+6823,Molokai cyanea,Cyanea,procera
+6824,manyfruit cyanea,Cyanea,pycnocarpa
+6825,oakleaf cyanea,Cyanea,quercifolia
+6826,plateau delissea,Cyanea,rivularis
+6827,pua kala,Cyanea,solenocalyx
+6828,cyanea,Cyanea,spp.
+6829,Kaiholena cyanea,Cyanea,stictophylla
+6830,Mt. Kaala cyanea,Cyanea,superba
+6833,aku aku,Cyanea,tritomantha
+6834,parrotfeather treefern,Cyathea,andina
+6835,West Indian treefern,Cyathea,arborea
+6837,Coopers cyathea,Cyathea,cooperi
+6838,olioli,Cyathea,decurrens
+6839,Jamaican treefern,Cyathea,furfuracea
+6840,olioli,Cyathea,lunulata
+6841,olioli,Cyathea,medullaris
+6842,kattar,Cyathea,nigricans
+6843,small treefern,Cyathea,parvula
+6844,kattar,Cyathea,ponapeana
+6847,treefern,Cyathea,spp.
+6848,helecho gigante,Cyathea,tenera
+6849,olioli,Cyathea,truncata
+6850,Cybianthus sintenisii,Cybianthus,sintenisii
+6852,queen sago,Cycas,circinalis
+6853,remiang,Cycas,revoluta
+6854,Cycas,Cycas,spp.
+6855,ola,Cyclophyllum,barbatum
+6857,oreganillo falso,Cynometra,portoricensis
+6858,gulos,Cynometra,ramiflora
+6859,eeme,Cynometra,yokotae
+6860,tree-tomato,Cyphomandra,betacea
+6862,swamp titi,Cyrilla,racemiflora
+6863,cyrtandra,Cyrtandra,pulchella
+6864,Cyrtandra,Cyrtandra,ramosissima
+6865,forest cyrtandra,Cyrtandra,giffardii
+6866,cyrtandra,Cyrtandra,spp.
+6867,candletree,Dacryodes,excelsa
+6868,Dalbergia retusa,Dalbergia,retusa
+6869,Indian rosewood,Dalbergia,sissoo
+6870,cocobolo,Dalbergia,tucurensis
+6871,burn nose,Daphnopsis,americana
+6872,Heller's cieneguillo,Daphnopsis,helleriana
+6873,emajagua de sierra,Daphnopsis,philippiana
+6875,Hawaii delissea,Delissea,fallax
+6876,cutleaf delissea,Delissea,laciniata
+6877,Niihau delissea,Delissea,niihauensis
+6880,smallflower delissea,Delissea,parviflora
+6881,delissea,Delissea,spp.
+6882,leechleaf delissea,Delissea,undulata
+6883,royal poinciana,Delonix,regia
+6884,delonix,Delonix,spp.
+6885,salato,Dendrocnide,harveyi
+6886,kahtat,Dendrocnide,latifolia
+6887,Dendrocnide,Dendrocnide,spp.
+6888,angelica tree,Dendropanax,arboreus
+6889,palo de vaca,Dendropanax,laurifolius
+6891,redpalm,Dictyosperma,album
+6896,chulta,Dillenia,indica
+6898,shrubby dillenia,Dillenia,suffruticosa
+6899,Dimocarpus longan,Dimocarpus,longan
+6900,mabolo,Diospyros,blancoi
+6902,Mabolo,Diospyros,discolor
+6903,Black sapote,Diospyros,ebenaster
+6904,anume,Diospyros,elliptica
+6905,Diospyros ferrea,Diospyros,ferrea
+6906,elama,Diospyros,hillebrandii
+6907,persimmon,Diospyros,kaki
+6909,black apple,Diospyros,revoluta
+6910,auauli,Diospyros,samoensis
+6911,lama,Diospyros,sandwicensis
+6912,Chinese persimmon,Diospyros,sintenisii
+6918,common buckthorn,Rhamnus,cathartica
+6921,otot,Discocalyx,ponapensis
+6923,jaboncillo,Ditta,myricoides
+6924,staghorn sumac,Rhus,typhina
+6927,Florida hopbush,Dodonaea,viscosa
+6928,rru,Dolichandrone,spathacea
+6930,Ceylon gooseberry,Dovyalis,hebecarpa
+6932,fragrant dracaena,Dracaena,fragrans
+6933,Dracaena multiflora,Dracaena,multiflora
+6934,song of India,Dracaena,reflexa
+6935,Drypetes carolinensis,Drypetes,carolinensis
+6936,Drypetes dolichocarpa,Drypetes,dolichocarpa
+6937,cafeillo,Drypetes,alba
+6938,varital,Drypetes,glauca
+6939,rosewood,Drypetes,ilicifolia
+6940,guiana plum,Drypetes,lateriflora
+6941,kevert,Drypetes,nitida
+6942,Drypetes,Drypetes,spp.
+6943,,Drypetes,vitiensis
+6944,Dubautia,Dubautia,demissifolia
+6945,Dubautia,Dubautia,fallax
+6946,Dubautia,Dubautia,montana
+6947,Mauna Kea dubautia,Dubautia,arborea
+6948,forest dubautia,Dubautia,knudsenii
+6949,Drypetes yapensis,Drypetes,yapensis
+6952,Kauai dubautia,Dubautia,microcephala
+6953,plantainleaf dubautia,Dubautia,plantaginea
+6954,Elaeagnus willow,Salix,elaeagnos
+6957,netvein dubautia,Dubautia,reticulata
+6958,dubautia,Dubautia,spp.
+6959,Geyer willow,Salix,geyeriana
+6961,golden dewdrops,Duranta,erecta
+6963,red willow,Salix,laevigata
+6965,Durian,Durio,zibethinus
+6966,Dypsis lutescens,Dypsis,lutescens
+6967,corkscrew willow,Salix,matsudana
+6968,maota mea,Dysoxylum,huntii
+6969,maota,Dysoxylum,maota
+6970,mamala,Dysoxylum,samoense
+6971,Dysoxylum,Dysoxylum,spp.
+6972,Dysoxylum mollissimum ssp. Molle,Dysoxylum,mollissimum
+6973,oil nut palm,Elaeis,guineensis
+6974,Kosrae elaeocarpus,Elaeocarpus,Kaneh
+6975,kalia,Elaeocarpus,bifidus
+6976,syatak,Elaeocarpus,carolinensis
+6977,`a`mati`e,Elaeocarpus,floridanus
+6978,Elaeocarpus graeffei,Elaeocarpus,graeffei
+6979,sapatua,Elaeocarpus,grandis
+6980,joga,Elaeocarpus,joga
+6981,Elaeocarpus kerstingianus,Elaeocarpus,kerstingianus
+6982,"maratte, opop",Elaeocarpus,kusanoi
+6983,Elaeocarpus,Elaeocarpus,spp.
+6984,aamatie,Elaeocarpus,tonganus
+6985,Elaeocarpus,Elaeocarpus,ulianus
+6990,taputoi,Elattostachys,falcata
+6991,red elderberry,Sambucus,racemosa
+6992,utuutu,Eleocharis,dulcis
+6994,elaeocarpa,Endiandra,elaeocarpa
+6996,monkeysoap,Enterolobium,cyclocarpum
+6998,loquat,Eriobotrya,japonica
+6999,loquat,Eriobotrya,spp.
+7000,blacktorch,Erithalis,fruticosa
+7004,machete,Erythrina,berteriana
+7005,coral erythrina,Erythrina,corallodendron
+7006,crybabytree,Erythrina,crista-galli
+7007,cock's spur,Erythrina,eggersii
+7008,bucayo,Erythrina,fusca
+7011,mountain immortelle,Erythrina,poeppigiana
+7012,wili wili,Erythrina,sandwicensis
+7013,erythrina,Erythrina,spp.
+7014,gatae palagi,Erythrina,subumbrans
+7015,tiger's claw,Erythrina,variegata
+7016,tiger's claw,Erythrina,variegata
+7017,acuminatissimum,Erythrospermum,acuminatissimum
+7019,swamp-redwood,Erythroxylum,areolatum
+7021,ratwood,Erythroxylum,rotundifolium
+7022,rufous false cocaine,Erythroxylum,rufum
+7023,Argentine senna,Senna,corymbosa
+7024,Urban's false cocaine,Erythroxylum,urbanii
+7025,southern mahogany,Eucalyptus,botryoides
+7026,applebox,Eucalyptus,bridgesiana
+7028,argyle apple,Eucalyptus,cinerea
+7030,sugargum,Eucalyptus,cladocalyx
+7031,yate,Eucalyptus,cornuta
+7032,narrowleaf red ironbark,Eucalyptus,crebra
+7033,roundleaf gum,Eucalyptus,deanei
+7034,Indonesian gum,Eucalyptus,deglupta
+7035,silver-dollar eucalyptus,Eucalyptus,cordata
+7036,white ironbark,Eucalyptus,leucoxylon
+7038,tuart,Eucalyptus,gomphocephala
+7039,mountain graygum,Eucalyptus,goniocalyx
+7040,redbox,Eucalyptus,polyanthemos
+7041,white box,Eucalyptus,hemiphloia
+7043,spotted gum,Eucalyptus,maculata
+7044,jarrah,Eucalyptus,marginata
+7045,Australian tallowwood,Eucalyptus,microcorys
+7046,gray ironbark,Eucalyptus,paniculata
+7047,blackbutt,Eucalyptus,pilularis
+7048,black ironbox,Eucalyptus,raveretiana
+7049,redmahogany,Eucalyptus,resinifera
+7051,Western Australian floodedgum,Eucalyptus,rudis
+7052,black peppermint,Eucalyptus,salicifolia
+7053,Sydney bluegum,Eucalyptus,saligna
+7054,red ironbark,Eucalyptus,sideroxylon
+7056,forest redgum,Eucalyptus,tereticornis
+7057,manna gum,Eucalyptus,viminalis
+7059,"edebsachel, chedebsachel",Eugenia,aquea
+7060,white stopper,Eugenia,axillaris
+7061,blackrodwood,Eugenia,biflora
+7062,Sierra de Cayey stopper,Eugenia,boqueronensis
+7063,guayabota de sierra,Eugenia,borinquensis
+7065,cloves,Eugenia,caryophyllus
+7066,redberry stopper,Eugenia,confusa
+7067,lathberry,Eugenia,cordata
+7068,lathberry,Eugenia,cordata
+7069,sperry guava,Eugenia,corozalensis
+7071,serrette guave,Eugenia,domingensis
+7072,guasabara,Eugenia,eggersii
+7075,smooth rodwood,Eugenia,glabrata
+7076,Luquillo Mountain stopper,Eugenia,haematocarpa
+7078,"macupa, wax apple",Eugenia,javanica
+7079,nioi,Eugenia,koolauensis
+7081,privet stopper,Eugenia,ligustrina
+7082,"makupa, malay apple",Eugenia,malaccensis
+7083,bigleaf snowbell,Styrax,grandifolius
+7084,birdcherry,Eugenia,monticola
+7086,Eugenia nitida,Eugenia,nitida
+7087,orenged,Eugenia,palauensis
+7088,agatelang,Eugenia,palumbis
+7089,rockmyrtle,Eugenia,procera
+7090,Christmas cherry,Eugenia,pseudopsidium
+7091,mountain stopper,Eugenia,reinwardtiana
+7092,Japanese tree lilac,Syringa,reticulata
+7093,serrasuela,Eugenia,serrasuela
+7094,sessileleaf stopper,Eugenia,sessiliflora
+7096,stopper,Eugenia,spp.
+7098,Stahl's stopper,Eugenia,stahlii
+7099,luluhut,Eugenia,stelechantha
+7100,Stewardson's stopper,Eugenia,stewardsonii
+7101,rebotel,Eugenia,suzukii
+7102,atoto,Eugenia,thompsonii
+7103,Underwood's stopper,Eugenia,underwoodii
+7104,Surinam cherry,Eugenia,uniflora
+7105,aridland stopper,Eugenia,xerophytica
+7109,Mexican shrubby spurge,Euphorbia,cotinifolia
+7110,Kauai spurge,Euphorbia,haeleeleana
+7111,mottled spurge,Euphorbia,lactea
+7112,Indian spurgetree,Euphorbia,neriifolia
+7113,manchineel berry,Euphorbia,petiolaris
+7114,poinsettia,Euphorbia,pulcherrima
+7115,spurge,Euphorbia,spp.
+7116,Indiantree spurge,Euphorbia,tirucalli
+7117,Longan,Euphoria,longana
+7119,anini,Eurya,sandwicensis
+7120,eurya,Eurya,spp.
+7123,Euodia hortensis,Euodia,hortensis
+7124,kertub,Euodia,nitida
+7125,beror,Euodia,palawensis
+7126,Euodia ponapensis,Euodia,ponapensis
+7127,Euodia,Euodia,spp.
+7128,Euodia trichantha,Euodia,trichantha
+7129,blinding tree,Excoecaria,agallocha
+7131,hulumoa,Exocarpos,gaudichaudii
+7132,exocarpos,Exocarpos,spp.
+7133,kotop,Exorrhiza,ponapensis
+7135,Caribbean princewood,Exostema,caribaeum
+7136,plateado,Exostema,ellipticum
+7137,Exostema sanctae-luciae,Exostema,sanctae-luciae
+7141,pualulu,Fagraea,berteroana
+7142,ksid,Fagraea,ksid
+7143,Fagraea,Fagraea,spp.
+7144,peacocksplume,Falcataria,moluccana
+7145,peacocksplume,Falcataria,spp.
+7146,false coffee,Faramea,occidentalis
+7147,feijoa,Feijoa,sellowiana
+7148,Jamaican cherry fig,Ficus,americana
+7149,Indian banyan,Ficus,benghalensis
+7150,weeping fig,Ficus,benjamina
+7151,edible fig,Ficus,carica
+7152,Ficus copiosa,Ficus,copiosa
+7154,brown-woolly fig,Ficus,drupacea
+7155,Indian rubberplant,Ficus,elastica
+7156,mati,Ficus,godeffroyi
+7158,Ficus lutea,Ficus,lutea
+7159,fiddleleaf fig,Ficus,lyrata
+7160,Chinese banyan,Ficus,microcarpa
+7162,tibig,Ficus,nota
+7163,aoa,Ficus,obliqua
+7164,amate,Ficus,obtusifolia
+7165,aoa,Ficus,prolixa
+7166,peepul tree,Ficus,religiosa
+7167,Port Jackson fig,Ficus,rubiginosa
+7168,"lulk, banyan",Ficus,saffordii
+7169,mati vao,Ficus,scabra
+7171,fig,Ficus,spp.
+7173,jaguey,Ficus,stahlii
+7174,sycamore fig,Ficus,sycomorus
+7175,Chinese banyan,Ficus,thonningii
+7176,mati,Ficus,tinctoria
+7177,jaguey blanco,Ficus,trigonata
+7178,mati,Ficus,uniauriculata
+7179,higo,Ficus,virens
+7180,Finschia chloroxantha,Finschia,chloroxantha
+7181,Chinese parasoltree,Firmiana,simplex
+7182,burrdaisytree,Fitchia,speciosa
+7184,governor's plum,Flacourtia,indica
+7185,batoko plum,Flacourtia,inermis
+7186,filimoto,Flacourtia,rukam
+7188,Queensland maple,Flindersia,brayleyana
+7190,Flueggea acidoton,Flueggea,acidoton
+7191,poumuli,Flueggea,flexuosa
+7192,mehamehame,Flueggea,neowawraea
+7193,bushweed,Flueggea,spp.
+7194,inkbush,Forestiera,eggersiana
+7195,caca ravet,Forestiera,rhamnifolia
+7196,Florida swampprivet,Forestiera,segregata
+7198,oval kumquat,Fortunella,margarita
+7199,Chinese chastetree,Vitex,negundo
+7200,California buckthorn,Frangula,californica
+7202,West Indian buckthorn,Frangula,sphaerosperma
+7203,Franklin tree,Franklinia,alatamaha
+7205,Goodding's ash,Fraxinus,gooddingii
+7206,shamel ash,Fraxinus,uhdei
+7207,Bolivian fuchsia,Fuchsia,boliviana
+7208,shrubby fuchsia,Fuchsia,paniculata
+7209,fuchsia,Fuchsia,spp.
+7210,silkrubber,Funtumia,elastica
+7211,avocado,Persea,americana
+7212,Gourka,Garcinia,dulcis
+7213,lemon saptree,Garcinia,hessii
+7214,mangosteen,Garcinia,mangostana
+7215,tilol,Garcinia,matsudai
+7216,,Garcinia,myrtifolia
+7217,konpuil,Garcinia,ponapensis
+7218,palo de cruz,Garcinia,portoricensis
+7219,tilol,Garcinia,rumiyo
+7220,Garcinia quadrilocularis,Garcinia,quadrilocularis
+7221,Garcinia,Garcinia,spp.
+7223,Garcinia xanthochymus,Garcinia,xanthochymus
+7224,forest gardenia,Gardenia,brighamii
+7225,Oahu gardenia,Gardenia,mannii
+7226,Remys gardenia,Gardenia,remyi
+7227,gardenia,Gardenia,spp.
+7228,Tahitian gardenia,Gardenia,taitensis
+7229,manuai vivao,Garuga,floribunda
+7231,llume,Gaussia,attenuata
+7233,taipoipo,Geniostoma,rupestre
+7235,jagua,Genipa,americana
+7237,arbol de Navidad,Gesneria,pedunculosa
+7239,bastard gregre,Ginoria,rohrii
+7241,Gironniera celtidifolia,Gironniera,celtidifolia
+7243,Japanese zelkova,Zelkova,serrata
+7245,quickstick,Gliricidia,sepium
+7246,lotebush,Ziziphus,obtusifolia
+7247,masame,Glochidion,cuspidatum
+7248,Glochidion marianum,Glochidion,marianum
+7249,masame,Glochidion,ramiflorum
+7250,Glochidion,Glochidion,spp.
+7251,belau,Gmelina,elliptica
+7252,blacheos,Gmelina,palawensis
+7253,Gmelina,Gmelina,spp.
+7254,Gnetum gnemon,Gnetum,gnemon
+7255,flower axistree,Glycosmis,parviflora
+7256,mata buey,Goetzea,elegans
+7257,Glochidion kanehirae,Glochidion,kanehirae
+7258,grand merisier,Gomidesia,lindeniana
+7260,Goniothalamus carolinensis,Goniothalamus,carolinensis
+7262,Creole cotton,Gossypium,barbadense
+7264,Gossypium hirsutum,Gossypium,hirsutum
+7268,Graffenrieda ottoschulzii,Graffenrieda,ottoschulzii
+7272,kahiliflower,Grevillea,banksii
+7273,silkoak,Grevillea,robusta
+7274,grevillea,Grevillea,spp.
+7275,fau ui,Grewia,crenata
+7279,lignum-vitae,Guaiacum,officinale
+7280,holywood,Guaiacum,sanctum
+7282,paipai,Guamia,mariannae
+7285,black mampoo,Guapira,fragrans
+7286,corcho prieto,Guapira,obtusata
+7288,alligatorwood,Guarea,glabra
+7290,American muskwood,Guarea,guidonia
+7294,haya minga,Guatteria,blainii
+7295,haya blanca,Guatteria,caribaea
+7298,bastardcedar,Guazuma,ulmifolia
+7299,hammock velvetseed,Guettarda,elliptica
+7300,frogwood,Guettarda,krugii
+7302,cucubano de vieques,Guettarda,odorata
+7303,cucubano,Guettarda,ovalifolia
+7305,roseta,Guettarda,pungens
+7306,wild guave,Guettarda,scabra
+7307,puapua,Guettarda,speciosa
+7309,cucubano de monte,Guettarda,valenzuelana
+7311,rhoifolia,Guioa,rhoifolia
+7312,Guioa,Guioa,spp.
+7313,"bochela uchererak, uch",Gulubia,palauensis
+7315,West Indian false box,Gyminda,latifolia
+7317,oysterwood,Gymnanthes,lucida
+7319,vilivili,Gyrocarpus,americanus
+7321,bloodwoodtree,Haematoxylum,campechianum
+7327,palo de hueso,Haenianthus,salicifolius
+7328,mountain silverbell,Halesia,tetraptera
+7329,Ozark witchhazel,Hamamelis,vernalis
+7330,scarletbush,Hamelia,patens
+7331,American witchhazel,Hamamelis,virginiana
+7332,Haplolobus floribundus,Haplolobus,floribundus
+7334,fa`aili,Harpullia,arborea
+7335,haujillo,Havardia,pallens
+7336,false locust,Hebestigma,cubense
+7338,denticulata,Hedycarya,denticulata
+7340,Hedycarya,Hedycarya,spp.
+7341,cigarbush,Hedyosmum,arborescens
+7343,Fosbergs starviolet,Hedyotis,fosbergii
+7344,manono,Hedyotis,hillebrandii
+7345,starviolet,Hedyotis,spp.
+7346,variable starviolet,Hedyotis,terminalis
+7347,screwtree,Helicteres,jamaicensis
+7349,white moho,Heliocarpus,popayanensis
+7350,heliocarpus,Heliocarpus,spp.
+7353,camasey peludo,Henriettea,fascicularis
+7354,MacFadyen's camasey,Henriettea,macfadyenii
+7355,thinleaf camasey,Henriettea,membranifolia
+7357,jusillo,Henriettea,squamulosum
+7359,ufa,Heritiera,littoralis
+7360,ufa halemtano,Heritiera,longipetiolata
+7362,Heritiera,Heritiera,spp.
+7363,pipi,Hernandia,moerenhoutiana
+7364,"pua, Chinese lantern tree",Hernandia,nymphaeifolia
+7365,Hernandia ovigera,Hernandia,ovigera
+7366,mago,Hernandia,sonora
+7367,Hernandia,Hernandia,spp.
+7368,Hernandia labyrinthica,Hernandia,labyrinthica
+7370,Lanai island-aster,Hesperomannia,arborescens
+7371,Maui island-aster,Hesperomannia,arbuscula
+7372,Kauai island-aster,Hesperomannia,lydgatei
+7373,island-aster,Hesperomannia,spp.
+7374,toyon,Heteromeles,arbutifolia
+7376,toyon,Heteromeles,spp.
+7377,palma brava,Heterospathe,elata
+7381,para rubber tree,Hevea,brasiliensis
+7384,hau kuahiwi,Hibiscadelphus,bombycinus
+7385,lava hau kuahiwi,Hibiscadelphus,crucibracteatus
+7386,Kauai hau kuahiwi,Hibiscadelphus,distans
+7387,Kilauea hau kuahiwi,Hibiscadelphus,giffardianus
+7388,Hualalai hau kuahiwi,Hibiscadelphus,hualalaiensis
+7389,hau kuahiwi,Hibiscadelphus,puakuahiwi
+7390,hibiscadelphus,Hibiscadelphus,spp.
+7391,Maui hau kuahiwi,Hibiscadelphus,wilderianus
+7392,Woods hau kuahiwi,Hibiscadelphus,woodii
+7393,white rosemallow,Hibiscus,arnottianus
+7397,Brackenridges rosemallow,Hibiscus,brackenridgei
+7401,lemonyellow rosemallow,Hibiscus,calyphyllus
+7402,red Kauai rosemallow,Hibiscus,clayi
+7403,mahoe,Hibiscus,elatus
+7404,red rosemallow,Hibiscus,kokio
+7407,largeleaf rosemallow,Hibiscus,macrophyllus
+7408,Dixie rosemallow,Hibiscus,mutabilis
+7409,seaside mahoe,Hibiscus,pernambucensis
+7410,shoeblackplant,Hibiscus,rosa-sinensis
+7411,rosemallow,Hibiscus,spp.
+7412,sea hibiscus,Hibiscus,tiliaceus
+7413,white Kauai rosemallow,Hibiscus,waimeae
+7418,teta de burra cinarron,Hirtella,rugosa
+7420,pigeonberry,Hirtella,triandra
+7422,white cogwood,Homalium,racemosum
+7424,Homalium whitmeeanum,Homalium,whitmeeanum
+7427,"chemeklachel, eumail",Horsfieldia,amklaal
+7428,ersachel,Horsfieldia,novoguineensis
+7429,Horsfieldia nunu,Horsfieldia,nunu
+7430,chersachel,Horsfieldia,palauensis
+7431,Horsfieldia,Horsfieldia,spp.
+7432,Japanese raisintree,Hovenia,dulcis
+7434,sandbox tree,Hura,crepitans
+7438,cedro macho,Hyeronima,clusioides
+7440,nightblooming cactus,Hylocereus,spp.
+7441,nightblooming cactus,Hylocereus,undatus
+7442,stinkingtoe,Hymenaea,courbaril
+7445,inkwood,Hypelate,trifoliata
+7446,limestone snakevine,Hyperbaena,laurifolia
+7448,Canary Island St. Johnswort,Hypericum,canariense
+7453,Hawaii holly,Ilex,anomala
+7454,English holly,Ilex,aquifolium
+7455,dahoon,Ilex,cassine
+7456,te,Ilex,cookii
+7457,maconcona,Ilex,guianensis
+7458,Caribbean holly,Ilex,macfadyenii
+7459,Puerto Rico holly,Ilex,nitida
+7460,mate,Ilex,paraguariensis
+7462,gongolin,Ilex,sideroxyloides
+7463,Sintenis' holly,Ilex,sintenisii
+7464,holly,Ilex,spp.
+7465,Urban's holly,Ilex,urbaniana
+7466,Ilex urbaniana,Ilex,urbaniana
+7467,inga,Inga,spp.
+7469,yaupon,Ilex,vomitoria
+7470,sacky sac bean,Inga,laurina
+7471,Inga nobilis,Inga,nobilis
+7472,ice cream bean,Inga,edulis
+7474,river koko,Inga,vera
+7475,ifi,Inocarpus,fagifer
+7477,ifilele,Intsia,bijuga
+7479,palo de hierro,Ixora,ferrea
+7481,white jungleflame,Ixora,thwaitesii
+7482,black poui,Jacaranda,mimosifolia
+7483,jacaranda,Jacaranda,spp.
+7485,braceletwood,Jacquinia,armillaris
+7487,bois bande,Jacquinia,berteroi
+7489,Chinese juniper,Juniperus,chinensis
+7490,chirriador,Jacquinia,umbellata
+7491,Barbados nut,Jatropha,curcas
+7492,wild oilnut,Jatropha,hernandiifolia
+7493,coralbush,Jatropha,multifida
+7494,nettlespurge,Jatropha,spp.
+7495,West Indian walnut,Juglans,jamaicensis
+7496,English walnut,Juglans,regia
+7497,ketoguit,Kayea,pacifica
+7499,Khaya anthotheca,Khaya,anthotheca
+7501,Senegal mahogany,Khaya,senegalensis
+7503,Kigelia africana,Kigelia,africana
+7506,guest tree,Kleinhovia,hospita
+7507,goldenrain tree,Koelreuteria,bipinnata
+7508,Koanophyllon polyodon,Koanophyllon,polyodon
+7509,Molokai treecotton,Kokia,cookei
+7510,Hawaii treecotton,Kokia,drynarioides
+7511,Kauai treecotton,Kokia,kauaiensis
+7512,Wailupe Valley treecotton,Kokia,lanceolata
+7513,treecotton,Kokia,spp.
+7514,leadwood,Krugiodendron,ferreum
+7515,goldenrain tree,Koelreuteria,paniculata
+7516,burgan,Kunzea,ericoides
+7517,Kunzea,Kunzea,spp.
+7518,summit labordia,Labordia,fagraeoidea
+7519,bog labordia,Labordia,hedyosmifolia
+7520,mountain labordia,Labordia,hirtella
+7521,Waianae Range labordia,Labordia,kaalae
+7522,Wahiawa Mountain labordia,Labordia,lydgatei
+7523,labordia,Labordia,spp.
+7524,paleflower labordia,Labordia,tinifolia
+7528,Lanai labordia,Labordia,triflora
+7529,Nevada peavine,Labordia,waiolani
+7530,cuero de rana,Laetia,procera
+7531,golden chain tree,Laburnum,anagyroides
+7532,crapemyrtle,Lagerstroemia,indica
+7533,pride of India,Lagerstroemia,speciosa
+7539,Langsat,Lansium,domesticum
+7541,nino de cota,Laplacea,portoricensis
+7543,bluelatan,Latania,loddigesii
+7550,henna,Lawsonia,inermis
+7552,Krug's roughleaf,Leandra,krugiana
+7556,pitahaya,Leptocereus,quadricostatus
+7558,large-leaf yellow teatree,Leptospermum,morrisonii
+7559,common teatree,Leptospermum,petersonii
+7560,common teatree,Leptospermum,polygalifolim
+7561,broom teatree,Leptospermum,scoparium
+7562,teatree,Leptospermum,spp.
+7564,Leucaena insularum,Leucaena,insularum
+7565,white leadtree,Leucaena,leucocephala
+7566,leadtree,Leucaena,spp.
+7567,littleleaf leadtree,Leucaena,retusa
+7569,Maria laurel,Licaria,brittoniana
+7570,Puerto Rico cinnamon,Licaria,parvifolia
+7571,Oriental sweetgum,Liquidambar,orientalis
+7573,pepperleaf sweetwood,Licaria,triandra
+7574,Amur privet,Ligustrum,amurense
+7575,Chinese privet,Ligustrum,sinense
+7576,privet,Ligustrum,spp.
+7577,Japanese privet,Ligustrum,japonicum
+7578,glossy privet,Ligustrum,lucidum
+7579,California privet,Ligustrum,ovalifolium
+7580,southern spicebush,Lindera,melissifolia
+7583,Lychee,Litchi,chinensis
+7586,papaono,Litsea,samoensis
+7587,Litsea,Litsea,spp.
+7588,fountain palm,Livistona,chinensis
+7590,geno geno,Lonchocarpus,domingensis
+7591,geno,Lonchocarpus,glaucifolius
+7592,broadleaf lancepod,Lonchocarpus,heptaphyllus
+7593,Amur honeysuckle,Lonicera,maackii
+7595,vinegartree,Lophostemon,confertus
+7598,Egg Fruit / Canistel,Lucuma,nervosa
+7600,luehea,Luehea,speciosa
+7602,"bakauaine, nana",Lumnitzera,littorea
+7604,lunania,Lunania,spp.
+7606,Lunania ekmanii,Lunania,ekmanii
+7608,St. Thomas staggerbush,Lyonia,rubiginosa
+7614,"macadamia nut tree, pengua",Macadamia,integrifolia
+7616,Macadamia,Macadamia,spp.
+7617,Macadamia Nut,Macadamia,tetraphylla
+7618,bedel,Macaranga,carolinensis
+7619,Macaranga grayana,Macaranga,grayana
+7620,lau pata,Macaranga,harveyana
+7621,pengua,Macaranga,mappa
+7623,macaranga,Macaranga,spp.
+7625,lau fatu,Macaranga,stipulosa
+7626,parasol leaf tree,Macaranga,tanarius
+7627,Macaranga thompsonii,Macaranga,thompsonii
+7628,palo de hoz,Machaerium,lunatum
+7630,Puerto Rico alfilerillo,Machaonia,portoricensis
+7632,Maclura tinctoria,Maclura,tinctoria
+7633,umbrella-tree,Maesopsis,eminii
+7635,Puerto Rico magnolia,Magnolia,portoricensis
+7636,laurel magnolia,Magnolia,splendens
+7637,Oyama magnolia,Magnolia,seboldii
+7638,Mallotus palauensis,Mallotus,palauensis
+7639,kamala tree,Mallotus,philippensis
+7641,mallotus,Mallotus,spp.
+7642,Mallotus tiliifolius,Mallotus,tiliifolius
+7643,Singapore holly,Malpighia,coccigera
+7644,Barbados cherry,Malpighia,emarginata
+7645,palo bronco,Malpighia,fucata
+7646,wild crapemyrtle,Malpighia,glabra
+7647,cowhage cherry,Malpighia,infestissima
+7648,bastard cherry,Malpighia,linearis
+7649,Siberian crab apple,Malus,baccata
+7650,Japanese flowering crab apple,Malus,floribunda
+7651,paradise apple,Malus,pumila
+7652,mammee apple,Mammea,americana
+7653,manapau,Mammea,glauca
+7654,chopak,Mammea,odorata
+7655,Mammea,Mammea,spp.
+7657,kanit,Mangifera,minor
+7658,saipan mango,Mangifera,odorata
+7659,mango,Mangifera,spp.
+7660,ceara rubbertree,Manihot,glaziovii
+7661,manihot,Manihot,spp.
+7662,bulletwood,Manilkara,bidentata
+7663,Surinam bulletwood,Manilkara,bidentata
+7664,pani,Manilkara,dissecta
+7666,kohle,Manilkara,hoshinoi
+7667,wild dilly,Manilkara,jaimiqui
+7669,zapote de costa,Manilkara,pleeana
+7671,Manilkara,Manilkara,spp.
+7672,udeuid,Manilkara,udoido
+7673,nisperillo,Manilkara,valenzuela
+7674,sapodilla,Manilkara,zapota
+7677,palo de cana,Mappia,racemosa
+7679,"bkau, apgau",Maranthes,corymbosa
+7680,dermarm,Marattia,fraxinea
+7682,bastard hogberry,Margaritaria,nobilis
+7684,beruquillo,Marlierea,sintenisii
+7688,Matayba apetala,Matayba,apetala
+7689,negra lora,Matayba,domingensis
+7694,mayten,Maytenus,boaria
+7695,Caribbean mayten,Maytenus,cymosa
+7697,Puerto Rico mayten,Maytenus,elongata
+7698,white cinnamon,Maytenus,laevigata
+7699,ponce mayten,Maytenus,ponceana
+7700,luluhut,Maytenus,thompsonii
+7702,Mecranium latifolium,Mecranium,latifolium
+7704,Medusanthera carolinensis,Medusanthera,carolinensis
+7705,matamo,Medusanthera,samoensis
+7706,Medusanthera,Medusanthera,spp.
+7709,melaleuca,Melaleuca,spp.
+7710,alom,Melanolepis,multiglandulosa
+7712,Melastoma candidum,Melastoma,candidum
+7713,Melastoma sanguineum,Melastoma,sanguineum
+7715,cajeput tree,Melaleuca,linariifolia
+7716,melia,Melia,spp.
+7717,Spanish lime,Melicoccus,bijugatus
+7719,mokihana,Melicope,anisata
+7720,Ballous melicope,Melicope,balloui
+7721,uahiapele,Melicope,barbigera
+7722,Waianae Range melicope,Melicope,christophersenii
+7723,manena,Melicope,cinerea
+7724,kukaemoa,Melicope,clusiifolia
+7725,piloula,Melicope,cruciata
+7726,leiohiiaka,Melicope,elliptica
+7727,Haleakala melicope,Melicope,haleakalae
+7728,Haupa Mountain melicope,Melicope,haupuensis
+7729,mokihana kukae moa,Melicope,hawaiensis
+7730,Monoa melicope,Melicope,hiiakae
+7731,Honolulu melicope,Melicope,hosakae
+7732,Kaala melicope,Melicope,kaalaensis
+7733,Olokele Valley melicope,Melicope,knudsenii
+7734,Kaholuamanu melicope,Melicope,macropus
+7735,Makaha Valley melicope,Melicope,makahae
+7736,Molokai melicope,Melicope,molokaiensis
+7737,alani,Melicope,mucronulata
+7738,Oahu melicope,Melicope,oahuensis
+7739,Makawao melicope,Melicope,obovata
+7740,Honokahua melicope,Melicope,orbicularis
+7741,Hana melicope,Melicope,ovalis
+7742,eggshape melicope,Melicope,ovata
+7743,pale melicope,Melicope,pallida
+7744,Lihue melicope,Melicope,paniculata
+7745,boxfruit alani,Melicope,peduncularis
+7746,Kohala Summit melicope,Melicope,pseudoanisata
+7747,hairy melicope,Melicope,puberula
+7748,fourangle melicope,Melicope,quadrangularis
+7749,kapu melicope,Melicope,radiata
+7750,soopini,Melicope,latifolia
+7751,roundleaf melicope,Melicope,rotundifolia
+7752,St. Johns melicope,Melicope,saint-johnii
+7753,Mt. Kaala melicope,Melicope,sandwicensis
+7754,melicope,Melicope,spp.
+7755,volcanic melicope,Melicope,volcanica
+7756,alani wai,Melicope,waialealae
+7757,Monoa melicope,Melicope,wawraeana
+7758,kipuka piaula,Melicope,zahlbruckneri
+7759,samoensis,Melicytus,samoensis
+7763,aguacatillo,Meliosma,herbertii
+7764,cacaillo,Meliosma,obtusifolia
+7766,mao,Melochia,aristata
+7767,melochia,Melochia,spp.
+7768,teabush,Melochia,tomentosa
+7769,hierba del soldado,Melochia,umbellata
+7770,sayafe spp.,Melochia,villosissima
+7771,sayafe,Melochia,villosissima
+7774,faniok,Merrilliodendron,megacarpum
+7776,fagufagu,Meryta,macrophylla
+7777,omechidel,Meryta,senfftiana
+7778,Meryta,Meryta,spp.
+7779,dawn redwood,Metasequoia,glyptostroboides
+7781,collina,Metrosideros,collina
+7782,ohia,Metrosideros,macropus
+7783,ohia lehua,Metrosideros,polymorpha
+7792,lehua papa,Metrosideros,rugosa
+7793,lehua,Metrosideros,spp.
+7794,lehua ahihi,Metrosideros,tremuloides
+7795,Kauai bottlebrush,Metrosideros,waialealae
+7798,ivory-nut palm,Metroxylon,amicarum
+7799,sago palm,Metroxylon,sagu
+7800,Metroxylon,Metroxylon,spp.
+7801,Orange Champak,Michelia,champaca
+7803,hairy johnnyberry,Miconia,lanata
+7804,saquiyac,Miconia,affinis
+7805,velvet tree,Miconia,calvescens
+7806,Puerto Rico johnnyberry,Miconia,foveolata
+7807,camasey de costilla,Miconia,impetiolaris
+7808,smooth johnnyberry,Miconia,laevigata
+7810,camasey cuatrocanales,Miconia,mirabilis
+7812,camasey racimoso,Miconia,pachyphylla
+7813,granadillo bobo,Miconia,prasina
+7814,auquey,Miconia,punctata
+7815,ridge johnnyberry,Miconia,pycnoneura
+7816,camasey felpa,Miconia,racemosa
+7817,peralejo,Miconia,rubiginosa
+7818,jau jau,Miconia,serrulata
+7819,mountain johnnyberry,Miconia,sintenisii
+7821,forest johnnyberry,Miconia,subcorymbosa
+7822,rajador,Miconia,tetrandra
+7823,camasey tomaso,Miconia,thomasiana
+7824,talafulu,Micromelum,minutum
+7828,caimitillo verde,Micropholis,garciniifolia
+7829,Micropholis guyanensis,Micropholis,guyanensis
+7831,pinnata,Millettia,pinnata
+7833,elegant mimosa,Mimosa,arenosa
+7835,"bulletwood, elengi",Mimusops,elengi
+7839,monodora,Monodora,spp.
+7841,treedaisy,Montanoa,hibiscifolia
+7842,montanoa,Montanoa,spp.
+7845,Morella cerifera,Morella,cerifera
+7846,firetree,Morella,faya
+7847,Morella holdridgeana,Morella,holdridgeana
+7848,bayberry,Morella,spp.
+7849,Indian mulberry,Morinda,citrifolia
+7850,ngel,Morinda,latibractea
+7851,Morinda pedunculata,Morinda,pedunculata
+7852,morinda,Morinda,spp.
+7853,noni kuahiwi,Morinda,trimera
+7855,horseradishtree,Moringa,oleifera
+7857,ratapple,Morisonia,americana
+7861,ngaio tree,Myoporum,laetum
+7862,murta,Mouriri,domingensis
+7863,mameyuelo,Mouriri,helleri
+7865,falseohe,Munroidendron,racemosum
+7867,strawberrytree,Muntingia,calabura
+7868,muntingia,Muntingia,spp.
+7869,Murraya exotica,Murraya,exotica
+7870,Murraya koenigii,Murraya,koenigii
+7872,French plantain,Musa,paradisiaca
+7873,bungeltuu,Musa,coccinea
+7874,tama,Musa,nana
+7875,tuu banana,Musa,sapientum
+7876,meia,Musa,spp.
+7877,blantalos,Musa,textilis
+7878,tikap,Musa,tikap
+7879,fei banana,Musa,troglodytarum
+7880,Mussaenda frondosa,Mussaenda,frondosa
+7881,aloalo vao,Mussaenda,raiateensis
+7882,Mussaenda,Mussaenda,spp.
+7883,naio,Myoporum,sandwicense
+7884,myoporum,Myoporum,spp.
+7886,red rodwood,Myrcia,citrifolia
+7887,cieneguillo,Myrcia,deflexa
+7888,curame,Myrcia,fallax
+7889,guayabacon,Myrcia,leptoclada
+7890,ausu,Myrcia,paganii
+7891,punchberry,Myrcia,splendens
+7892,rodwood,Myrcia,spp.
+7893,twinberry,Myrcianthes,fragrans
+7894,jaboticaba,Myrciaria,cauliflora
+7895,guavaberry,Myrciaria,floribunda
+7899,"yamamomo, strawberry tree",Myrica,rubra
+7900,sweetgale,Myrica,spp.
+7902,atoneulu,Myristica,hypargyraea
+7903,adepurot,Myristica,insularis
+7904,Myristica,Myristica,spp.
+7905,cercipo,Myrospermum,frutescens
+7906,Myristica inutilis,Myristica,inutilis
+7907,balsam of Tolu,Myroxylon,balsamum
+7910,forest colicwood,Myrsine,alyxifolia
+7911,leathery colicwood,Myrsine,coriacea
+7912,Myrsine cubana,Myrsine,cubana
+7913,summit colicwood,Myrsine,degeneri
+7914,mountain colicwood,Myrsine,emarginata
+7915,streambank colicwood,Myrsine,fernseei
+7916,Koolau Range colicwood,Myrsine,fosbergii
+7918,Wahiawa Bog colicwood,Myrsine,helleri
+7919,Kauai colicwood,Myrsine,kauaiensis
+7920,Kokee colicwood,Myrsine,knudsenii
+7921,Lanai colicwood,Myrsine,lanaiensis
+7922,kolea lau nui,Myrsine,lessertiana
+7923,Hanapepe River colicwood,Myrsine,mezii
+7924,swamp colicwood,Myrsine,petiolata
+7925,Molokai colicwood,Myrsine,pukooensis
+7926,kokea lau lii,Myrsine,sandwicensis
+7927,colicwood,Myrsine,spp.
+7928,Mt. Kahili colicwood,Myrsine,wawraea
+7929,Myrsine palauensis,Myrsine,palauensis
+7932,Nectandra coriacea,Nectandra,coriacea
+7933,shinglewood,Nectandra,hihua
+7934,Nectandra krugii,Nectandra,krugii
+7935,Nectandra membranacea,Nectandra,membranacea
+7936,Nectandra patens,Nectandra,patens
+7939,Nectandra turbacensis,Nectandra,turbacensis
+7940,saltwood,Neea,buxifolia
+7942,fao,Neisosperma,oppositifolia
+7944,kadam,Neolamarckia,cadamba
+7946,aquilon,Neolaugeria,resinosa
+7948,afa,Neonauclea,forsteri
+7952,Rambutan,Nephelium,lappaceum
+7953,pulasan,Nephelium,ramboutan-ake
+7954,maaloa,Neraudia,melastomifolia
+7956,oleander,Nerium,oleander
+7958,keahi,Nesoluma,polynesicum
+7960,Hawaii olive,Nestegis,sandwicensis
+7961,nestegis,Nestegis,spp.
+7962,"kalm, aralm",Neuburgia,celebica
+7964,tree tobacco,Nicotiana,glauca
+7965,tobacco,Nicotiana,spp.
+7966,smallflower aiea,Nothocestrum,breviflorum
+7967,broadleaf aiea,Nothocestrum,latifolium
+7968,longleaf aiea,Nothocestrum,longifolium
+7969,Oahu aiea,Nothocestrum,peltatum
+7970,aiea,Nothocestrum,spp.
+7971,kaala rockwort,Nototrichium,humile
+7972,Hawaii rockwort,Nototrichium,sandwicense
+7974,"toechel, teuechel",Nypa,fruticans
+7976,African bird's-eye bush,Ochna,mossambicensis
+7977,ochna,Ochna,spp.
+7978,Thomas birds-eye bush,Ochna,thomasiana
+7980,Ochroma pyramidale,Ochroma,pyramidale
+7982,holei,Ochrosia,compta
+7983,island yellowwood,Ochrosia,haleakalae
+7984,Kauai yellowwood,Ochrosia,kauaiensis
+7985,Hawaii yellowwood,Ochrosia,kilaueaensis
+7986,yellowwood,Ochrosia,spp.
+7987,langiti,Ochrosia,mariannensis
+7990,laurel espada,Ocotea,floribunda
+7991,black sweetwood,Ocotea,foeniculacea
+7994,loblolly sweetwood,Ocotea,leucoxylon
+7996,nemoca,Ocotea,moschata
+7997,laurel sassafras,Ocotea,nemodaphne
+7999,laurel de paloma,Ocotea,portoricensis
+8000,oleandra fern,Oleandra,neriiformis
+8001,nemoca cimarrona,Ocotea,spathulata
+8003,Wright's laurel canelon,Ocotea,wrightii
+8004,olive,Olea,europaea
+8007,olive,Olea,spp.
+8008,fanuamamala,Homalanthus,acuminatus
+8009,fanuamamala,Homalanthus,nutans
+8010,Homalanthus,Homalanthus,spp.
+8011,Ophiorrhiza palauensis,Ophiorrhiza,palauensis
+8013,cochineal nopal cactus,Opuntia,cochenillifera
+8014,tuna cactus,Opuntia,ficus-indica
+8015,common pricklypear,Opuntia,monacantha
+8018,pricklypear,Opuntia,spp.
+8019,"amansis, edebsungelked, necklace bead tree",Ormosia,calavensis
+8020,peronia,Ormosia,krugii
+8022,kesiamel,Osmoxylon,oliveri
+8023,kesiamel,Osmoxylon,pachyphyllum
+8024,Osmoxylon,Osmoxylon,spp.
+8027,pincho palo de rosa,Ottoschulzia,rhodoxylon
+8029,chicharron amarillo,Ouratea,ilicifolia
+8030,abey amarillo,Ouratea,littoralis
+8032,guanabanilla,Ouratea,striata
+8033,blacklancewood,Oxandra,lanceolata
+8034,haya,Oxandra,laurifolia
+8036,"miich era ngebard, guiana chestnut",Pachira,aquatica
+8037,wild chestnut,Pachira,insignis
+8044,gasu,Palaquium,stehlinii
+8045,tafetan,Palicourea,alpina
+8047,red cappel,Palicourea,crocea
+8049,Palicourea croceoides,Palicourea,croceoides
+8051,showy cappel,Palicourea,guianensis
+8053,Pandanus japensis,Pandanus,japensis
+8054,chertochet,Pandanus,aimiriikensis
+8055,matal,Pandanus,cominsii
+8056,ongor,Pandanus,compressus
+8057,silaue,Pandanus,cylindricus
+8058,kienpel,Pandanus,dilatatus
+8059,ongor,Pandanus,divergens
+8060,pahong,Pandanus,dubius
+8061,ongor,Pandanus,duriocarpus
+8062,moak,Pandanus,enchabiensis
+8063,hara,Pandanus,fischerianus
+8064,aggag,Pandanus,fragrans
+8065,nenketak,Pandanus,hosinoi
+8066,pacheren,Pandanus,jaluitensis
+8067,buuk,Pandanus,kanehirae
+8068,siu,Pandanus,korrensis
+8069,lakatwa,Pandanus,lakatwa
+8070,"erwan, jonmouia",Pandanus,laticanaliculatus
+8071,"intekul, pasyure",Pandanus,macrocephalus
+8072,"ongor, ertochet",Pandanus,macrojeanneretia
+8073,menne,Pandanus,menne
+8074,Palaquium karrak,Palaquium,karrak
+8075,Pandanus odontoides,Pandanus,odontoides
+8076,"ongor, ertochet",Pandanus,palawensis
+8077,peet,Pandanus,patina
+8078,ongor,Pandanus,peliliuensis
+8079,"alwan, kipal, taip",Pandanus,ponapensis
+8080,"deipw, jomineia",Pandanus,pulposus
+8081,pathaplip,Pandanus,rectangulatus
+8082,fasa,Pandanus,reineckei
+8083,magojokojok,Pandanus,rotundatus
+8084,screwpine,Pandanus,spp.
+8085,Tahitian screwpine,Pandanus,tectorius
+8086,kiparenwel,Pandanus,tolotomensis
+8087,mojel,Pandanus,trukensis
+8088,common screwpine,Pandanus,utilis
+8090,berrakelongor,Pandanus,variegatus
+8091,rauel,Pangium,edule
+8092,"lonlin, lajokorer",Pandanus,obliquus
+8099,scratchthroat,Parathesis,crenulata
+8103,sea,Parinari,insularum
+8104,ais,Parinari,laurina
+8105,Parinari,Parinari,spp.
+8106,parkia,Parkia,spp.
+8107,Parkia korom,Parkia,korom
+8108,kmekumer,Parkia,parvifoliola
+8110,Parkia timoriana,Parkia,timoriana
+8111,Jerusalem thorn,Parkinsonia,aculeata
+8112,paloverde,Parkinsonia,spp.
+8113,cuachilote,Parmentiera,aculeata
+8114,candle tree,Parmentiera,cereifera
+8115,Texas paloverde,Parkinsonia,texana
+8121,Peltophorum pterocarpum,Peltophorum,pterocarpum
+8123,ngis,Pemphis,acidula
+8125,butter tree,Pentadesma,butyracea
+8127,jiqi,Pera,bumeliifolia
+8129,Pericopsis mooniana,Pericopsis,mooniana
+8131,olomea,Perrottetia,sandwicensis
+8134,canela,Persea,krugii
+8138,aquacatillo,Persea,urbaniana
+8141,bastard stopper,Petitia,domingensis
+8143,aquilon prieto,Phialanthus,grandifolius
+8144,candlewood,Phialanthus,myrtilloides
+8146,Phaleria nisidai,Phaleria,nisidai
+8150,pygmy date palm,Phoenix,roebelenii
+8151,Canary Island date palm,Phoenix,canariensis
+8152,date palm,Phoenix,dactylifera
+8153,date palm,Phoenix,spp.
+8154,date palm,Phoenix,sylvestris
+8155,Chinese  photinia,Photinia,davidiana
+8156,Fraser's photinia,Photinia,xfraseri
+8157,Tahitian gooseberry tree,Phyllanthus,acidus
+8159,pamakani mahu,Phyllanthus,distichus
+8160,gamo de costa,Phyllanthus,juglandifolius
+8162,Phyllanthus orbicularis,Phyllanthus,orbicularis
+8164,Florida bitterbush,Picramnia,pentandra
+8167,bitterwood,Picrasma,excelsa
+8169,fustic,Pictetia,aculeata
+8171,aceitillo,Pilocarpus,racemosus
+8173,Royen's tree cactus,Pilosocereus,royenii
+8175,allspice,Pimenta,dioica
+8177,bayrumtree,Pimenta,racemosa
+8178,bayrumtree,Pimenta,racemosa
+8180,Pimenta,Pimenta,spp.
+8181,"chebouch, demailei",Pinanga,insignis
+8183,Caribbean pine,Pinus,caribaea
+8184,Chinese red pine,Pinus,massoniana
+8185,Merkus pine,Pinus,merkusii
+8186,ocote chino,Pinus,oocarpa
+8187,Mexican weeping pine,Pinus,patula
+8188,maritime pine,Pinus,pinaster
+8189,Japanese red pine,Pinus,densiflora
+8190,higuillo de hoja menuda,Piper,aduncum
+8191,higuillo de limon,Piper,amalago
+8192,moth pepper,Piper,blattarum
+8193,Guyanese pepper,Piper,glabrescens
+8194,Jamaican pepper,Piper,hispidum
+8195,Caracas pepper,Piper,jacquemontianum
+8196,marigold pepper,Piper,marginatum
+8197,five-needle pine,Pinus,parviflora
+8198,Japansese Black pine,Pinus,thunbergii
+8199,spanish elder,Piper,swartzianum
+8200,Bunge's pine,Pinus,bungeana
+8201,Canary Island pine,Pinus,canariensis
+8202,aleppo pine,Pinus,halepensis
+8203,Italian stone pine,Pinus,pinea
+8205,Waimea pipturus,Pipturus,albidus
+8206,soga,Pipturus,argenteus
+8207,pipturus,Pipturus,spp.
+8208,stinkwood,Piscidia,carthagenensis
+8210,piscidia,Piscidia,spp.
+8211,corcho bobo,Pisonia,albida
+8212,Australasian catchbirdtree,Pisonia,brunoniana
+8213,grand devils-claws,Pisonia,grandis
+8214,aulu,Pisonia,sandwicensis
+8215,catchbirdtree,Pisonia,spp.
+8216,water mampoo,Pisonia,subcordata
+8217,umbrella catchbirdtree,Pisonia,umbellifera
+8218,Kauai catchbirdtree,Pisonia,wagneriana
+8219,Chinese pistache,Pistacia,chinensis
+8220,monkeypod,Pithecellobium,dulce
+8222,Japanese cheesewood,Pittosporum,tobira
+8223,catclaw blackbead,Pithecellobium,unguis-cati
+8224,"Mona cheesewood, Pittosporum",Pittosporum,monae
+8225,kamal,Pittosporum,ferrugineum
+8226,Hawaii poisonberry tree,Pittosporum,argentifolium
+8227,hoawa,Pittosporum,confertiflorum
+8228,Waianae Range cheesewood,Pittosporum,flocculosum
+8229,Waialeale cheesewood,Pittosporum,gayanum
+8230,Koolau Range cheesewood,Pittosporum,glabrum
+8231,hoawa,Pittosporum,halophilum
+8232,Hawaii cheesewood,Pittosporum,hawaiiense
+8233,Kona cheesewood,Pittosporum,hosmeri
+8234,Kauai cheesewood,Pittosporum,kauaiense
+8235,royal cheesewood,Pittosporum,napaliense
+8236,Taiwanese cheesewood,Pittosporum,pentandrum
+8238,cheesewood,Pittosporum,spp.
+8239,cream cheesewood,Pittosporum,terminalioides
+8240,Australian cheesewood,Pittosporum,undulatum
+8241,cape cheesewood,Pittosporum,viridiflorum
+8242,alaa,Planchonella,garberi
+8243,alaa,Planchonella,grayana
+8244,alaa,Planchonella,linggensis
+8246,mamalava,Planchonella,samoensis
+8247,Planchonella,Planchonella,spp.
+8248,mamalava,Planchonella,torricellensis
+8249,Oriental arborvitae,Platycladus,orientalis
+8250,Hawaii pilo kea,Platydesma,remyi
+8251,Maui pilo kea,Platydesma,spathulata
+8252,platydesma,Platydesma,spp.
+8253,London planetree,Platanus,hybrida
+8254,Oriental planetree,Platanus,orientalis
+8255,chupa gallo,Pleodendron,macranthum
+8256,Mexican sycamore,Platanus,mexicana
+8257,golden hala pepe,Pleomele,aurea
+8258,Maui hala pepe,Pleomele,auwahiensis
+8259,Lanai hala pepe,Pleomele,fernaldii
+8260,Waianae Range hala pepe,Pleomele,forbesii
+8261,royal hala pepe,Pleomele,halapepe
+8262,Hawaii hala pepe,Pleomele,hawaiiensis
+8263,hala pepe,Pleomele,spp.
+8266,nosegaytree,Plumeria,alba
+8268,Singapore graveyard flower,Plumeria,obtusa
+8269,Plumeria obtusa,Plumeria,obtusa
+8271,templetree,Plumeria,rubra
+8272,Plumeria,Plumeria,spp.
+8273,yucca plum pine,Podocarpus,coriaceus
+8274,yew plum pine,Podocarpus,macrophyllus
+8275,Poitea florida,Poitea,florida
+8276,Poitea punicea,Poitea,punicea
+8279,violet tree,Polygala,cowellii
+8280,crevajosa,Polygala,penaea
+8283,bungaruau,Polyscias,grandifolia
+8284,geranium aralia,Polyscias,guilfoylei
+8285,Polyscias macgillivrayi,Polyscias,macgillivrayi
+8286,bngei,Polyscias,nodosa
+8287,tagitagi,Polyscias,samoensis
+8288,shield aralia,Polyscias,scutellaria
+8289,Polyscias,Polyscias,spp.
+8290,tava,Pometia,pinnata
+8292,kattai,Ponapea,hosinoi
+8293,Ponapea ledermanniana,Ponapea,ledermanniana
+8294,Ponapea,Ponapea,spp.
+8295,kisaks,Pongamia,pinnata
+8296,hardy orange,Poncirus,trifoliata
+8297,Abiu,Pouteria,caimito
+8298,"elangel, chelangel",Pouteria,calcarea
+8299,eggfruit,Pouteria,campechiana
+8300,cocuyo,Pouteria,dictyoneura
+8301,redmammee,Pouteria,hotteana
+8302,bullytree,Pouteria,multiflora
+8303,lalahag,Pouteria,obovata
+8304,alaa,Pouteria,sandwicensis
+8305,mammee sapote,Pouteria,sapota
+8306,pouteria,Pouteria,spp.
+8307,ahgao,Premna,obtusifolia
+8308,Premna pubescens,Premna,pubescens
+8309,aloalo,Premna,serratifolia
+8310,Premna,Premna,spp.
+8311,Prestoea acuminata,Prestoea,acuminata
+8313,Carolina poplar,Populus,x canadensis
+8314,gray poplar,Populus,x canescens
+8315,Hawaii pritchardia,Pritchardia,affinis
+8316,Maui pritchardia,Pritchardia,arecina
+8317,Kilauea pritchardia,Pritchardia,beccariana
+8318,Mt. Eke pritchardia,Pritchardia,forbesiana
+8319,Makaleha pritchardia,Pritchardia,hardyi
+8320,loulu lelo,Pritchardia,hillebrandii
+8321,Waianae Range pritchardia,Pritchardia,kaalae
+8322,Lanai pritchardia,Pritchardia,lanaiensis
+8323,loulu,Pritchardia,lanigera
+8324,Limahuli Valley pritchardia,Pritchardia,limahuliensis
+8325,Molokai pritchardia,Pritchardia,lowreyana
+8326,Koolau Range pritchardia,Pritchardia,martii
+8327,Alakai Swamp pritchardia,Pritchardia,minor
+8328,Kamalo pritchardia,Pritchardia,munroi
+8329,fan palm,Pritchardia,pacifica
+8330,Waioli Valley pritchardia,Pritchardia,perlmanii
+8331,Nihoa pritchardia,Pritchardia,remota
+8336,lands of papa pritchardia,Pritchardia,schattaueri
+8337,pritchardia,Pritchardia,spp.
+8338,stickybud pritchardia,Pritchardia,viscosa
+8339,poleline pritchardia,Pritchardia,waialealeana
+8340,guasimilla,Prockia,crucis
+8341,fua lole,Procris,pedunculata
+8342,jand,Prosopis,cineraria
+8343,mesquite,Prosopis,juliflora
+8344,kiawe,Prosopis,pallida
+8345,Carolina laurelcherry,Prunus,caroliniana
+8346,West Indian cherry,Prunus,myrtifolia
+8347,western cherry laurel,Prunus,occidentalis
+8348,cherry plum,Prunus,cerasifera
+8349,Prunus serotina,Prunus,serotina
+8350,apricot,Prunus,armeniaca
+8351,sweet almond,Prunus,dulcis
+8352,false breadnut,Pseudolmedia,spuria
+8353,Florida cherry palm,Pseudophoenix,sargentii
+8354,mountain guava,Psidium,amplexicaule
+8355,strawberry guava,Psidium,cattleianum
+8356,guava,Psidium,guajava
+8357,Yoshino flowering cherry,Prunus,x yedoensis
+8358,Psidium longipes,Psidium,longipes
+8359,Sintenis' guava,Psidium,sintenisii
+8360,Japanese plum,Prunus,salicina
+8361,cachimbo-cumun,Psychotria,berteriana
+8362,palo de cachimbo,Psychotria,brachiata
+8363,Browne's wild coffee,Psychotria,brownei
+8364,Psychotria domingensis,Psychotria,domingensis
+8365,Koolau Range wild coffee,Psychotria,fauriei
+8366,largeflower wild coffee,Psychotria,grandiflora
+8367,cachimbo grande,Psychotria,grandis
+8368,chimei,Psychotria,carolinensis
+8369,Kauai wild coffee,Psychotria,greenwelliae
+8370,Waianae Range wild coffee,Psychotria,hathewayi
+8373,kopikoula,Psychotria,hawaiiensis
+8377,woodland wild coffee,Psychotria,hexandra
+8382,Oahu wild coffee,Psychotria,hexandra
+8386,milolii kopiwai,Psychotria,hobdyi
+8387,matalafi,Psychotria,insularum
+8388,kopiko kea,Psychotria,kaduana
+8389,cachimbo de gato,Psychotria,maleolens
+8390,aplohkateng,Psychotria,mariana
+8391,cachimbo de maricao,Psychotria,maricaensis
+8392,forest wild coffee,Psychotria,mariniana
+8393,opiko,Psychotria,mauiensis
+8394,thicket wild coffee,Psychotria,microdon
+8395,floating balsamo,Psychotria,nutans
+8397,hairy wild coffee,Psychotria,pubescens
+8398,Psychotria rhombocarpa,Psychotria,rhombocarpa
+8399,Psychotria rotensis,Psychotria,rotensis
+8400,wild coffee,Psychotria,spp.
+8401,leatherleaf wild coffee,Psychotria,wawrae
+8402,alahee,Psydrax,odorata
+8403,common hoptree,Ptelea,trifoliata
+8404,Kauai pteralyxia,Pteralyxia,kauaiensis
+8405,ridged pteralyxia,Pteralyxia,macrocarpa
+8406,pteralyxia,Pteralyxia,spp.
+8407,pterocarpus,Pterocarpus,indicus
+8408,Burma padauk,Pterocarpus,macrocarpus
+8409,Malabar kino,Pterocarpus,marsupium
+8410,dragonsblood tree,Pterocarpus,officinalis
+8411,Chinese wingnut,Pterocarya,stenoptera
+8412,Ptychococcus ledermannianus,Ptychococcus,ledermannianus
+8413,Psychotria cheathamiana,Psychotria,cheathamiana
+8415,Macarthur feather palm,Ptychosperma,macarthuri
+8416,chesdbuuch,Ptychosperma,palauense
+8418,Ptychosperma,Ptychosperma,spp.
+8419,pomegranate,Punica,granatum
+8420,pear spp.,Pyrus,spp.
+8421,Callery pear,Pyrus,calleryana
+8422,swizzlestick tree,Quararibea,turbinata
+8423,common pear,Pyrus,communis
+8424,cork oak,Quercus,suber
+8425,white indigoberry,Randia,aculeata
+8426,Chinese pear,Pyrus,pyrifolia
+8427,sawtooth oak,Quercus,acutissima
+8429,bastard white oak,Quercus,austrina
+8430,togo vao,Rapanea,myricifolia
+8431,poison devils-pepper,Rauvolfia,vomitoria
+8432,omechidel,Rauvolfia,insularis
+8433,palo amargo,Rauvolfia,nitida
+8434,devils-pepper,Rauvolfia,sandwicensis
+8435,devils-pepper,Rauvolfia,spp.
+8436,traveler's tree,Ravenala,madagascariensis
+8437,European turkey oak,Quercus,cerris
+8438,Texas live oak,Quercus,fusiformis
+8439,tortugo prieto,Ravenia,urbanii
+8440,vi vao,Reynoldsia,lanutoensis
+8441,sand live oak,Quercus,geminata
+8442,ohe makai,Reynoldsia,sandwicensis
+8443,reynoldsia,Reynoldsia,spp.
+8444,guama,Reynosia,guama
+8445,Krug's darlingplum,Reynosia,krugii
+8447,sloe,Reynosia,uncinata
+8449,Darlington oak,Quercus,hemisphaerica
+8450,holly oak,Quercus,ilex
+8453,pungent oak,Quercus,pungens
+8455,lateleaf oak,Quercus,tardifolia
+8456,Rheeda,Rheedia,edulis
+8457,Toumey oak,Quercus,toumeyi
+8458,mangle,Rhizophora,apiculata
+8459,Sonoran scrub oak,Quercus,turbinella
+8460,Rhizophora lamarckii,Rhizophora,lamarckii
+8461,sandpaper oak,Quercus,vaseyana
+8462,mangle hembra,Rhizophora,mucronata
+8463,mangrove,Rhizophora,spp.
+8464,Rhizophora stylosa,Rhizophora,stylosa
+8465,rose myrtle,Rhodomyrtus,spp.
+8466,Rhodomyrtus tomentosus,Rhodomyrtus,tomentosa
+8467,neneleau,Rhus,sandwicensis
+8468,sumac,Rhus,spp.
+8469,tavai,Rhus,taitensis
+8470,African sumac,Rhus,lancea
+8471,Catawba rosebay,Rhododendron,catawbiense
+8472,castorbean,Ricinus,communis
+8473,ricinus,Ricinus,spp.
+8474,Rinorea carolinensis,Rinorea,carolinensis
+8475,winged sumac,Rhus,copallinum
+8476,greenheart ebony,Rochefortia,acanthophora
+8477,smooth sumac,Rhus,glabra
+8478,Rochefortia spinosa,Rochefortia,spinosa
+8479,prairie sumac,Rhus,lanceolata
+8480,Rollinia,Rollinia,deliciosa
+8481,wild sugar apple,Rollinia,mucosa
+8483,cordobancillo,Rondeletia,inermis
+8484,cordobancillo peludo,Rondeletia,pilosa
+8485,Juan Tomas,Rondeletia,portoricensis
+8486,bristly locust,Robinia,hispida
+8487,bastard oak,Quercus,sinuata
+8489,Puerto Rico royal palm,Roystonea,borinquena
+8490,Roystonea elata,Roystonea,elata
+8491,royal palm,Roystonea,oleracea
+8492,robust oak,Quercus,robusta
+8494,Puerto Rico palmetto,Sabal,causiarum
+8495,dwarf palmetto,Sabal,minor
+8499,white hogwood,Sagraea,umbrosa
+8501,Salix humboldtiana,Salix,humboldtiana
+8502,pussy willow,Salix,discolor
+8503,"etkeam, cheskeam",Samadera,indica
+8504,arroyo willow,Salix,lasiolepis
+8505,raintree,Samanea,saman
+8506,raintree,Samanea,spp.
+8507,Sitka willow,Salix,sitchensis
+8508,Goodding's willow,Salix,gooddingii
+8509,common elderberry,Sambucus,nigra
+8510,raintree,Sambucus,spp.
+8511,Graves oak,Quercus,gravesii
+8512,Mexican white oak,Quercus,polymorpha
+8513,Buckley oak,Quercus,buckleyi
+8514,Lacey oak,Quercus,laceyi
+8515,"santol, kechapi",Sandoricum,koetjape
+8516,coastal sandalwood,Santalum,ellipticum
+8517,forest sandalwood,Santalum,freycinetianum
+8518,sandalwood,Santalum,album
+8519,yellow willow,Salix,lutea
+8521,Haleakala sandalwood,Santalum,haleakalae
+8522,mountain sandalwood,Santalum,paniculatum
+8523,diamondleaf willow,Salix,planifolia
+8524,silky willow,Salix,sericea
+8525,willowleaf sandalwood,Santalum,salicifolium
+8526,sandalwood,Santalum,spp.
+8527,European black elderberry,Sambucus,nigra
+8528,lonomea,Sapindus,oahuense
+8529,wingleaf soapberry,Sapindus,saponaria
+8531,soapberry,Sapindus,spp.
+8532,vitiensis,Sapindus,vitiensis
+8533,gumtree,Sapium,glandulosum
+8534,maskerekur,Sapium,indicum
+8535,hinchahuevos,Sapium,laurifolium
+8536,milktree,Sapium,laurocerasus
+8544,uunu,Sarcopygme,pacifica
+8546,amansa guapo,Savia,sessiliflora
+8548,"Scaevola, naupaka",Scaevola,cerasifolia
+8549,naupaka kuahiwi,Scaevola,chamissoniana
+8550,mountain naupaka,Scaevola,gaudichaudiana
+8551,forest naupaka,Scaevola,procera
+8552,naupaka,Scaevola,spp.
+8553,Schefflera kraemeri,Schefflera,kraemeri
+8554,Florida boxwood,Schaefferia,frutescens
+8555,schaefferia,Schaefferia,spp.
+8556,guayabilla,Samyda,dodecandra
+8557,yuquilla,Schefflera,gleasonii
+8558,matchwood,Schefflera,morototonii
+8559,samoensis,Schefflera,samoensis
+8560,Toitoi,Scaevola,taccada
+8561,Peruvian peppertree,Schinus,molle
+8563,Brazilian peppertree,Schinus,terebinthifolius
+8565,Brazilian firetree,Schizolobium,parahybum
+8567,lac tree,Schleichera,oleosa
+8571,arana,Schoepfia,arenaria
+8572,white beefwood,Schoepfia,obovata
+8573,gulf graytwig,Schoepfia,schreberi
+8577,kuat,Scyphiphora,hydrophyllacea
+8583,poumuli,Securinega,flexuosa
+8585,poison tree,Semecarpus,kraemeri
+8586,tonget,Semecarpus,venenosa
+8588,emperor's candlesticks,Senna,alata
+8589,flor de San Jose,Senna,atomaria
+8590,Gaudichauds senna,Senna,gaudichaudii
+8591,false sicklepod,Senna,multijuga
+8592,valamuerto,Senna,pendula
+8594,retama prieta,Senna,polyphylla
+8595,senna,Senna,septemtrionalis
+8596,Siamese cassia,Senna,siamea
+8597,casia amarilla,Senna,spectabilis
+8598,senna,Senna,spp.
+8599,Senna sulfurea,Senna,sulfurea
+8600,glossy shower,Senna,surattensis
+8601,ukall,Serianthes,kanehirae
+8603,"hayun lago, trongkon guafi",Serianthes,nelsonii
+8605,vegetable hummingbird,Sesbania,grandiflora
+8606,Egyptian riverhemp,Sesbania,sesban
+8607,riverhemp,Sesbania,spp.
+8608,Shirakiopsis indica,Shirakiopsis,indica
+8609,yellow llima,Sida,fallax
+8610,fanpetals,Sida,spp.
+8611,espejuelo,Sideroxylon,cubense
+8612,saffron plum,Sideroxylon,celastrinum
+8613,breakbill,Sideroxylon,obovatum
+8614,Puerto Rico bully,Sideroxylon,portoricense
+8615,buckthorn bully,Sideroxylon,lycioides
+8616,tough bully,Sideroxylon,tenax
+8617,simarouba,Simarouba,spp.
+8618,Tamaulipan Coma,Sideroxylon,laetevirens
+8619,aceitillo falso,Simarouba,tulae
+8620,hoja menuda,Siphoneugena,densiflora
+8622,bullwood,Sloanea,spp.
+8623,motillo,Sloanea,amygdalina
+8624,bullwood,Sloanea,berteriana
+8626,Solanum bahamense,Solanum,bahamense
+8627,mullein nightshade,Solanum,donianum
+8628,American black nightshade,Solanum,americanum
+8629,potatotree,Solanum,erianthum
+8631,earleaf nightshade,Solanum,mauritianum
+8632,forest nightshade,Solanum,nudum
+8633,cakalaka berry,Solanum,polygamum
+8634,tabacon aspero,Solanum,rugosum
+8635,nightshade,Solanum,spp.
+8636,turkey berry,Solanum,torvum
+8639,mangrove,Sonneratia,alba
+8641,mamani,Sophora,chrysophylla
+8642,necklacepod,Sophora,spp.
+8643,silver bush,Sophora,tomentosa
+8644,African tuliptree,Spathodea,campanulata
+8645,spathodea,Spathodea,spp.
+8646,Spiraeanthemum samoense,Spiraeanthemum,samoense
+8647,Japanese pagoda tree,Styphnolobium,japonicum
+8648,mescal bean,Sophora,secundiflora
+8649,Spondias dulcis,Spondias,dulcis
+8650,yellow mombin,Spondias,mombin
+8651,Anacahuita Texas Olive,Cordia,boissieri
+8652,purple mombin,Spondias,purpurea
+8653,Spondias,Spondias,spp.
+8654,cobana negra,Stahlia,monosperma
+8655,ngmui,Stemonurus,ammui
+8656,titmel,Spondias,pinnata
+8657,false spiraea,Sorbaria,spp.
+8658,Greene's mountain ash,Sorbus,scopulina
+8659,western mountain ash,Sorbus,sitchensis
+8660,maras,Soulamea,amara
+8664,Panama tree,Sterculia,apetala
+8665,fanaio,Sterculia,fanaiho
+8666,hazel sterculia,Sterculia,foetida
+8667,Sterculia palauensis,Sterculia,palauensis
+8668,silky camellia,Stewartia,malacodendron
+8669,anthropophagorum,Streblus,anthropophagorum
+8670,Hawaii roughbush,Streblus,pendulinus
+8671,streblus,Streblus,spp.
+8672,mountain camellia,Stewartia,ovata
+8673,American snowbell,Styrax,americanus
+8674,palo de jazmin,Styrax,portoricensis
+8675,Stewartia,Stewartia,koreana
+8676,bay cedar,Suriana,maritima
+8678,mahogany,Swietenia,spp.
+8679,Honduras mahogany,Swietenia,macrophylla
+8683,nispero cimarron,Symplocos,lanata
+8684,Martinique sweetleaf,Symplocos,martinicensis
+8685,aceitunilla,Symplocos,micrantha
+8686,queen palm,Syagrus,romanzoffiana
+8687,"chebtui, ebtui",Symplocos,racemosa
+8689,turpentine tree,Syncarpia,glomulifera
+8690,turpentine tree,Syncarpia,spp.
+8691,Miracle Berry,Synsepalum,dulcificum
+8693,common lilac,Syringa,vulgaris
+8694,watery roseapple,Syzygium,aqueum
+8695,asi,Syzygium,brevifolium
+8696,popona,Syzygium,carolinense
+8697,asi vai,Syzygium,clusiifolium
+8698,sea apple,Syzygium,grande
+8699,asi vai,Syzygium,dealatum
+8700,asi,Syzygium,inophylloides
+8701,Syzygium jambos,Syzygium,jambos
+8702,Malaysian apple,Syzygium,malaccense
+8703,popona,Syzygium,richii
+8704,nonu vao,Syzygium,samarangense
+8705,fena vao,Syzygium,samoense
+8706,ohia ha,Syzygium,sandwicense
+8707,brush cherry,Syzygium,paniculatum
+8708,syzygium,Syzygium,spp.
+8709,roble amarillo,Tabebuia,chrysantha
+8710,primavera,Tabebuia,donnell-smithii
+8712,roble cimarron,Tabebuia,haemantha
+8713,white cedar,Tabebuia,heterophylla
+8714,pink tabebuia,Tabebuia,pallida
+8715,roble de sierra,Tabebuia,rigida
+8716,pink trumpet-tree,Tabebuia,rosea
+8717,roble colorado,Tabebuia,schumanniana
+8718,trumpet-tree,Tabebuia,spp.
+8719,Tabernaemontana aurantiaca,Tabernaemontana,aurantiaca
+8720,milkwood,Tabernaemontana,citrifolia
+8722,Pulu,Tabernaemontana,pandacaqui
+8723,Tabernaemontana rotensis,Tabernaemontana,rotensis
+8727,Athel tamarisk,Tamarix,aphylla
+8728,five-stamen tamarisk,Tamarix,chinensis
+8729,saltcedar,Tamarix,ramosissima
+8737,manunu,Tarenna,sambucina
+8738,English yew,Taxus,baccata
+8739,Japanese yew,Taxus,cuspidata
+8741,chestnutleaf trumpetbush,Tecoma,castanifolia
+8743,yellow trumpetbush,Tecoma,stans
+8744,teak,Tectona,grandis
+8745,tectona,Tectona,spp.
+8748,tropical almond,Terminalia,spp.
+8749,kehma,Terminalia,carolinensis
+8750,tropical almond,Terminalia,catappa
+8751,"esemiich, chesemiich",Terminalia,crassipes
+8752,"esemiich, chesemiich",Terminalia,edulis
+8753,strand tree,Terminalia,litoralis
+8754,Ivory Coast almond,Terminalia,ivorensis
+8755,tropical almond,Terminalia,kaernbachii
+8756,East Indian almond,Terminalia,myriocarpa
+8757,Peruvian almond,Terminalia,oblonga
+8758,malili,Terminalia,richii
+8759,talie,Terminalia,samoensis
+8761,superb terminalia,Terminalia,superba
+8762,saintedwood,Ternstroemia,heptasepala
+8763,palo colorado,Ternstroemia,luquillensis
+8764,copey vera,Ternstroemia,peduncularis
+8766,mamey de cura,Ternstroemia,stahlii
+8767,el yunque colorado,Ternstroemia,subsessilis
+8768,masa,Tetragastris,balsamifera
+8770,Flynnsohe,Tetraplasandra,flynnii
+8771,Koolau Rangeohe,Tetraplasandra,gymnocarpa
+8772,Hawaii ohe,Tetraplasandra,hawaiensis
+8773,ohe ohe,Tetraplasandra,kavaiensis
+8774,ohe mauka,Tetraplasandra,oahuensis
+8775,tetraplasandra,Tetraplasandra,spp.
+8776,Mt. Waialeale ohe,Tetraplasandra,waialealae
+8777,ohe kiko ola,Tetraplasandra,waimeae
+8778,stinkingfish,Tetrazygia,angustifolia
+8779,Florida clover ash,Tetrazygia,bicolor
+8780,Puerto Rico clover ash,Tetrazygia,biflora
+8781,krekre,Tetrazygia,elaeagnoides
+8783,cenizo,Tetrazygia,urbanii
+8784,cacao,Theobroma,cacao
+8786,maga,Thespesia,grandiflora
+8787,Portia tree,Thespesia,populnea
+8788,thespesia,Thespesia,spp.
+8789,luckynut,Thevetia,peruviana
+8793,ceboruquillo,Thouinia,striata
+8794,Puerto Rico ceboruquillo,Thouinia,striata
+8799,Timonius albus,Timonius,albus
+8800,kehn,Timonius,ledermanii
+8801,tuhke duwehte kamal,Timonius,ponapensis
+8803,Brazilian glorytree,Tibouchina,granulosa
+8804,glorytree,Tibouchina,spp.
+8805,princess-flower,Tibouchina,urvilleana
+8806,Timonius corymbosus,Timonius,corymbosus
+8807,Timonius mollis,Timonius,mollis
+8808,Timonius,Timonius,spp.
+8809,Timonius subauritus,Timonius,subauritus
+8810,Timonius timon,Timonius,timon
+8811,redcedar,Toona,spp.
+8812,Australian redcedar,Toona,ciliata
+8813,littleleaf linden,Tilia,cordata
+8814,Silver linden,Tilia,tomentosa
+8816,boje,Torralbasia,cuneifolia
+8821,Chinese windmill palm,Trachycarpus,fortunei
+8822,olona,Touchardia,latifolia
+8823,touchardia,Touchardia,spp.
+8824,velvetleaf soldierbush,Tournefortia,argentea
+8825,cold withe,Tournefortia,filiflora
+8826,soldierbush,Tournefortia,spp.
+8827,magele,Trema,cannabina
+8828,Lamarck's trema,Trema,lamarckianum
+8829,Jamaican nettletree,Trema,micranthum
+8830,poison sumac,Toxicodendron,vernix
+8831,oriental trema,Trema,orientalis
+8832,trema,Trema,spp.
+8833,broomstick,Trichilia,hirta
+8834,gaita,Trichilia,pallida
+8836,bariaco,Trichilia,triacantha
+8837,Trichospermum ikutai,Trichospermum,ikutai
+8838,"elsau, oleiulakersus",Trichospermum,ledermannii
+8839,maouli,Trichospermum,richii
+8842,limeberry,Triphasia,trifolia
+8843,Triplaris spp.,Triplaris,spp.
+8844,ant tree,Triplaris,cumingiana
+8846,faia,Tristiropsis,obtusangula
+8848,white ramoon,Trophis,racemosa
+8849,Trukia carolinensis,Trukia,carolinensis
+8850,muttonwood,Turpinia,occidentalis
+8851,Chinese elm,Ulmus,parvifolia
+8852,English elm,Ulmus,procera
+8853,scratchbush,Urera,baccifera
+8854,flameberry,Urera,caracasana
+8855,ortiga,Urera,chlorocarpa
+8856,hopue,Urera,glabra
+8857,opuhe,Urera,kaalae
+8858,urera,Urera,spp.
+8859,Mexican buckeye,Ungnadia,speciosa
+8860,farkleberry,Vaccinium,arboreum
+8861,voa vanga,Vangueria,madagascariensis
+8862,Japanese elm,Ulmus,davidiana
+8863,Vavaea pauciflora,Vavaea,pauciflora
+8866,Manila palm,Veitchia,merrillii
+8868,Sterculia ponapensis,Sterculia,ponapensis
+8869,mu oil tree,Vernicia,montana
+8870,vernicia,Vernicia,spp.
+8871,lilac chastetree,Vitex,agnus-castus
+8872,"bars, beokel",Vitex,cofassus
+8873,higuerillo,Vitex,divaricata
+8874,smallflower chastetree,Vitex,parviflora
+8875,chastetree,Vitex,spp.
+8876,simpleleaf chastetree,Vitex,trifolia
+8877,nannyberry,Viburnum,lentago
+8878,blackhaw,Viburnum,prunifolium
+8879,rusty blackhaw,Viburnum,rufidulum
+8880,Siebold's arrowwood,Viburnum,sieboldii
+8881,Wallenia lamarckiana,Wallenia,lamarckiana
+8883,California fan palm,Washingtonia,filifera
+8884,ateate,Wedelia,biflora
+8885,Washington fan palm,Washingtonia,robusta
+8886,Weinmannia affinis,Weinmannia,affinis
+8887,bastard briziletto,Weinmannia,pinnata
+8889,alpine false ohelo,Wikstroemia,bicornuta
+8890,forest false ohelo,Wikstroemia,furcata
+8891,montane false ohelo,Wikstroemia,monticola
+8892,Oahu false ohelo,Wikstroemia,oahuensis
+8895,Hawaii false ohelo,Wikstroemia,phillyreifolia
+8896,Kohala false ohelo,Wikstroemia,pulcherrima
+8897,variableleaf false ohelo,Wikstroemia,sandwicensis
+8898,Skottsbergs false ohelo,Wikstroemia,skottsbergiana
+8899,false ohelo,Wikstroemia,spp.
+8900,hairy false ohelo,Wikstroemia,villosa
+8901,tallow wood,Ximenia,americana
+8902,dense logwood,Xylosma,congestum
+8903,lalanyog,Xylocarpus,granatum
+8904,leilei,Xylocarpus,moluccensis
+8905,Xylocarpus,Xylocarpus,spp.
+8906,mucha-gente,Xylosma,buxifolia
+8907,sawtooth logwood,Xylosma,crenata
+8908,Hawaii brushholly,Xylosma,hawaiiensis
+8909,Xylosma nelsonii,Xylosma,nelsonii
+8910,spiny logwood,Xylosma,pachyphylla
+8911,Xylosma samoensis,Xylosma,samoensis
+8912,white logwood,Xylosma,schaefferioides
+8913,Schwaneck's logwood,Xylosma,schwaneckeana
+8914,mission manzanita,Xylococcus,bicolor
+8915,xylosma,Xylosma,spp.
+8916,aloe yucca,Yucca,aloifolia
+8917,Eve's needle,Yucca,faxoniana
+8918,moundlily yucca,Yucca,gloriosa
+8919,bluestem yucca,Yucca,guatemalensis
+8923,Maricao pricklyash,Zanthoxylum,bifoliolatum
+8924,prickly yellow,Zanthoxylum,caribaeum
+8925,kawau,Zanthoxylum,dipetalum
+8928,West Indian satinwood,Zanthoxylum,flavum
+8929,Hawaii pricklyash,Zanthoxylum,hawaiiense
+8930,Kauai pricklyash,Zanthoxylum,kauaense
+8931,white pricklyash,Zanthoxylum,martinicense
+8932,yellow prickle,Zanthoxylum,monophyllum
+8933,Oahu pricklyash,Zanthoxylum,oahuense
+8934,dotted pricklyash,Zanthoxylum,punctatum
+8935,niaragato,Zanthoxylum,spinifex
+8936,pricklyash,Zanthoxylum,spp.
+8937,St. Thomas pricklyash,Zanthoxylum,thomasianum
+8938,Zapoteca portoricensis,Zapoteca,portoricensis
+8939,Indian jujube,Ziziphus,mauritiana
+8940,cacao rojo,Ziziphus,reticulata
+8941,soana,Ziziphus,rignonii
+8942,common pricklyash,Zanthoxylum,americanum
+8943,Taylor's jujube,Ziziphus,taylorii
+8944,Hercules' club,Zanthoxylum,clava-herculis
+8947,common jujube,Ziziphus,zizyphus

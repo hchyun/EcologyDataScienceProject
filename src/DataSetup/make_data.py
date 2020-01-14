@@ -5,64 +5,40 @@ import os
 import sys
 import math
 
+#Database obtained from FIA website
 database = '../fia.sqlite'
 conn = sqlite3.connect(database)
 
-sql = """SELECT plott.statecd, plott.unitcd, plott.countycd, plott.plot, lat, lon, AVG(slope), AVG(aspect), MAX(elev), cond.invyr
-         FROM forest_inventory_analysis_COND as cond JOIN forest_inventory_analysis_PLOT as plott
-         ON cond.statecd == plott.statecd AND cond.unitcd == plott.unitcd AND cond.countycd == plott.countycd AND cond.plot == plott.plot
-         WHERE slope != '' AND elev != '' AND aspect != '' GROUP BY plott.statecd, plott.unitcd, plott.countycd, plott.plot, cond.invyr"""
+sql="""SELECT plott.statecd, plott.unitcd, plott.countycd, plott.plot, lat, lon, slope, aspect, elev, CARBON_SOIL_ORG, plott.watercd, cond.PHYSCLCD, cond.invyr
+    FROM (SELECT * FROM forest_inventory_analysis_COND GROUP BY statecd, unitcd, countycd, plot, invyr) cond
+    JOIN
+    (SELECT statecd, unitcd, countycd, plot, MAX(invyr) AS invyr, lat, lon, elev, watercd FROM forest_inventory_analysis_PLOT
+    WHERE statecd < 60 GROUP BY statecd, countycd, plot) as plott
+    ON cond.statecd == plott.statecd AND cond.unitcd == plott.unitcd AND cond.countycd == plott.countycd
+    AND cond.plot == plott.plot AND cond.invyr == plott.invyr
+    WHERE slope != '' AND elev != '' AND aspect != '' AND CARBON_SOIL_ORG != '' AND plott.watercd != ''
+    AND cond.PHYSCLCD != ''
+    """
 fia_climate = pd.read_sql_query(sql, conn)
 
-#Getting all predictor values
-Neon_Domain3 = pd.read_csv("../data/domain3.csv")
-bioclim = pd.read_csv("../data/bioclim_fia.csv")
-bioclim.drop('Unnamed: 0', axis=1, inplace=True)
-
-sql = """"SELECT COUNT(Distinct tree) ,spcd, T.statecd, T.unitcd, T.countycd, T.plot, T.invyr 
-          FROM forest_inventory_analysis_TREE T 
-          JOIN (SELECT MAX(invyr) as invyr, statecd, unitcd, countycd, plot FROM forest_inventory_analysis_TREE GROUP BY statecd, unitcd, countycd, plot) S
-          ON T.invyr = S.invyr AND T.statecd = S.statecd AND T.unitcd = S.unitcd AND T.countycd = S.countycd AND T.plot = S.plot
-          GROUP BY spcd, T.statecd, T.unitcd, T.countycd, T.plot"""
+sql ="""SELECT spcq.ct, spcq.spcd, spcq.statecd, spcq.unitcd, spcq.countycd, spcq.plot, spcq.invyr FROM
+    (SELECT COUNT(*) as ct,spcd, statecd, unitcd, countycd, plot, invyr
+    FROM forest_inventory_analysis_TREE WHERE statecd < 60 and statuscd == 1
+    and subp BETWEEN 1 and 4
+    GROUP BY statecd, unitcd, countycd, plot, invyr, spcd
+    HAVING COUNT(DISTINCT subp) == 4) spcq
+    JOIN
+    (SELECT statecd, unitcd, countycd, plot, MAX(invyr) as invyr
+    FROM forest_inventory_analysis_PLOT WHERE statecd < 60
+    GROUP BY statecd, unitcd, countycd, plot) AS myrq
+    ON spcq.statecd == myrq.statecd AND spcq.unitcd == myrq.unitcd AND spcq.countycd == myrq.countycd AND myrq.plot == spcq.plot
+    AND spcq.invyr == myrq.invyr
+    """
 fia_response = pd.read_sql_query(sql, conn)
 
-sql = "SELECT COUNT(Distinct tree) ,spcd, statecd, unitcd, countycd, plot, invyr FROM forest_inventory_analysis_TREE WHERE statecd < 60 and statuscd = 1 GROUP BY spcd, statecd, unitcd, countycd, plot, invyr"
-fia_temporal = pd.read_sql(sql, conn)
 conn.close()
 
+cont_climate = format_predictors(fia_climate)
 
-def format_predictors(df, df2=None, merge=["statecd","unitcd","countycd","plot"], join_kind="left"):
-    """
-    @param 
-    df: the left data frame
-    df2: the right data frame
-    merge: the colunms to merge the data frames
-    join_kind: type of join on the two data frames (left, inner, right, outer)
-    @return 
-    final_df: a data frame that is a combination of the two data frames
-    """
-    df.columns = map(str.lower, df.columns)
-    if(df2.equals(None)):
-        #merging all of the duplicate rows
-        final_df = df.groupby(merge, as_index=False).mean()
-    else:
-        #renaming columns to lowercase
-        df2.columns = map(str.lower, df2.columns)
-        final_df = pd.merge(df, df2, on=merge, how=join_kind)
-        final_df = final_df.groupby(merge, as_index=False).mean()
-        #adding primary key for the plots
-        final_df['id_coords'] = final_df.apply(lambda row: str(int(row.statecd)) + '_' + str(int(row.unitcd)) + '_' + str(int(row.countycd)) + '_' + str(int(row[3])), axis=1)
-        #for duplicate lat and lon in the data frames dropping one of them and renaming the other
-    if "lat_x" in final_df.columns:
-        final_df.drop(["lat_y", "lon_y"], axis=1, inplace=True)
-        final_df.rename(columns={"lat_x":"lat","lon_x":"lon"},inplace=True)
-    return final_df
-
-neon_domain3 = format_predictors(Neon_Domain3, fia_climate)
-neon_climate = format_predictors(neon_domain3, bioclim)
-cont_climate = format_predictors(fia_climate,bioclim)
-
-neon_climate.to_csv('../data/neon_climate.csv', index=False)
-cont_climate.to_csv('../data/cont_climate.csv',index=False)
-fia_response.to_csv('../data/fia_response.csv',index=False)
-fia_temporal.to_csv('../data/fia_temporal.csv', index=False)
+cont_climate.to_csv('../data/climate_fia.csv',index=False)
+fia_response.to_csv('../data/response_fia.csv',index=False)
