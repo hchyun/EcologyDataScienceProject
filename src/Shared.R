@@ -10,8 +10,7 @@ neon_domains <- readOGR("NEONDomains_0/", "NEON_Domains")
 #6, 5 are lon, lat
 subscales_fia("../data/climate_fia.csv", c(6,5))
 
-daymet <- read_csv("../data/climate_daymet.csv")
-daymet_used <- daymet[,c("countycd", "unitcd","statecd","plot","daylength_3", "daylength_4","daylength_10","prec_6","prec_7","rad_8","tmax_8","tmin_1")]
+daymet_used <- read_csv("../data/climate_daymet.csv")
 
 files <- c("../data/climate_fia.csv", "../data/response_fia.csv")
 data_eco <- load_data(files)

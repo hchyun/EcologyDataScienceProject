@@ -1,7 +1,9 @@
 # EcologyDataScienceProject
 
 ## Overview
-The goal of this project is to apply a joint species distribution model to predict population of different tree species in the United States. This project utilizes the FIA data for the tree species information and Daymet data for the climate information. This approach of species distribution modeling is different from others as it considers interspecies relationships when modeling the species distribution. The model is applied to different NEON Domains (Figure 1) to investigate interspecies relationships in different climates and response to different variables in different climates. Link to our paper: https://arxiv.org/pdf/1910.04932.pdf
+The goal of this project is to apply a joint species distribution model to predict population of different tree species in the United States. This project utilizes the FIA data for the tree species information and Daymet data for the climate information. This approach of species distribution modeling is different from others as it considers interspecies relationships when modeling the species distribution. The model is applied to different NEON Domains (Figure 1) to investigate interspecies relationships in different climates and response to different variables in different climates.
+
+ Link to our paper: https://arxiv.org/pdf/1910.04932.pdf
 
 
 ![alt text](https://www.neonscience.org/sites/default/files/styles/fullwidth/public/image-content-images/2016_NEONBattelleDomainOverview-web.png?itok=WfKIIINK)
