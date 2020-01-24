@@ -192,8 +192,16 @@ evaluate_model <- function(x_, y_, model){
   return(list('eval'=eval,'pred'=prediction))
 }
 
+get_climate <- function(lat, lon, x_mat=cont_pred){
+  dist <- sqrt((x_mat$lat - lat)^2 + (x_mat$lon - lon)^2)
+  dist_sorted <- sort(dist)
+  index <- which(dist %in% dist_sorted[1:16])
+  geo_info <- x_mat[index, !colnames(x_mat) %in% c("invyr", "id_coords")]
+  return(geo_info)
+}
+
 #find row num from x_mat then return row of y_mat
-find_abundance <- function(lat, lon, y_mat, x_mat){
+get_abundance <- function(lat, lon, y_mat=y_fia, x_mat=cont_x){
   #Finding minimum distance
   #Returning row
   #sort then get first 16 then aggregate these
@@ -213,7 +221,7 @@ find_abundance <- function(lat, lon, y_mat, x_mat){
   return(grouped_mat)
 }
 
-find_covariance <- function(lat, lon, n_domains=neon_domains){
+get_covariance <- function(lat, lon, n_domains=neon_domains){
 
   coords <- data.frame(list('Latitude'=lat, 'Longitude'=lon))
   coordinates(coords) <- ~ Longitude + Latitude
@@ -226,5 +234,21 @@ find_covariance <- function(lat, lon, n_domains=neon_domains){
   covariance <- get(var_name)$parameters$sigMu
   print(domain_num)
   return(covariance)
+  
+}
+
+get_correlation <- function(lat, lon, n_domains=neon_domains){
+  
+  coords <- data.frame(list('Latitude'=lat, 'Longitude'=lon))
+  coordinates(coords) <- ~ Longitude + Latitude
+  proj4string(coords) <- proj4string(n_domains)
+  domain_num <- over(coords, n_domains)$DomainID
+  if(is.na(domain_num)){
+    return("Not in domains")
+  }
+  var_name <- paste("DO", "_out", sep=as.character(domain_num))
+  correlation <- get(var_name)$parameters$corMu
+  print(domain_num)
+  return(correlation)
   
 }
