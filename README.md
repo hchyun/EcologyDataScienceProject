@@ -20,7 +20,7 @@ For other data science challenges to ecology, read more about the [data science 
 ## Requirements
 The best way to run this project is to download [RStudio][RStudio]. This project was built on R version 3.5.1 but may run on other versions of R and Python version 3.6.3.
 
-In order to clone the repository following command:
+In order to clone the repository, run following command:
 ```bash
 git clone https://github.com/hchyun/EcologyDataScienceProject.git
 ```
