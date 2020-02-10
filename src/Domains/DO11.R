@@ -1,4 +1,7 @@
 DO11 <- read_csv("./outputs/plots_per_domain_11.csv")
+
+colnames(DO11) <- tolower(colnames(DO11))
+
 DO11 <- DO11 %>%
   dplyr::select(-c("lon.1", "lat.1", "invyr"))
 
@@ -30,7 +33,7 @@ DO11_y <- get_responses(DO11_clustered_x, y_fia)
 # DO11_y <- filter_sparse(DO11_y)
 
 DO11_pred_final <- DO11_clustered_x %>%
-  dplyr::select(-c("statecd", "unitcd", "countycd","id_coords","plot","lat","lon","invyr","watercd","physclcd"))
+  dplyr::select(-c("statecd", "unitcd", "countycd","id_coords","plot","lat","lon","invyr","physclcd"))
 #colnames(DO11_pred_final)[1:3] <- c("slope", "aspect", "elev")
 
 DO11_pred_mat <- apply(DO11_pred_final, 2, scale)

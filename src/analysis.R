@@ -98,7 +98,6 @@ barplot(pred.counts, names.arg = c('>0.75\nGreat', '0.5-0.75\nGood', '0.25-0.5\n
 gjamPlot(output = DO1_out)
 gjamPlot(output = DO2_out)
 gjamPlot(output = DO3_out)
-gjamPlot(output = DO4_out)
 gjamPlot(output = DO5_out)
 gjamPlot(output = DO6_out)
 gjamPlot(output = DO7_out)
@@ -112,7 +111,6 @@ gjamPlot(output = DO14_out)
 gjamPlot(output = DO15_out)
 gjamPlot(output = DO16_out)
 gjamPlot(output = DO17_out)
-gjamPlot(output = DO19_out)
 gjamPlot(output = cont_out)
 
 

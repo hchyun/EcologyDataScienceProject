@@ -64,7 +64,7 @@ cluster_plots <- function(data, cols_to_cluster){
 
 filter_sparse <- function(y_mat){
   
-  min_num <- nrow(y_mat) / 100
+  min_num <- nrow(y_mat) / 10
   num_zero <- colSums(y_mat != 0)
   col_zeros <- which(num_zero > min_num)
   spc_filter <- colnames(y_mat)[col_zeros]
