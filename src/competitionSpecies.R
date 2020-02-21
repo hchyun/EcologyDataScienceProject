@@ -10,8 +10,13 @@ comp_train_y <- comp_training[[2]]
 comp_test_x <- comp_training[[3]]
 comp_test_y <- comp_training[[4]]
 
+
 ml   <- list(ng =7500, burnin = 5000, typeNames = "DA")
 form <- as.formula(paste("~", paste(colnames(comp_train_x), collapse = " + ")))
 comp_out <- gjam(form, xdata=comp_train_x, ydata=comp_train_y, modelList=ml)
 
 comp_eval <- evaluate_model(comp_test_x, comp_test_y, comp_out)
+
+#Results
+#   316       611       111        121      131       819       827
+#0.3615206 0.3035375 0.3730737 0.06909795 0.489213 0.2822943 0.3103697

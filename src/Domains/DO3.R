@@ -16,6 +16,7 @@ DO3_pred$id_coords <- id
 DO3_clustered_x <- cluster_plots(DO3_pred, cols_cluster)
 DO3_y <- get_responses(DO3_clustered_x, y_fia)
 
+DO3_n <- length(unique(y_fia[y_fia$spcd %in% colnames(DO3_y),]$spgrpcd))
 # DO3_y <- matrix(as.numeric(0), nrow=nrow(DO3_pred))
 # DO3_y <- data.frame(DO3_y)
 
@@ -46,6 +47,6 @@ DO3_train_y <- DO3_training[[2]]
 DO3_test_x <- DO3_training[[3]]
 DO3_test_y <- DO3_training[[4]]
 
-DO3_out <- train_gjam(DO3_train_x, DO3_train_y)
+DO3_out <- train_gjam(DO3_train_x, DO3_train_y, n=DO3_n, R=5)
 
 DO3_eval <- evaluate_model(DO3_test_x, DO3_test_y, DO3_out)
