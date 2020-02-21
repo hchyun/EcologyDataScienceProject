@@ -101,7 +101,7 @@ get_responses <- function(x_d, y){
   return(rsp_plot)
 }
 
-train_gjam <- function(x_data,y_data, R=8,n=10,Typenames="DA",Ng=2500,Burnin=500){
+train_gjam <- function(x_data,y_data, R=8,n=10,Typenames="DA",Ng=7500,Burnin=5000){
   rl   <- list(r = R, N = n)
   ml   <- list(ng = Ng, burnin = Burnin, typeNames = Typenames, reductList = rl)
   form <- as.formula(paste("~", paste(colnames(x_data), collapse = " + ")))
@@ -252,3 +252,45 @@ get_correlation <- function(lat, lon, n_domains=neon_domains){
   return(correlation)
   
 }
+
+
+matrix_to_csv <- function(gjam_out, filename){
+  spc_names <- paste(spcd_code[spcd_code$spcd %in% colnames(gjam_out$inputs$y),]$genus, spcd_code[spcd_code$spcd %in% colnames(gjam_out$inputs$y),]$species, sep="_")
+ corr_mat <- gjam_out$parameters$corMu
+ colnames(corr_mat) <- rownames(corr_mat) <- spc_names
+ write.table(corr_mat, file=paste("correlation",filename, sep="/"))
+}
+
+cov_to_csv <- function(gjam_out, filename){
+  spc_names <- paste(spcd_code[spcd_code$spcd %in% colnames(gjam_out$inputs$y),]$genus, spcd_code[spcd_code$spcd %in% colnames(gjam_out$inputs$y),]$species, sep="_")
+  corr_mat <- gjam_out$parameters$sigMu
+  colnames(corr_mat) <- rownames(corr_mat) <- spc_names
+  write.table(corr_mat, file=paste("covariance",filename, sep="/"))
+}
+
+calc_cor <- function(gjam_out, spc1, spc2){
+  out <- gjam_out$parameters$corMu[ which(colnames(gjam_out$parameters$sigMu) == spc1),  which(colnames(gjam_out$parameters$sigMu) == spc2)] 
+  calc <- gjam_out$parameters$sigMu[spc1, spc2] / sqrt(gjam_out$parameters$sigMu[spc2, spc2] * gjam_out$parameters$sigMu[spc1, spc1]) 
+  #print(out)
+  #print(calc)
+  return(out-calc)
+}
+
+find_diff <- function(gjam_out){
+  for(i in 1:nrow(gjam_out$parameters$sigMu)){
+    for(j in i+1:nrow(gjam_out$parameters$sigMu)){
+      if(j > nrow(gjam_out$parameters$sigMu)){
+        break
+      }
+      s1 <- colnames(gjam_out$inputs$y)[i]
+      s2 <- colnames(gjam_out$inputs$y)[j]
+      diff <- calc_cor(gjam_out, s1, s2)
+      if(abs(diff) > 0.1){
+        print(paste(s1 , s2, diff, sep=" "))
+      
+      }
+    }
+  }
+}
+
+

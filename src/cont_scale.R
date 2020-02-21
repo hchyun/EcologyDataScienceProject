@@ -10,6 +10,8 @@ cont_clustered_x <- cluster_plots(cont_pred, cols_cluster)
 
 cont_y <- get_responses(cont_clustered_x, y_fia)
 
+cont_n <- length(unique(y_fia[y_fia$spcd %in% colnames(cont_y),]$spgrpcd))
+
 cont_clustered_x <- cont_clustered_x %>%
   group_by(statecd, countycd) %>%
   dplyr::mutate(tmin_1_county = mean(tmin_1), tmax_8_county = mean(tmax_8), prec_6_county = mean(prec_6), prec7_county = mean(prec_7), rad_8_county = mean(rad_8))
@@ -30,6 +32,6 @@ cont_test_x <- cont_training[[3]]
 cont_test_y <- cont_training[[4]]
 rm(cont_training)
 
-cont_out <- train_gjam(cont_train_x, cont_train_y)
+cont_out <- train_gjam(cont_train_x, cont_train_y, Ng =7500, Burnin = 5000, n=cont_n, R=5)
 
 cont_eval <- evaluate_model(cont_test_x, cont_test_y, cont_out)
