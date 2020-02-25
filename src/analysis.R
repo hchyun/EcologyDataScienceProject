@@ -84,16 +84,14 @@ avg.pred <- medians[,medians > 0.25 & medians < 0.5]
 notgood.pred <- medians[,medians > 0 & medians < 0.25]
 bad.pred <-medians[,medians < 0]
 
-spcd_code <- read_csv("../data/spcd.csv")
-
-good.spcd <- spcd_code[spcd_code$spcd==631,]
+good.spcd <- spcd_code[spcd_code$spcd %in% colnames(good.pred),]
 ok.spcd <- spcd_code[spcd_code$spcd %in% colnames(ok.pred),]
 avg.spcd <- spcd_code[spcd_code$spcd %in% colnames(avg.pred),]
 notgood.spcd <- spcd_code[spcd_code$spcd %in% colnames(notgood.pred),]
 bad.spcd <- spcd_code[spcd_code$spcd %in% colnames(bad.pred),]
 
-pred.counts <- c(length(good.pred), length(ok.pred), length(avg.pred), length(notgood.pred))
-barplot(pred.counts, names.arg = c('>0.75\nGreat', '0.5-0.75\nGood', '0.25-0.5\nAvg', '0-0.25\npoor'))
+pred.counts <- c(length(good.pred), length(ok.pred), length(avg.pred), length(notgood.pred), length(bad.spcd))
+barplot(pred.counts, names.arg = c('>0.75\nGreat', '0.5-0.75\nGood', '0.25-0.5\nAvg', '0-0.25\npoor', '-neg'))
 
 gjamPlot(output = DO1_out)
 gjamPlot(output = DO2_out)
