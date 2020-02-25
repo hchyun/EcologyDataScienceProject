@@ -30,6 +30,8 @@ DO1_train_x <- DO1_training[[1]]
 DO1_train_y <- DO1_training[[2]]
 DO1_test_x <- DO1_training[[3]]
 DO1_test_y <- DO1_training[[4]]
+rm(DO1_pred_mat, DO1_training)
+
 
 DO1_out <- train_gjam(DO1_train_x, DO1_train_y, n=DO1_n, R=5)
 

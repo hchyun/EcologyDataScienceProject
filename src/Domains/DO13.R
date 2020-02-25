@@ -17,24 +17,8 @@ DO13_pred$id_coords <- id
 DO13_clustered_x <- cluster_plots(DO13_pred, cols_cluster)
 DO13_y <- get_responses(DO13_clustered_x, y_fia)
 
-# DO13_y <- matrix(as.numeric(0), nrow=nrow(DO13_pred))
-# DO13_y <- data.frame(DO13_y)
-
-# for(i in 1:nrow(y_fia)){
-#  ind <- which(DO13_pred$statecd == y_fia$statecd[i] & DO13_pred$countycd == y_fia$countycd[i] & DO13_pred$plot == y_fia$plot[i])
-#  if(!identical(ind,integer(0))){
-#    if(! (y_fia$spcd[i] %in% colnames(DO13_y)) ){
-#      DO13_y[,as.character(y_fia$spcd[i])] <- 0
-#    }
-#    DO13_y[ind, as.character(y_fia$spcd[i])] <- as.numeric(y_fia$count[i])
-#  }
-# }
-
-# DO13_y <- filter_sparse(DO13_y)
-
 DO13_pred_final <- DO13_clustered_x %>%
   dplyr::select(-c("statecd", "unitcd", "countycd","id_coords","plot","lat","lon","invyr","physclcd"))
-#colnames(DO13_pred_final)[1:3] <- c("slope", "aspect", "elev")
 
 DO13_pred_mat <- apply(DO13_pred_final, 2, scale)
 DO13_pred_final <- data.frame(DO13_pred_mat)
@@ -44,6 +28,7 @@ DO13_train_x <- DO13_training[[1]]
 DO13_train_y <- DO13_training[[2]]
 DO13_test_x <- DO13_training[[3]]
 DO13_test_y <- DO13_training[[4]]
+rm(DO13_pred_mat, DO13_training)
 
 DO13_out <- train_gjam(DO13_train_x, DO13_train_y)
 

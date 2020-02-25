@@ -1,4 +1,4 @@
-competitionspc <- c("316", "611", "111", "121", "131", "819", "827") #8441 Quercus Geminata
+competitionspc <- c("316", "611", "111", "121", "131", "819", "827") #8441 Quercus Geminata missing
 competitionnames <- paste(spcd_code[spcd_code$spcd %in% competitionspc, ]$genus, spcd_code[spcd_code$spcd %in% competitionspc, ]$species, sep=" ")
 
 comp_y <- DO3_y[,competitionspc]

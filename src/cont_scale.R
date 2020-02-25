@@ -30,7 +30,7 @@ cont_train_x <- cont_training[[1]]
 cont_train_y <- cont_training[[2]]
 cont_test_x <- cont_training[[3]]
 cont_test_y <- cont_training[[4]]
-rm(cont_training)
+rm(cont_training, cont_pred_mat)
 
 cont_out <- train_gjam(cont_train_x, cont_train_y, Ng =7500, Burnin = 5000, n=cont_n, R=5)
 

@@ -39,7 +39,7 @@ The NEON data could be downloaded by running `python download.py` in the `Ecolog
 
 ## Training GJAM
 To train the model run `Run.R` in `EcologyDataScienceProject/src`. Which will run the following files:
-`functions.R    Shared.R    cont_scale.R  /Domains/DO<Domain Number>.R `. The file will run the continental model and each domain. To run a domain or continental model just run the line that corresponds to the respective model in `Run.R`. Note that `Shared.R` and `functions.R` must be ran before running any of these models.
+`util.R    Shared.R    cont_scale.R  /Domains/DO<Domain Number>.R `. The file will run the continental model and each domain. To run a domain or continental model just run the line that corresponds to the respective model in `Run.R`. Note that `Shared.R` and `util.R` must be ran before running any of these models.
 
 
 ## Analysis of the Results
@@ -68,10 +68,10 @@ EcologyDataScienceProject
     ├── Domains
         └── DO<number>.R # Domain level GJAM models
     ├── download.py # Downloading NEON data
-    ├── functions.R # File with the utility functions for the code
     ├── NEONDomains_0 # Neon domain files downloaded from NEON website
     ├── outputs
-        └── plots_per_domain_<number>.csv # Generated from sub_scales function dividing FIA plots into NEON domains
+        └── plots_per_domain_<number>.csv # Generated from sub_scales function dividing FIA plots into
+    ├── util.R # File with the utility functions for the code
     ├── plotpoints.R # Plotting points of where the species occur
     ├── Run.R # Main file to run the code
     └── shared.R # Data that is shared among all domains and continental scale models
